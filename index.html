@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Security Content Security Policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
+    />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Pol Alegre Martinez | Diseñador y Desarrollador Web en Badalona
+    </title>
+    <meta
+      name="description"
+      content="Páginas web a mano para comercios y negocios locales de Badalona. Código rápido, diseño exclusivo y trato cercano de tú a tú. ¡Impulsa tu presencia digital!"
+    />
+    <meta
+      name="keywords"
+      content="desarrollo web badalona, diseñador web badalona, paginas web badalona, freelance badalona, creacion web badalona, seo local badalona"
+    />
+    <meta name="author" content="Pol Alegre Martinez" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://polalegre.dev/" />
+    <meta
+      property="og:title"
+      content="Pol Alegre Martinez | Web de Autor en Badalona"
+    />
+    <meta
+      property="og:description"
+      content="Hago páginas web limpias y rápidas para negocios locales de Badalona. Sin rodeos, trato presencial y directo."
+    />
+    <meta property="og:image" content="assets/og-image.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon (SVG Data URI) -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232E5BFF' stroke-width='1.8'%3E%3Ccircle cx='12' cy='12' r='10' stroke='rgba(255,255,255,0.15)'/%3E%3Cpath d='M8.5 16V8h3.5a2.5 2.5 0 0 1 0 5H8.5M12 13l3.5 3' stroke='%232E5BFF' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 14.5h4' stroke='%23E26D5C' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- App Translations Dictionary & Scripts (Deferred for FCP speed) -->
+    <script src="translations.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo" id="nav-logo">
+          <svg
+            class="logo-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="rgba(255,255,255,0.15)"
+            ></circle>
+            <path
+              d="M8.5 16V8h3.5a2.5 2.5 0 0 1 0 5H8.5M12 13l3.5 3"
+              stroke="url(#logo-grad)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M10 14.5h4"
+              stroke="url(#logo-grad)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <defs>
+              <linearGradient
+                id="logo-grad"
+                x1="0%"
+                y1="100%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="var(--accent-blue)"></stop>
+                <stop offset="100%" stop-color="var(--accent-clay)"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">Pol Alegre</span>
+        </a>
+        <nav class="nav-menu" id="nav-menu">
+          <a
+            href="#servicios"
+            class="nav-link"
+            id="link-servicios"
+            data-i18n="nav-servicios"
+            >Servicios</a
+          >
+          <a
+            href="#como-trabajamos"
+            class="nav-link"
+            id="link-metodo"
+            data-i18n="nav-metodo"
+            >Cómo trabajo</a
+          >
+          <a
+            href="#sobre-mi"
+            class="nav-link"
+            id="link-sobre-mi"
+            data-i18n="nav-sobre-mi"
+            >Sobre mí</a
+          >
+          <a
+            href="#portafolio"
+            class="nav-link"
+            id="link-portafolio"
+            data-i18n="nav-portafolio"
+            >Proyectos</a
+          >
+
+          <a
+            href="#contacto"
+            class="btn btn-secondary nav-btn"
+            id="btn-nav-contacto"
+            data-i18n="nav-contacto"
+            >Hablemos</a
+          >
+
+          <!-- Language Selector -->
+          <div class="lang-selector">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" data-lang="ca">CA</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="hero-decor-container">
+          <!-- Clean, warm vignette layer instead of floating neon orbs -->
+          <div class="vignette-overlay"></div>
+        </div>
+        <div class="container hero-container">
+          <div class="hero-wrapper">
+            <div
+              class="hero-badge animate-fade-in"
+              id="hero-badge-badge"
+              data-i18n="hero-badge"
+            >
+              <span class="badge-dot"></span>
+              Páginas web hechas a mano &middot; Badalona
+            </div>
+            <h1
+              class="hero-title animate-slide-up"
+              id="hero-main-title"
+              data-i18n="hero-title"
+            >
+              Diseño y programo webs para negocios de
+              <span class="gradient-text">Badalona</span>. Sin rodeos.
+            </h1>
+            <p
+              class="hero-subtitle animate-slide-up-delayed"
+              id="hero-main-subtitle"
+              data-i18n="hero-subtitle"
+            >
+              Soy Pol Alegre. Ayudo a comercios, despachos y profesionales
+              locales a conseguir clientes en internet con una web rápida, clara
+              y que funciona. Quedamos, nos tomamos un café y lo planeamos.
+            </p>
+            <div
+              class="hero-actions animate-slide-up-delayed"
+              id="hero-main-actions"
+            >
+              <a
+                href="#contacto"
+                class="btn btn-primary btn-glow"
+                id="btn-hero-contacto"
+                data-i18n="btn-hero-contacto"
+              >
+                Hablemos de tu web
+              </a>
+              <a
+                href="#como-trabajamos"
+                class="btn btn-outline"
+                id="btn-hero-proceso"
+                data-i18n="btn-hero-proceso"
+                >Mi proceso</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services-section" id="servicios">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-decor-tag" data-i18n="services-decor"
+              >Servicios</span
+            >
+            <h2
+              class="section-title"
+              id="services-title"
+              data-i18n="services-title"
+            >
+              ¿Qué necesitas?
+            </h2>
+            <p class="section-subtitle" data-i18n="services-subtitle">
+              Tres formas claras de ayudarte a tener una presencia profesional
+              en internet, explicadas de forma sencilla.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="service-card spotlight-card reveal" id="card-landing">
+              <div class="card-glow-layer"></div>
+              <div class="card-inner">
+                <div class="service-header">
+                  <div class="service-icon-wrapper">
+                    <svg
+                      class="icon-svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <rect
+                        x="2"
+                        y="3"
+                        width="20"
+                        height="14"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  </div>
+                  <span
+                    class="service-price-tag"
+                    data-i18n="service-price-landing"
+                    >Desde 299€</span
+                  >
+                </div>
+                <h3
+                  class="service-title-text"
+                  data-i18n="service-title-landing"
+                >
+                  Página de Aterrizaje
+                </h3>
+                <p class="service-desc-text" data-i18n="service-desc-landing">
+                  Una sola página estructurada de principio a fin para un único
+                  objetivo: presentar tu servicio estrella y hacer que te llamen
+                  o te manden un WhatsApp.
+                </p>
+                <ul class="service-bullets">
+                  <li data-i18n="service-bullet-landing-1">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Adaptada perfectamente a teléfonos móviles
+                  </li>
+                  <li data-i18n="service-bullet-landing-2">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Formulario de contacto rápido y enlace directo a WhatsApp
+                  </li>
+                  <li data-i18n="service-bullet-landing-3">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Ideal para campañas o servicios muy concretos
+                  </li>
+                </ul>
+                <a
+                  href="#contacto"
+                  class="service-link-btn"
+                  id="link-service-landing"
+                  data-i18n="service-link-landing"
+                >
+                  Hablemos sobre tu landing
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2 (Featured) -->
+            <div
+              class="service-card spotlight-card service-featured reveal"
+              id="card-corporate"
+            >
+              <div class="card-glow-layer"></div>
+              <div class="card-inner">
+                <div class="service-header">
+                  <div class="service-icon-wrapper">
+                    <svg
+                      class="icon-svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                      <path d="M2 17l10 5 10-5"></path>
+                      <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                  </div>
+                  <span
+                    class="service-price-tag"
+                    data-i18n="service-price-corporate"
+                    >Desde 599€</span
+                  >
+                </div>
+                <h3
+                  class="service-title-text"
+                  data-i18n="service-title-corporate"
+                >
+                  Web Completa
+                </h3>
+                <p class="service-desc-text" data-i18n="service-desc-corporate">
+                  El escaparate formal para despachos, clínicas, restaurantes o
+                  pymes. Un sitio web multi-página estructurado y
+                  auto-administrable para reflejar la solidez de tu empresa.
+                </p>
+                <ul class="service-bullets">
+                  <li data-i18n="service-bullet-corporate-1">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Secciones ilimitadas y adaptadas a tu marca
+                  </li>
+                  <li data-i18n="service-bullet-corporate-2">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    SEO On-Page para que tus vecinos te encuentren en Google
+                  </li>
+                  <li data-i18n="service-bullet-corporate-3">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Gestor de contenido para que puedas editar textos tú mismo
+                  </li>
+                </ul>
+                <a
+                  href="#contacto"
+                  class="service-link-btn"
+                  id="link-service-corporate"
+                  data-i18n="service-link-corporate"
+                >
+                  Hablemos sobre tu web
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="service-card spotlight-card reveal"
+              id="card-maintenance"
+            >
+              <div class="card-glow-layer"></div>
+              <div class="card-inner">
+                <div class="service-header">
+                  <div class="service-icon-wrapper">
+                    <svg
+                      class="icon-svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span
+                    class="service-price-tag"
+                    data-i18n="service-price-maint"
+                    >Desde 49€/mes</span
+                  >
+                </div>
+                <h3 class="service-title-text" data-i18n="service-title-maint">
+                  Mantenimiento y SEO
+                </h3>
+                <p class="service-desc-text" data-i18n="service-desc-maint">
+                  Para que te olvides de la parte técnica. Me encargo de que tu
+                  web esté actualizada y segura, además de optimizar tu ficha de
+                  Google Maps para que destaques en Badalona.
+                </p>
+                <ul class="service-bullets">
+                  <li data-i18n="service-bullet-maint-1">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Copias de seguridad semanales y actualizaciones de seguridad
+                  </li>
+                  <li data-i18n="service-bullet-maint-2">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Soporte rápido para pequeños cambios (fotos, horarios,
+                    textos)
+                  </li>
+                  <li data-i18n="service-bullet-maint-3">
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Optimización SEO para búsquedas locales en tu zona
+                  </li>
+                </ul>
+                <a
+                  href="#contacto"
+                  class="service-link-btn"
+                  id="link-service-maint"
+                  data-i18n="service-link-maint"
+                >
+                  Pregúntame sobre soporte
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process / How I work Section -->
+      <section class="workflow-section" id="como-trabajamos">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-decor-tag" data-i18n="method-decor"
+              >Metodología</span
+            >
+            <h2 class="section-title" data-i18n="method-title">
+              Paso a paso, sin líos
+            </h2>
+            <p class="section-subtitle" data-i18n="method-subtitle">
+              Así es como trabajo contigo para llevar tu negocio a internet.
+            </p>
+          </div>
+
+          <div class="workflow-timeline-wrapper reveal">
+            <div class="timeline-indicator-track">
+              <div
+                class="timeline-indicator-fill"
+                id="timeline-scroll-fill"
+              ></div>
+            </div>
+
+            <div class="workflow-steps-grid">
+              <!-- Step 1 -->
+              <div class="workflow-step-card spotlight-card" id="step-reunion">
+                <div class="card-glow-layer"></div>
+                <div class="card-inner">
+                  <span class="step-number" data-i18n="step-reunion-title"
+                    >01. Café &amp; Ideas</span
+                  >
+                  <p class="step-desc" data-i18n="step-reunion-desc">
+                    Quedamos en tu negocio o en alguna cafetería de la Rambla de
+                    Badalona. Me cuentas qué haces, cómo es tu cliente y qué
+                    esperas de la web. De ahí salimos con un plan estructurado y
+                    un precio cerrado de antemano.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="workflow-step-card spotlight-card" id="step-diseno">
+                <div class="card-glow-layer"></div>
+                <div class="card-inner">
+                  <span class="step-number" data-i18n="step-diseno-title"
+                    >02. El Boceto</span
+                  >
+                  <p class="step-desc" data-i18n="step-diseno-desc">
+                    Diseño una propuesta visual exclusiva para tu negocio. Nada
+                    de plantillas genéricas. Revisamos la disposición, los
+                    textos y los colores juntos, ajustando todo lo necesario
+                    hasta que digas: 'Esto es exactamente mi negocio'.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div
+                class="workflow-step-card spotlight-card"
+                id="step-desarrollo"
+              >
+                <div class="card-glow-layer"></div>
+                <div class="card-inner">
+                  <span class="step-number" data-i18n="step-desarrollo-title"
+                    >03. El Codi</span
+                  >
+                  <p class="step-desc" data-i18n="step-desarrollo-desc">
+                    Escribo el código de tu web a mano. Me aseguro de que cargue
+                    al instante en móviles y esté optimizada técnicamente para
+                    que Google empiece a indexarte y a mostrarte a tus vecinos
+                    de Badalona.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div
+                class="workflow-step-card spotlight-card"
+                id="step-publicacion"
+              >
+                <div class="card-glow-layer"></div>
+                <div class="card-inner">
+                  <span class="step-number" data-i18n="step-publicacion-title"
+                    >04. El Despegue</span
+                  >
+                  <p class="step-desc" data-i18n="step-publicacion-desc">
+                    Lanzamos la web. Te configuro el dominio y el hosting más
+                    adecuado. Te explico en un vídeo de 5 minutos cómo hacer
+                    cambios sencillos por tu cuenta y activo las herramientas de
+                    analítica para que veas tus visitas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section (Bento Grid) -->
+      <section class="about-section" id="sobre-mi">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-decor-tag" data-i18n="about-decor"
+              >Quién soy</span
+            >
+            <h2 class="section-title" data-i18n="about-title">
+              Hola, soy Pol Alegre
+            </h2>
+          </div>
+
+          <div class="bento-grid reveal">
+            <!-- Box 1: Profile photo wrapper -->
+            <div class="bento-box bento-profile spotlight-card">
+              <div class="card-glow-layer"></div>
+              <div class="card-inner">
+                <div class="editor-header">
+                  <span class="editor-title">profile.png</span>
+                </div>
+                <img
+                  src="assets/pol-alegre.png"
+                  alt="Pol Alegre Martinez"
+                  class="about-profile-img"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            <!-- Box 2: Main Copy -->
+            <div class="bento-box bento-text spotlight-card">
+              <div class="card-glow-layer"></div>
+              <div class="card-inner">
+                <h3 data-i18n="about-lead">
+                  No soy una agencia de 15 personas con oficinas de diseño en
+                  Barcelona que te cobra por cada correo. Soy un desarrollador
+                  freelance de Badalona, y hablo directo.
+                </h3>
+                <p data-i18n="about-body-1">
+                  Nací y vivo en Badalona (de los que cruzan el Pont del Petroli
+                  a pasear los domingos). Sé lo difícil que es levantar la
+                  persiana de un negocio de barrio todos los días, y por eso
+                  decidí ofrecer mis servicios de forma clara: precios cerrados,
+                  comunicación directa por WhatsApp y soporte rápido cuando lo
+                  necesitas.
+                </p>
+                <p data-i18n="about-body-2">
+                  No uso plantillas genéricas de WordPress que tardan 10
+                  segundos en cargar. Hago páginas web rápidas, limpias y
+                  estructuradas con código moderno para que tus clientes te
+                  llamen o te escriban.
+                </p>
+              </div>
+            </div>
+
+            <!-- Box 3: Value 1 -->
+            <div class="bento-box bento-value bento-value-1 spotlight-card">
+              <div class="card-glow-layer"></div>
+              <div class="card-inner">
+                <div class="bento-val-header">
+                  <span class="bento-val-icon">📍</span>
+                  <h4 data-i18n="about-val-title-1">Al lado de tu negocio</h4>
+                </div>
+                <p data-i18n="about-val-desc-1">
+                  Trabajo en el Centre, Gorg, Llefià, Bufalà... si pasa
+                  cualquier cosa, me acerco a tu local a solucionar-lo.
+                </p>
+              </div>
+            </div>
+
+            <!-- Box 4: Value 2 -->
+            <div class="bento-box bento-value bento-value-2 spotlight-card">
+              <div class="card-glow-layer"></div>
+              <div class="card-inner">
+                <div class="bento-val-header">
+                  <span class="bento-val-icon">✨</span>
+                  <h4 data-i18n="about-val-title-2">
+                    Cero plantillas prefabricadas
+                  </h4>
+                </div>
+                <p data-i18n="about-val-desc-2">
+                  Diseño tu web desde un lienzo en blanco para que tu marca
+                  tenga una identidad real en internet.
+                </p>
+              </div>
+            </div>
+
+            <!-- Box 5: Value 3 (Full width span bottom) -->
+            <div class="bento-box bento-value bento-value-3 spotlight-card">
+              <div class="card-glow-layer"></div>
+              <div class="card-inner">
+                <div class="bento-val-header">
+                  <span class="bento-val-icon">🔑</span>
+                  <h4 data-i18n="about-val-title-3">Trasparencia absoluta</h4>
+                </div>
+                <p data-i18n="about-val-desc-3">
+                  Tú eres el propietario de todo. Te entrego los accesos de tu
+                  hosting y dominio desde el primer día.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Showcase -->
+      <section class="portfolio-section" id="portafolio">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-decor-tag" data-i18n="portfolio-decor"
+              >Casos de ejemplo</span
+            >
+            <h2
+              class="section-title"
+              id="portfolio-title"
+              data-i18n="portfolio-title"
+            >
+              Conceptos reales para Badalona
+            </h2>
+            <p class="section-subtitle" data-i18n="portfolio-subtitle">
+              Propuestas visuales que he diseñado pensando en las necesidades
+              específicas de los comercios locales.
+            </p>
+          </div>
+
+          <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal" id="proj-restaurant">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/project-restaurant.png"
+                  alt="Mockup El Racó Badalona"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="project-tags">
+                  <span class="project-tag" data-i18n="proj-tag-corp"
+                    >Web Completa</span
+                  >
+                  <span class="project-tag" data-i18n="proj-tag-rest"
+                    >Restauración</span
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 data-i18n="proj-title-1">Restaurante "El Racó"</h3>
+                <p data-i18n="proj-desc-1">
+                  Un concepto moderno para restauración: visualización rápida de
+                  la carta en móviles, integración de reservas directas a
+                  WhatsApp y valoraciones de clientes destacadas.
+                </p>
+                <a
+                  href="#contacto"
+                  class="project-link"
+                  id="link-proj-1"
+                  data-i18n="proj-link-1"
+                >
+                  Quiero algo similar para mi local
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal" id="proj-physio">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/project-physio.png"
+                  alt="Mockup Fisioterapia Bufalà"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="project-tags">
+                  <span class="project-tag" data-i18n="proj-tag-corp"
+                    >Web Completa</span
+                  >
+                  <span class="project-tag" data-i18n="proj-tag-health"
+                    >Salud</span
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 data-i18n="proj-title-2">Fisioterapia Bufalà</h3>
+                <p data-i18n="proj-desc-2">
+                  Diseño web adaptado a clínicas o profesionales de salud:
+                  presentación limpia de especialidades y un sistema de citas
+                  online sencillo para los pacientes.
+                </p>
+                <a
+                  href="#contacto"
+                  class="project-link"
+                  id="link-proj-2"
+                  data-i18n="proj-link-2"
+                >
+                  Quiero algo similar para mi local
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card reveal" id="proj-shop">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/project-shop.png"
+                  alt="Mockup BadaModa Concept"
+                  class="project-img"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="project-tags">
+                  <span class="project-tag" data-i18n="proj-tag-landing"
+                    >Landing Page</span
+                  >
+                  <span class="project-tag" data-i18n="proj-tag-shop"
+                    >Comercio</span
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 data-i18n="proj-title-3">BadaModa Boutique</h3>
+                <p data-i18n="proj-desc-3">
+                  Landing page de captación para tiendas de ropa locales:
+                  catálogo de colecciones integrado y botón de compra rápido a
+                  través de WhatsApp Business.
+                </p>
+                <a
+                  href="#contacto"
+                  class="project-link"
+                  id="link-proj-3"
+                  data-i18n="proj-link-3"
+                >
+                  Quiero algo similar para mi local
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contacto">
+        <div class="container contact-container">
+          <div class="contact-info reveal" id="contact-details-col">
+            <span class="section-decor-tag" data-i18n="contact-decor"
+              >Contacto</span
+            >
+            <h2 class="section-title left-align" data-i18n="contact-title">
+              ¿Hablamos de tu web?
+            </h2>
+            <p class="contact-desc" data-i18n="contact-desc">
+              Cuéntame qué negocio tienes y qué necesitas conseguir. Te
+              responderé en menos de 24 horas y, si quieres, quedamos para tomar
+              un café por Badalona.
+            </p>
+
+            <div class="contact-methods">
+              <a
+                href="mailto:polalegre.dev@gmail.com"
+                class="contact-method-item"
+              >
+                <div class="method-icon">
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <span data-i18n="contact-method-email"
+                    >Escríbeme por email</span
+                  >
+                  <strong>polalegre.dev@gmail.com</strong>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/34640610268?text=Hola%20Pol,%20he%20visto%20tu%20portfolio%20y%20quiero%20consultarte%20para%20mi%20negocio."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-method-item"
+              >
+                <div class="method-icon">
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <span data-i18n="contact-method-wa"
+                    >Escríbeme por WhatsApp</span
+                  >
+                  <strong>+34 640 61 02 68</strong>
+                </div>
+              </a>
+
+              <div class="contact-method-item non-clickable">
+                <div class="method-icon">
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <circle cx="12" cy="10" r="3" />
+                    <path
+                      d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"
+                    />
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <span data-i18n="contact-method-zone">Dónde trabajo</span>
+                  <strong>Badalona, Barcelona, Santa Coloma y Maresme</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper reveal" id="contact-form-col">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" data-i18n="form-label-name"
+                  >Tu nombre o el de tu Negocio</label
+                >
+                <input
+                  type="text"
+                  id="form-name"
+                  data-i18n-placeholder="form-placeholder-name"
+                  placeholder="Ej. Panadería Rambla o María López"
+                  required
+                />
+                <span class="error-msg" id="error-name" data-i18n="error-name"
+                  >Dime cómo te llamas o el nombre de tu negocio.</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="form-email" data-i18n="form-label-email"
+                  >Tu Correo Electrónico</label
+                >
+                <input
+                  type="email"
+                  id="form-email"
+                  data-i18n-placeholder="form-placeholder-email"
+                  placeholder="Ej. maria@tucomercio.com"
+                  required
+                />
+                <span class="error-msg" id="error-email" data-i18n="error-email"
+                  >Introduce un correo electrónico correcto para que te
+                  responda.</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="form-phone" data-i18n="form-label-phone"
+                  >Tu Teléfono</label
+                >
+                <input
+                  type="tel"
+                  id="form-phone"
+                  data-i18n-placeholder="form-placeholder-phone"
+                  placeholder="Ej. 612 345 678"
+                  required
+                />
+                <span class="error-msg" id="error-phone" data-i18n="error-phone"
+                  >Introduce un teléfono de 9 dígitos para llamarte.</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="form-message" data-i18n="form-label-msg"
+                  >¿Qué tienes en mente para la web?</label
+                >
+                <textarea
+                  id="form-message"
+                  rows="5"
+                  data-i18n-placeholder="form-placeholder-msg"
+                  placeholder="Cuéntame brevemente qué tipo de negocio tienes y tus ideas principales..."
+                  required
+                ></textarea>
+                <span
+                  class="error-msg"
+                  id="error-message"
+                  data-i18n="error-message"
+                  >Escribe un breve mensaje describiendo tu necesidad (mínimo 10
+                  caracteres).</span
+                >
+              </div>
+
+              <!-- Honeypot spam protection hidden field -->
+              <div class="form-group" style="display: none !important">
+                <label for="form-website">Website (dejar en blanco)</label>
+                <input
+                  type="text"
+                  id="form-website"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-full btn-glow"
+                id="btn-submit-form"
+                data-i18n="form-btn-submit"
+              >
+                Enviar consulta
+              </button>
+
+              <div class="form-success-alert" id="form-success">
+                <svg
+                  class="icon-success"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <div class="alert-content">
+                  <strong data-i18n="success-title">¡Mensaje recibido!</strong>
+                  <p data-i18n="success-desc">
+                    Te responderé en menos de 24 horas.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <svg
+              class="logo-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="rgba(255,255,255,0.15)"
+              ></circle>
+              <path
+                d="M8.5 16V8h3.5a2.5 2.5 0 0 1 0 5H8.5M12 13l3.5 3"
+                stroke="url(#logo-grad-footer)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M10 14.5h4"
+                stroke="url(#logo-grad-footer)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="logo-grad-footer"
+                  x1="0%"
+                  y1="100%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="var(--accent-blue)"></stop>
+                  <stop offset="100%" stop-color="var(--accent-clay)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="logo-text">Pol Alegre</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer-tagline">
+            Páginas web a mano, rápidas y legibles para comercios y negocios
+            locales en Badalona.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4 data-i18n="footer-links-title">Enlaces</h4>
+          <a href="#servicios" data-i18n="nav-servicios">Servicios</a>
+          <a href="#como-trabajamos" data-i18n="nav-metodo">Cómo trabajo</a>
+          <a href="#sobre-mi" data-i18n="nav-sobre-mi">Sobre mí</a>
+          <a href="#portafolio" data-i18n="nav-portafolio">Proyectos</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4 data-i18n="footer-contact-title">Contacto</h4>
+          <p>📍 Badalona, Barcelona</p>
+          <p>
+            ✉️ <a href="mailto:hola@polalegre.dev">polalegre.dev@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+          <p data-i18n="footer-rights">
+            &copy; 2026 Pol Alegre Martinez. Todos los derechos reservados.
+          </p>
+          <p data-i18n="footer-made-by">Hecho a mano en Badalona 🏖️</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
