@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show localized loading message
         btnSubmitForm.innerHTML = `${sendingTexts[currentLanguage]} <span class="spinner"></span>`;
 
-        fetch("https://formspree.io/f/polalegre.dev@gmail.com", {
+        fetch("https://formspree.io/f/mqejgdne", {
             method: "POST",
             headers: {
                 "Accept": "application/json",
