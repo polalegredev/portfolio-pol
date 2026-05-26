@@ -938,7 +938,7 @@
           </div>
 
           <div class="contact-form-wrapper reveal" id="contact-form-col">
-            <form class="contact-form" id="contact-form" novalidate>
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/polalegre.dev@gmail.com" method="POST" novalidate>
               <div class="form-group">
                 <label for="form-name" data-i18n="form-label-name"
                   >Tu nombre o el de tu Negocio</label
@@ -946,6 +946,7 @@
                 <input
                   type="text"
                   id="form-name"
+                  name="name"
                   data-i18n-placeholder="form-placeholder-name"
                   placeholder="Ej. Panadería Rambla o María López"
                   required
@@ -961,6 +962,7 @@
                 <input
                   type="email"
                   id="form-email"
+                  name="email"
                   data-i18n-placeholder="form-placeholder-email"
                   placeholder="Ej. maria@tucomercio.com"
                   required
@@ -977,6 +979,7 @@
                 <input
                   type="tel"
                   id="form-phone"
+                  name="phone"
                   data-i18n-placeholder="form-placeholder-phone"
                   placeholder="Ej. 612 345 678"
                   required
@@ -991,6 +994,7 @@
                 >
                 <textarea
                   id="form-message"
+                  name="message"
                   rows="5"
                   data-i18n-placeholder="form-placeholder-msg"
                   placeholder="Cuéntame brevemente qué tipo de negocio tienes y tus ideas principales..."

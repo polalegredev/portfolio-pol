@@ -276,21 +276,36 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show localized loading message
         btnSubmitForm.innerHTML = `${sendingTexts[currentLanguage]} <span class="spinner"></span>`;
 
-        setTimeout(() => {
+        fetch("https://formspree.io/f/polalegre.dev@gmail.com", {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
             btnSubmitForm.disabled = false;
             btnSubmitForm.innerHTML = originalBtnText;
 
-            console.log('Mensaje de contacto enviado con éxito:', data);
-
-            // Show localized success alert
-            formSuccessAlert.classList.add('show');
-            formElement.reset();
-            
-            // Auto hide success alert
-            setTimeout(() => {
-                formSuccessAlert.classList.remove('show');
-            }, 8000);
-
-        }, 1500);
+            if (response.ok) {
+                // Show localized success alert
+                formSuccessAlert.classList.add('show');
+                formElement.reset();
+                
+                // Auto hide success alert
+                setTimeout(() => {
+                    formSuccessAlert.classList.remove('show');
+                }, 8000);
+            } else {
+                alert("Error al enviar el formulario. Por favor, inténtalo más tarde.");
+            }
+        })
+        .catch(error => {
+            btnSubmitForm.disabled = false;
+            btnSubmitForm.innerHTML = originalBtnText;
+            console.error('Error de Formspree:', error);
+            alert("Hubo un problema de conexión. Por favor, inténtalo más tarde.");
+        });
     }
 });
