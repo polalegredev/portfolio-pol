@@ -308,4 +308,37 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Hubo un problema de conexión. Por favor, inténtalo más tarde.");
         });
     }
+
+    /* ==========================================================================
+       7. GSAP SCROLLTRIGGER HERO PARALLAX & ZOOM
+       ========================================================================== */
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Zoom and move background down (classic parallax zoom)
+        gsap.to(".hero-slideshow", {
+            scrollTrigger: {
+                trigger: "#hero",
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            },
+            scale: 1.15,
+            y: 80,
+            ease: "none"
+        });
+        
+        // Push container content up and fade out (separate layer parallax depth)
+        gsap.to(".hero-container", {
+            scrollTrigger: {
+                trigger: "#hero",
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            },
+            y: -50,
+            opacity: 0.3,
+            ease: "none"
+        });
+    }
 });
