@@ -396,19 +396,58 @@ h1, h2, h3, h4 {
     padding-top: 80px;
     padding-bottom: 40px;
     overflow: hidden;
-    background-image: linear-gradient(180deg, rgba(18, 19, 22, 0.75) 0%, rgba(18, 19, 22, 0.96) 100%), url('assets/hero-bg.png');
+}
+
+/* Fading Slideshow Background representing step-by-step workflow */
+.hero-slideshow {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeSlideshow 20s infinite ease-in-out;
 }
 
-.hero-decor-container, .vignette-overlay {
-    display: none !important; /* Completely clean flat background */
+.hero-slide:nth-child(1) {
+    animation-delay: 0s;
+}
+.hero-slide:nth-child(2) {
+    animation-delay: 5s;
+}
+.hero-slide:nth-child(3) {
+    animation-delay: 10s;
+}
+.hero-slide:nth-child(4) {
+    animation-delay: 15s;
+}
+
+@keyframes fadeSlideshow {
+    0% { opacity: 0; transform: scale(1.03); }
+    4% { opacity: 1; transform: scale(1); }    /* Fades in quickly and scales to rest */
+    21% { opacity: 1; }
+    25% { opacity: 0; transform: scale(0.97); }  /* Fades out slowly */
+    100% { opacity: 0; }
+}
+
+.hero-slideshow-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(180deg, rgba(18, 19, 22, 0.7) 0%, rgba(18, 19, 22, 0.96) 100%);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .hero-container {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hero-wrapper {
