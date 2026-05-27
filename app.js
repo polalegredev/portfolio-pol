@@ -350,22 +350,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const timelineNodes = document.querySelectorAll('.timeline-node');
             
             if (stickySection && stickyContainer && textBlocks.length > 0 && imagePanes.length > 0) {
-                // Pin the methodology viewport container throughout the section's scroll length
-                ScrollTrigger.create({
-                    trigger: stickySection,
-                    start: "top top",
-                    end: "bottom bottom",
-                    pin: stickyContainer,
-                    pinSpacer: false, // Let parent handle spacer spacing
-                    scrub: true
-                });
-                
-                // Create timeline mapped to scroll percentage
+                // Create timeline mapped to scroll percentage with built-in pinning
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: stickySection,
                         start: "top top",
                         end: "bottom bottom",
+                        pin: true,
                         scrub: 0.5
                     }
                 });

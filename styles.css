@@ -760,27 +760,16 @@ h1, h2, h3, h4 {
 }
 
 .workflow-left-text {
-    width: 42%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 45%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
     position: relative;
 }
 
-.workflow-header-block {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
 .workflow-step-text-block {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -788,13 +777,7 @@ h1, h2, h3, h4 {
     opacity: 0;
     transform: translateY(40px);
     pointer-events: none;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.workflow-step-text-block.active {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: all;
+    will-change: opacity, transform;
 }
 
 .step-badge-premium {
