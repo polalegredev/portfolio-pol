@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         trigger: stickySection,
                         start: "top top",
                         end: "bottom bottom",
-                        pin: true,
+                        pin: ".workflow-sticky-container",
                         scrub: 0.5
                     }
                 });
