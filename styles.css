@@ -4,13 +4,13 @@
 :root {
     /* Colors: Obsidian Deep Indigo Space and Glass Accents */
     --bg-dark: #030014;
-    --bg-card: rgba(255, 255, 255, 0.02);
-    --bg-card-hover: rgba(255, 255, 255, 0.05);
-    --bg-navbar: rgba(3, 0, 20, 0.7);
+    --bg-card: rgba(13, 10, 30, 0.65);
+    --bg-card-hover: rgba(20, 16, 45, 0.8);
+    --bg-navbar: rgba(3, 0, 20, 0.8);
     
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
-    --text-muted: #64748b;
+    --text-primary: #ffffff;
+    --text-secondary: #e2e8f0;
+    --text-muted: #94a3b8;
     
     /* Vibrant digital accents */
     --accent-blue: #6366f1;  /* Royal Indigo */
@@ -18,7 +18,7 @@
     --accent-pink: #d946ef;  /* Magenta highlight */
     
     --gradient-accent: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-clay) 100%);
-    --gradient-text: linear-gradient(135deg, #a5b4fc 0%, var(--accent-blue) 50%, var(--accent-clay) 100%);
+    --gradient-text: linear-gradient(135deg, #ffffff 0%, #a5b4fc 40%, var(--accent-blue) 75%, var(--accent-clay) 100%);
     
     /* Layout & Spacing */
     --max-width: 1140px;
@@ -31,9 +31,9 @@
     --font-body: 'Plus Jakarta Sans', sans-serif;
     
     /* Glassmorphism settings */
-    --glass-blur: blur(20px);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
-    --glass-border-glow: 1px solid rgba(255, 255, 255, 0.18);
+    --glass-blur: blur(25px);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    --glass-border-glow: 1px solid rgba(99, 102, 241, 0.35);
     
     /* Transitions */
     --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -275,13 +275,17 @@ h1, h2, h3, h4 {
 
 .section-decor-tag {
     display: inline-block;
-    font-family: var(--font-heading);
-    font-style: italic;
-    font-size: 0.95rem;
-    color: var(--accent-clay);
-    font-weight: 400;
-    letter-spacing: 0;
-    text-transform: none;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-blue);
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    padding: 4px 14px;
+    border-radius: 30px;
+    margin-bottom: 12px;
 }
 
 /* ==========================================================================
@@ -326,25 +330,30 @@ h1, h2, h3, h4 {
    ========================================================================== */
 .navbar {
     position: fixed;
-    top: 0; left: 0; width: 100%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 1100px;
     z-index: 1000;
-    background: transparent;
-    transition: background var(--transition-normal), padding var(--transition-normal), border-bottom var(--transition-normal);
-    padding: 24px 0;
+    background: rgba(10, 10, 15, 0.6);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: var(--glass-border);
+    border-radius: 50px;
+    padding: 12px 30px;
+    transition: all var(--transition-normal);
 }
 
 .navbar.scrolled {
-    background: var(--bg-navbar);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
-    padding: 14px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(3, 0, 20, 0.85);
+    border-color: rgba(255, 255, 255, 0.15);
+    padding: 8px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 30px rgba(99, 102, 241, 0.05);
 }
 
 .nav-container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 32px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -551,6 +560,21 @@ h1, h2, h3, h4 {
     padding-bottom: 60px;
     overflow: hidden;
     background-color: var(--bg-dark);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position: center;
+    mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 60% 60% at 50% 50%, #000 40%, transparent 100%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .hero-spotlight {
@@ -1949,6 +1973,19 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 14px 24px;
+        background: rgba(3, 0, 20, 0.95);
+    }
+    
     .nav-toggle {
         display: flex;
     }
