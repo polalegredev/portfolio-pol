@@ -82,24 +82,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ==========================================================================
-       4. WORKFLOW TIMELINE PROGRESS (Scroll Filling Line)
+       4. HERO BROWSER MOCKUP WORKFLOW SLIDESHOW
        ========================================================================== */
-    const workflowSection = document.getElementById('como-trabajamos');
-    const timelineFill = document.getElementById('timeline-scroll-fill');
+    const browserSlides = document.querySelectorAll('.browser-slide');
+    const progressBarItems = document.querySelectorAll('.progress-bar-item');
+    let activeSlideIndex = 0;
+    let progressInterval = null;
+    const SLIDE_DURATION = 4000; // 4 seconds per slide
+    const PROGRESS_TICK = 50; // Update progress bar every 50ms
 
-    if (workflowSection && timelineFill) {
-        window.addEventListener('scroll', () => {
-            const rect = workflowSection.getBoundingClientRect();
-            const sectionHeight = rect.height;
-            const windowHeight = window.innerHeight;
+    if (browserSlides.length > 0 && progressBarItems.length > 0) {
+        startMockupSlideshow();
 
-            const scrolledDistance = -rect.top + (windowHeight * 0.7);
-
-            let percentage = (scrolledDistance / (sectionHeight - windowHeight * 0.3)) * 100;
-            percentage = Math.max(0, Math.min(100, percentage));
-
-            timelineFill.style.height = `${percentage}%`;
+        // Allow clicking on progress tabs to switch slide
+        progressBarItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                goToSlide(index);
+            });
         });
+    }
+
+    function startMockupSlideshow() {
+        let startTime = Date.now();
+        
+        // Reset all fills
+        progressBarItems.forEach(item => {
+            const fill = item.querySelector('.progress-fill');
+            if (fill) fill.style.width = '0%';
+        });
+
+        // Set interval for filling progress bar
+        clearInterval(progressInterval);
+        progressInterval = setInterval(() => {
+            const elapsed = Date.now() - startTime;
+            const percentage = Math.min(100, (elapsed / SLIDE_DURATION) * 100);
+            
+            const activeItem = progressBarItems[activeSlideIndex];
+            if (activeItem) {
+                const fill = activeItem.querySelector('.progress-fill');
+                if (fill) fill.style.width = `${percentage}%`;
+            }
+
+            if (elapsed >= SLIDE_DURATION) {
+                // Time's up, go to next slide
+                goToNextSlide();
+            }
+        }, PROGRESS_TICK);
+    }
+
+    function goToNextSlide() {
+        const nextIndex = (activeSlideIndex + 1) % browserSlides.length;
+        goToSlide(nextIndex);
+    }
+
+    function goToSlide(index) {
+        // Clear active classes
+        browserSlides[activeSlideIndex].classList.remove('active');
+        progressBarItems[activeSlideIndex].classList.remove('active');
+        const oldFill = progressBarItems[activeSlideIndex].querySelector('.progress-fill');
+        if (oldFill) oldFill.style.width = '0%';
+
+        // Update active index
+        activeSlideIndex = index;
+
+        // Set active classes
+        browserSlides[activeSlideIndex].classList.add('active');
+        progressBarItems[activeSlideIndex].classList.add('active');
+
+        // Restart slideshow loop
+        startMockupSlideshow();
     }
 
 
@@ -315,63 +366,66 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
 
-        // Zoom and move background down (classic parallax zoom)
-        gsap.to(".hero-slideshow", {
+        // Parallax scroll on browser mockup in Hero
+        gsap.to(".hero-browser-mockup", {
             scrollTrigger: {
                 trigger: "#hero",
                 start: "top top",
                 end: "bottom top",
                 scrub: true
             },
-            scale: 1.15,
-            y: 80,
+            y: 50,
+            scale: 0.97,
             ease: "none"
         });
         
         // Push container content up and fade out (separate layer parallax depth)
-        gsap.to(".hero-container", {
+        gsap.to(".hero-text-side", {
             scrollTrigger: {
                 trigger: "#hero",
                 start: "top top",
                 end: "bottom top",
                 scrub: true
             },
-            y: -50,
-            opacity: 0.3,
+            y: -30,
+            opacity: 0.5,
             ease: "none"
         });
 
-        // Workflow step images parallax and reveal/expansion
-        const stepImages = document.querySelectorAll('.workflow-step-image');
+        // Workflow step items fade up reveal & image unclip parallax
+        const stepItems = document.querySelectorAll('.workflow-step-item');
         
-        stepImages.forEach((wrapper) => {
-            const img = wrapper.querySelector('.step-image-parallax');
+        stepItems.forEach((item) => {
+            const wrapper = item.querySelector('.workflow-step-image');
+            const img = item.querySelector('.step-image-parallax');
             
-            // 1. Reveal/expand container: clip-path inset and scale up
-            gsap.fromTo(wrapper, 
-                { 
-                    scale: 0.9, 
-                    opacity: 0.6,
-                    clipPath: "inset(10% 10% 10% 10% round 24px)",
-                    borderColor: "rgba(255, 255, 255, 0.05)"
-                },
-                {
-                    scale: 1,
-                    opacity: 1,
-                    clipPath: "inset(0% 0% 0% 0% round 16px)",
-                    borderColor: "rgba(255, 255, 255, 0.12)",
-                    ease: "power1.out",
-                    scrollTrigger: {
-                        trigger: wrapper,
-                        start: "top 92%",
-                        end: "top 60%",
-                        scrub: 0.5
+            // 1. Reveal/expand image container: clip-path inset and scale up
+            if (wrapper) {
+                gsap.fromTo(wrapper, 
+                    { 
+                        scale: 0.9, 
+                        opacity: 0.7,
+                        clipPath: "inset(8% 8% 8% 8% round 20px)",
+                        borderColor: "rgba(255, 255, 255, 0.05)"
+                    },
+                    {
+                        scale: 1,
+                        opacity: 1,
+                        clipPath: "inset(0% 0% 0% 0% round 16px)",
+                        borderColor: "rgba(255, 255, 255, 0.12)",
+                        ease: "power1.out",
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 90%",
+                            end: "top 55%",
+                            scrub: 0.5
+                        }
                     }
-                }
-            );
+                );
+            }
 
             // 2. Parallax vertical move of the image itself
-            if (img) {
+            if (img && wrapper) {
                 gsap.fromTo(img,
                     { yPercent: -15 },
                     {

@@ -61,16 +61,20 @@ const translations = {
         "method-title": "Paso a paso, sin líos",
         "method-subtitle": "Así es como trabajo contigo para llevar tu negocio a internet.",
         
-        "step-reunion-title": "01. Café & Ideas",
+        "step-badge-1": "Paso 01",
+        "step-badge-2": "Paso 02",
+        "step-badge-3": "Paso 03",
+        "step-badge-4": "Paso 04",
+        "step-reunion-title": "Café &amp; Ideas",
         "step-reunion-desc": "Quedamos en tu negocio o en alguna cafetería de la Rambla de Badalona. Me cuentas qué haces, cómo es tu cliente y qué esperas de la web. De ahí salimos con un plan estructurado y un precio cerrado de antemano.",
         
-        "step-diseno-title": "02. El Boceto",
+        "step-diseno-title": "El Boceto",
         "step-diseno-desc": "Diseño una propuesta visual exclusiva para tu negocio. Nada de plantillas genéricas. Revisamos la disposición, los textos y los colores juntos, ajustando todo lo necesario hasta que digas: 'Esto es exactamente mi negocio'.",
         
-        "step-desarrollo-title": "03. El Código",
+        "step-desarrollo-title": "El Código",
         "step-desarrollo-desc": "Escribo el código de tu web a mano. Me aseguro de que cargue al instante en móviles y esté optimizada técnicamente para que Google empiece a indexarte y a mostrarte a tus vecinos de Badalona.",
         
-        "step-publicacion-title": "04. El Despegue",
+        "step-publicacion-title": "El Despegue",
         "step-publicacion-desc": "Lanzamos la web. Te configuro el dominio y el hosting más adecuado. Te explico en un vídeo de 5 minutos cómo hacer cambios sencillos por tu cuenta y activo las herramientas de analítica para que veas tus visitas.",
         
         // About
@@ -204,16 +208,20 @@ const translations = {
         "method-title": "Pas a pas, sense embolics",
         "method-subtitle": "Així és com treballo amb tu per portar el teu negoci a internet.",
         
-        "step-reunion-title": "01. Cafè & Idees",
+        "step-badge-1": "Pas 01",
+        "step-badge-2": "Pas 02",
+        "step-badge-3": "Pas 03",
+        "step-badge-4": "Pas 04",
+        "step-reunion-title": "Cafè &amp; Idees",
         "step-reunion-desc": "Quedem al teu negoci o en alguna cafeteria de la Rambla de Badalona. Em comptes què fas, com és el teu client i què esperes de la web. D'allà sortim amb un pla estructurat i un preu tancat per endavant.",
         
-        "step-diseno-title": "02. El Esbós",
+        "step-diseno-title": "L'Esbós",
         "step-diseno-desc": "Dissenyo una proposta visual exclusiva per al teu negoci. Gens de plantilles genèriques. Revisem la disposició, els textos i els colors junts, ajustant tot el necessari fins que diguis: 'Això és exactament el meu negoci'.",
         
-        "step-desarrollo-title": "03. El Codi",
+        "step-desarrollo-title": "El Codi",
         "step-desarrollo-desc": "Escric el codi de la teva web a mà. M'asseguro que carregui a l'instant en mòbils i estigui optimitzada tècnicament perquè Google comenci a indexar-te i a mostrar-te als teus veïns de Badalona.",
         
-        "step-publicacion-title": "04. L'Enlairament",
+        "step-publicacion-title": "L'Enlairament",
         "step-publicacion-desc": "Llancem la web. Et configuro el domini i el fòsting més adequat. Et explico en un vídeo de 5 minuts com fer canvis senzills pel teu compte i activo les eines d'analítica perquè vegis les teves visites.",
         
         // About
@@ -347,16 +355,20 @@ const translations = {
         "method-title": "Step by step, no fuss",
         "method-subtitle": "This is how we work together to bring your local business online.",
         
-        "step-reunion-title": "01. Coffee & Ideas",
+        "step-badge-1": "Step 01",
+        "step-badge-2": "Step 02",
+        "step-badge-3": "Step 03",
+        "step-badge-4": "Step 04",
+        "step-reunion-title": "Coffee &amp; Ideas",
         "step-reunion-desc": "We meet at your business or a cozy coffee shop at the Rambla de Badalona. You tell me what you do, who your clients are, and your goals. We leave with a clear plan and a fixed budget.",
         
-        "step-diseno-title": "02. The Sketch",
+        "step-diseno-title": "The Sketch",
         "step-diseno-desc": "I design a unique visual mockup for your business from scratch. No cheap generic templates. We review layouts, texts, and colors together, adjusting everything until you love it.",
         
-        "step-desarrollo-title": "03. The Code",
+        "step-desarrollo-title": "The Code",
         "step-desarrollo-desc": "I write your website code by hand. I make sure it loads instantly on mobile devices and is technically optimized so Google starts placing you above local competition.",
         
-        "step-publicacion-title": "04. The Launch",
+        "step-publicacion-title": "The Launch",
         "step-publicacion-desc": "We launch the site. I hook up your domain and high-speed hosting. I explain in a quick 5-minute video how to edit text easily, and activate analytics tracking.",
         
         // About
