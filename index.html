@@ -164,124 +164,28 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="hero-section" id="hero">
-        <!-- Glowing ambient blobs -->
-        <div class="hero-glow glow-1"></div>
-        <div class="hero-glow glow-2"></div>
-        
-        <div class="container hero-container">
-          <div class="hero-grid">
-            <!-- Left Side: Copy and Actions -->
-            <div class="hero-text-side">
-              <div
-                class="hero-badge animate-fade-in"
-                id="hero-badge-badge"
-                data-i18n="hero-badge"
-              >
-                <span class="badge-dot"></span>
-                Páginas web hechas a mano &middot; Badalona
-              </div>
-              <h1
-                class="hero-title animate-slide-up"
-                id="hero-main-title"
-                data-i18n="hero-title"
-              >
-                Diseño y programo webs para negocios de
-                <span class="gradient-text">Badalona</span>. Sin rodeos.
-              </h1>
-              <p
-                class="hero-subtitle animate-slide-up-delayed"
-                id="hero-main-subtitle"
-                data-i18n="hero-subtitle"
-              >
-                Soy Pol Alegre. Ayudo a comercios, despachos y profesionales
-                locales a conseguir clientes en internet con una web rápida, clara
-                y que funciona. Quedamos, nos tomamos un café y lo planeamos.
-              </p>
-              <div
-                class="hero-actions animate-slide-up-delayed"
-                id="hero-main-actions"
-              >
-                <a
-                  href="#contacto"
-                  class="btn btn-primary btn-glow"
-                  id="btn-hero-contacto"
-                  data-i18n="btn-hero-contacto"
-                >
-                  Hablemos de tu web
-                </a>
-                <a
-                  href="#como-trabajamos"
-                  class="btn btn-outline"
-                  id="btn-hero-proceso"
-                  data-i18n="btn-hero-proceso"
-                  >Mi proceso</a
-                >
-              </div>
+      <section class="hero-section cinematic-section" id="hero">
+        <div class="cinematic-bg" style="background-image: url('assets/hero-step1.png');"></div>
+        <div class="cinematic-overlay"></div>
+        <div class="container cinematic-container">
+          <div class="hero-wrapper cinematic-wrapper hero-premium-card animate-fade-in">
+            <div class="hero-badge" id="hero-badge-badge" data-i18n="hero-badge">
+              <span class="badge-dot"></span>
+              Páginas web hechas a mano &middot; Badalona
             </div>
-
-            <!-- Right Side: macOS Browser Mockup with Workflow Slideshow -->
-            <div class="hero-visual-side animate-fade-in">
-              <div class="hero-browser-mockup">
-                <div class="browser-header">
-                  <div class="browser-dots">
-                    <span class="dot close"></span>
-                    <span class="dot minimize"></span>
-                    <span class="dot expand"></span>
-                  </div>
-                  <div class="browser-address">
-                    <svg class="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                    </svg>
-                    <span>polalegre.dev/metodo</span>
-                  </div>
-                </div>
-                <div class="browser-viewport">
-                  <!-- Carousel Slides -->
-                  <div class="browser-slides">
-                    <div class="browser-slide active" style="background-image: url('assets/hero-step1.png');">
-                      <div class="slide-caption">
-                        <span class="slide-step-num">01. Café & Ideas</span>
-                      </div>
-                    </div>
-                    <div class="browser-slide" style="background-image: url('assets/hero-step2.png');">
-                      <div class="slide-caption">
-                        <span class="slide-step-num">02. El Boceto</span>
-                      </div>
-                    </div>
-                    <div class="browser-slide" style="background-image: url('assets/hero-step3.png');">
-                      <div class="slide-caption">
-                        <span class="slide-step-num">03. El Código</span>
-                      </div>
-                    </div>
-                    <div class="browser-slide" style="background-image: url('assets/hero-step4.png');">
-                      <div class="slide-caption">
-                        <span class="slide-step-num">04. El Despegue</span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Progress bars at the bottom of viewport -->
-                  <div class="browser-progress-bars">
-                    <div class="progress-bar-item active">
-                      <div class="progress-fill"></div>
-                      <span class="progress-label">01. Café</span>
-                    </div>
-                    <div class="progress-bar-item">
-                      <div class="progress-fill"></div>
-                      <span class="progress-label">02. Boceto</span>
-                    </div>
-                    <div class="progress-bar-item">
-                      <div class="progress-fill"></div>
-                      <span class="progress-label">03. Código</span>
-                    </div>
-                    <div class="progress-bar-item">
-                      <div class="progress-fill"></div>
-                      <span class="progress-label">04. Lanzamiento</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h1 class="hero-title animate-slide-up" id="hero-main-title" data-i18n="hero-title">
+              Diseño y programo webs para negocios de <span class="gradient-text">Badalona</span>. Sin rodeos.
+            </h1>
+            <p class="hero-subtitle animate-slide-up-delayed" id="hero-main-subtitle" data-i18n="hero-subtitle">
+              Soy Pol Alegre. Ayudo a comercios, despachos y profesionales locales a conseguir clientes en internet con una web rápida, clara y que funciona. Quedamos, nos tomamos un café y lo planeamos.
+            </p>
+            <div class="hero-actions animate-slide-up-delayed" id="hero-main-actions">
+              <a href="#contacto" class="btn btn-primary btn-glow" id="btn-hero-contacto" data-i18n="btn-hero-contacto">
+                Hablemos de tu web
+              </a>
+              <a href="#como-trabajamos" class="btn btn-outline" id="btn-hero-proceso" data-i18n="btn-hero-proceso">
+                Mi proceso
+              </a>
             </div>
           </div>
         </div>
@@ -571,124 +475,102 @@
                 </a>
               </div>
             </div>
+            <!-- Process / How I work Section -->
+      <section class="workflow-intro-section" id="como-trabajamos">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-decor-tag" data-i18n="method-decor">Metodología</span>
+            <h2 class="section-title" data-i18n="method-title">Paso a paso, sin líos</h2>
+            <p class="section-subtitle" data-i18n="method-subtitle">
+              Así es como trabajo contigo para llevar tu negocio a internet. Desliza para ver el proceso.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Process / How I work Section -->
-      <section class="workflow-section" id="como-trabajamos">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-decor-tag" data-i18n="method-decor"
-              >Metodología</span
-            >
-            <h2 class="section-title" data-i18n="method-title">
-              Paso a paso, sin líos
-            </h2>
-            <p class="section-subtitle" data-i18n="method-subtitle">
-              Así es como trabajo contigo para llevar tu negocio a internet.
+      <!-- Step 1 Section -->
+      <section class="cinematic-section" id="step-reunion-sec">
+        <div class="cinematic-bg" style="background-image: url('assets/hero-step1.png');"></div>
+        <div class="cinematic-overlay"></div>
+        <div class="container cinematic-container">
+          <div class="cinematic-wrapper">
+            <span class="step-badge-premium" data-i18n="step-badge-1">Paso 01</span>
+            <h3 class="cinematic-title" data-i18n="step-reunion-title">Café &amp; Ideas</h3>
+            <p class="cinematic-desc" data-i18n="step-reunion-desc">
+              Quedamos en tu negocio o en alguna cafetería de la Rambla de
+              Badalona. Me cuentas qué haces, cómo es tu cliente y qué
+              esperas de la web. De ahí salimos con un plan estructurado y
+              un precio cerrado de antemano.
             </p>
+            <div class="step-indicator">
+              <span class="step-num">01 / 04</span>
+              <div class="step-line"><div class="step-line-fill" style="width: 25%;"></div></div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="workflow-steps-list reveal">
-            <!-- Step 1 -->
-            <div class="workflow-step-item" id="step-reunion">
-              <div class="step-text-content">
-                <span class="step-badge" data-i18n="step-badge-1">Paso 01</span>
-                <h3 class="step-title" data-i18n="step-reunion-title">Café &amp; Ideas</h3>
-                <p class="step-desc" data-i18n="step-reunion-desc">
-                  Quedamos en tu negocio o en alguna cafetería de la Rambla de
-                  Badalona. Me cuentas qué haces, cómo es tu cliente y qué
-                  esperas de la web. De ahí salimos con un plan estructurado y
-                  un precio cerrado de antemano.
-                </p>
-              </div>
-              <div class="workflow-step-image">
-                <div class="step-image-inner">
-                  <img
-                    src="assets/hero-step1.png"
-                    alt="Café &amp; Ideas"
-                    class="step-image-parallax"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              </div>
+      <!-- Step 2 Section -->
+      <section class="cinematic-section" id="step-diseno-sec">
+        <div class="cinematic-bg" style="background-image: url('assets/hero-step2.png');"></div>
+        <div class="cinematic-overlay"></div>
+        <div class="container cinematic-container">
+          <div class="cinematic-wrapper">
+            <span class="step-badge-premium" data-i18n="step-badge-2">Paso 02</span>
+            <h3 class="cinematic-title" data-i18n="step-diseno-title">El Boceto</h3>
+            <p class="cinematic-desc" data-i18n="step-diseno-desc">
+              Diseño una propuesta visual exclusiva para tu negocio. Nada
+              de plantillas genéricas. Revisamos la disposición, los
+              textos y los colores juntos, ajustando todo lo necesario
+              hasta que digas: 'Esto es exactamente mi negocio'.
+            </p>
+            <div class="step-indicator">
+              <span class="step-num">02 / 04</span>
+              <div class="step-line"><div class="step-line-fill" style="width: 50%;"></div></div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Step 2 -->
-            <div class="workflow-step-item" id="step-diseno">
-              <div class="step-text-content">
-                <span class="step-badge" data-i18n="step-badge-2">Paso 02</span>
-                <h3 class="step-title" data-i18n="step-diseno-title">El Boceto</h3>
-                <p class="step-desc" data-i18n="step-diseno-desc">
-                  Diseño una propuesta visual exclusiva para tu negocio. Nada
-                  de plantillas genéricas. Revisamos la disposición, los
-                  textos y los colores juntos, ajustando todo lo necesario
-                  hasta que digas: 'Esto es exactamente mi negocio'.
-                </p>
-              </div>
-              <div class="workflow-step-image">
-                <div class="step-image-inner">
-                  <img
-                    src="assets/hero-step2.png"
-                    alt="El Boceto"
-                    class="step-image-parallax"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              </div>
+      <!-- Step 3 Section -->
+      <section class="cinematic-section" id="step-desarrollo-sec">
+        <div class="cinematic-bg" style="background-image: url('assets/hero-step3.png');"></div>
+        <div class="cinematic-overlay"></div>
+        <div class="container cinematic-container">
+          <div class="cinematic-wrapper">
+            <span class="step-badge-premium" data-i18n="step-badge-3">Paso 03</span>
+            <h3 class="cinematic-title" data-i18n="step-desarrollo-title">El Código</h3>
+            <p class="cinematic-desc" data-i18n="step-desarrollo-desc">
+              Escribo el código de tu web a mano. Me aseguro de que cargue
+              al instante en móviles y esté optimizada técnicamente para
+              que Google empiece a indexarte y a mostrarte a tus vecinos
+              de Badalona.
+            </p>
+            <div class="step-indicator">
+              <span class="step-num">03 / 04</span>
+              <div class="step-line"><div class="step-line-fill" style="width: 75%;"></div></div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Step 3 -->
-            <div class="workflow-step-item" id="step-desarrollo">
-              <div class="step-text-content">
-                <span class="step-badge" data-i18n="step-badge-3">Paso 03</span>
-                <h3 class="step-title" data-i18n="step-desarrollo-title">El Código</h3>
-                <p class="step-desc" data-i18n="step-desarrollo-desc">
-                  Escribo el código de tu web a mano. Me aseguro de que cargue
-                  al instante en móviles y esté optimizada técnicamente para
-                  que Google empiece a indexarte y a mostrarte a tus vecinos
-                  de Badalona.
-                </p>
-              </div>
-              <div class="workflow-step-image">
-                <div class="step-image-inner">
-                  <img
-                    src="assets/hero-step3.png"
-                    alt="El Código"
-                    class="step-image-parallax"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="workflow-step-item" id="step-publicacion">
-              <div class="step-text-content">
-                <span class="step-badge" data-i18n="step-badge-4">Paso 04</span>
-                <h3 class="step-title" data-i18n="step-publicacion-title">El Despegue</h3>
-                <p class="step-desc" data-i18n="step-publicacion-desc">
-                  Lanzamos la web. Te configuro el dominio y el hosting más
-                  adecuado. Te explico en un vídeo de 5 minutos cómo hacer
-                  cambios sencillos por tu cuenta y activo las herramientas de
-                  analítica para que veas tus visitas.
-                </p>
-              </div>
-              <div class="workflow-step-image">
-                <div class="step-image-inner">
-                  <img
-                    src="assets/hero-step4.png"
-                    alt="El Despegue"
-                    class="step-image-parallax"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              </div>
+      <!-- Step 4 Section -->
+      <section class="cinematic-section" id="step-publicacion-sec">
+        <div class="cinematic-bg" style="background-image: url('assets/hero-step4.png');"></div>
+        <div class="cinematic-overlay"></div>
+        <div class="container cinematic-container">
+          <div class="cinematic-wrapper">
+            <span class="step-badge-premium" data-i18n="step-badge-4">Paso 04</span>
+            <h3 class="cinematic-title" data-i18n="step-publicacion-title">El Despegue</h3>
+            <p class="cinematic-desc" data-i18n="step-publicacion-desc">
+              Lanzamos la web. Te configuro el dominio y el hosting más
+              adecuado. Te explico en un vídeo de 5 minutos cómo hacer
+              cambios sencillos por tu cuenta y activo las herramientas de
+              analítica para que veas tus visitas.
+            </p>
+            <div class="step-indicator">
+              <span class="step-num">04 / 04</span>
+              <div class="step-line"><div class="step-line-fill" style="width: 100%;"></div></div>
             </div>
           </div>
         </div>
