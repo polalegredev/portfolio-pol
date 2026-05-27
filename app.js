@@ -293,81 +293,160 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ==========================================================================
-       7. GSAP SCROLLTRIGGER HERO PARALLAX & ZOOM
+       7. HERO INTERACTIVE SPOTLIGHT & 3D TILT CARDS
+       ========================================================================== */
+    const hero = document.getElementById('hero');
+    const cards = document.querySelectorAll('.tech-card');
+    
+    if (hero && cards.length > 0) {
+        hero.addEventListener('mousemove', (e) => {
+            const rect = hero.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Spotlight positioning variable
+            hero.style.setProperty('--mouse-x', `${(x / rect.width) * 100}%`);
+            hero.style.setProperty('--mouse-y', `${(y / rect.height) * 100}%`);
+            
+            // 3D Parallax Tilt coordinates relative to center
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const deltaX = x - centerX;
+            const deltaY = y - centerY;
+            
+            cards.forEach(card => {
+                const depth = parseFloat(card.getAttribute('data-depth')) || 0.2;
+                const moveX = deltaX * depth * 0.15;
+                const moveY = deltaY * depth * 0.15;
+                const rotateX = -deltaY * depth * 0.04;
+                const rotateY = deltaX * depth * 0.04;
+                
+                card.style.transform = `translate3d(${moveX}px, ${moveY}px, 0) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+        });
+        
+        // Reset transforms on cursor leave
+        hero.addEventListener('mouseleave', () => {
+            cards.forEach(card => {
+                card.style.transform = 'translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg)';
+            });
+        });
+    }
+
+    /* ==========================================================================
+       8. STICKY-SCROLL METHODOLOGY ANIMATIONS (GSAP & SCROLLTRIGGER)
        ========================================================================== */
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
 
-        const cinematicSections = document.querySelectorAll('.cinematic-section');
+        const isMobile = window.innerWidth <= 1024;
         
-        cinematicSections.forEach((section) => {
-            const bg = section.querySelector('.cinematic-bg');
-            const wrapper = section.querySelector('.cinematic-wrapper');
+        if (!isMobile) {
+            // Desktop Pinned / Sticky Scroll Timeline
+            const stickySection = document.querySelector('.workflow-sticky-section');
+            const stickyContainer = document.querySelector('.workflow-sticky-container');
+            const textBlocks = document.querySelectorAll('.workflow-step-text-block');
+            const imagePanes = document.querySelectorAll('.workflow-image-pane');
+            const timelineNodes = document.querySelectorAll('.timeline-node');
             
-            // 1. Zoom parallax for background image
-            if (bg) {
-                gsap.fromTo(bg, 
-                    { scale: 1.0 },
-                    {
-                        scale: 1.15,
-                        ease: "none",
-                        scrollTrigger: {
-                            trigger: section,
-                            start: "top bottom",
-                            end: "bottom top",
-                            scrub: true
-                        }
+            if (stickySection && stickyContainer && textBlocks.length > 0 && imagePanes.length > 0) {
+                // Pin the methodology viewport container throughout the section's scroll length
+                ScrollTrigger.create({
+                    trigger: stickySection,
+                    start: "top top",
+                    end: "bottom bottom",
+                    pin: stickyContainer,
+                    pinSpacer: false, // Let parent handle spacer spacing
+                    scrub: true
+                });
+                
+                // Create timeline mapped to scroll percentage
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: stickySection,
+                        start: "top top",
+                        end: "bottom bottom",
+                        scrub: 0.5
                     }
-                );
-            }
-            
-            // 2. Timeline for text wrapper entrance, hold, and exit
-            if (wrapper) {
-                if (section.id === 'hero') {
-                    // Hero section: already fully visible, only fades out and moves up as we scroll away
-                    gsap.fromTo(wrapper,
-                        { opacity: 1, y: 0, scale: 1 },
-                        {
-                            opacity: 0,
-                            y: -60,
-                            scale: 0.97,
-                            ease: "power1.in",
-                            scrollTrigger: {
-                                trigger: section,
-                                start: "top top",
-                                end: "bottom top",
-                                scrub: true
-                            }
+                });
+                
+                // Fill timeline center path line
+                tl.to(".timeline-progress-fill", {
+                    height: "100%",
+                    ease: "none"
+                }, 0);
+                
+                // Set initial states (Step 1 active)
+                gsap.set(textBlocks[0], { opacity: 1, y: 0, pointerEvents: "all" });
+                gsap.set(imagePanes[0], { opacity: 1, scale: 1 });
+                timelineNodes[0].classList.add('active');
+                
+                // STEP 1 -> STEP 2 (transition at 15% - 25% scroll progress)
+                tl.to(textBlocks[0], { opacity: 0, y: -40, pointerEvents: "none", duration: 0.2 }, 0.15)
+                  .fromTo(textBlocks[1], { opacity: 0, y: 40 }, { opacity: 1, y: 0, pointerEvents: "all", duration: 0.2 }, 0.22)
+                  
+                  .to(imagePanes[0], { opacity: 0, scale: 1.05, duration: 0.2 }, 0.15)
+                  .fromTo(imagePanes[1], { opacity: 0, scale: 1.1 }, { opacity: 1, scale: 1.0, duration: 0.2 }, 0.22)
+                  
+                  .call(() => updateTimelineNodes(1), null, 0.22);
+                
+                // STEP 2 -> STEP 3 (transition at 45% - 55% scroll progress)
+                tl.to(textBlocks[1], { opacity: 0, y: -40, pointerEvents: "none", duration: 0.2 }, 0.45)
+                  .fromTo(textBlocks[2], { opacity: 0, y: 40 }, { opacity: 1, y: 0, pointerEvents: "all", duration: 0.2 }, 0.52)
+                  
+                  .to(imagePanes[1], { opacity: 0, scale: 1.05, duration: 0.2 }, 0.45)
+                  .fromTo(imagePanes[2], { opacity: 0, scale: 1.1 }, { opacity: 1, scale: 1.0, duration: 0.2 }, 0.52)
+                  
+                  .call(() => updateTimelineNodes(2), null, 0.52);
+                
+                // STEP 3 -> STEP 4 (transition at 75% - 85% scroll progress)
+                tl.to(textBlocks[2], { opacity: 0, y: -40, pointerEvents: "none", duration: 0.2 }, 0.75)
+                  .fromTo(textBlocks[3], { opacity: 0, y: 40 }, { opacity: 1, y: 0, pointerEvents: "all", duration: 0.2 }, 0.82)
+                  
+                  .to(imagePanes[2], { opacity: 0, scale: 1.05, duration: 0.2 }, 0.75)
+                  .fromTo(imagePanes[3], { opacity: 0, scale: 1.1 }, { opacity: 1, scale: 1.0, duration: 0.2 }, 0.82)
+                  
+                  .call(() => updateTimelineNodes(3), null, 0.82);
+                
+                function updateTimelineNodes(activeIndex) {
+                    timelineNodes.forEach((node, idx) => {
+                        if (idx <= activeIndex) {
+                            node.classList.add('active');
+                        } else {
+                            node.classList.remove('active');
                         }
-                    );
-                } else {
-                    // Other sections: fade in, hold, and fade out
-                    const tl = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: section,
-                            start: "top bottom",
-                            end: "bottom top",
-                            scrub: true
-                        }
-                    });
-                    
-                    tl.fromTo(wrapper, 
-                        { opacity: 0, y: 60, scale: 0.97 },
-                        { opacity: 1, y: 0, scale: 1, duration: 1, ease: "power1.out" }
-                    )
-                    .to(wrapper, {
-                        // hold state
-                        duration: 2
-                    })
-                    .to(wrapper, {
-                        opacity: 0,
-                        y: -60,
-                        scale: 0.97,
-                        duration: 1,
-                        ease: "power1.in"
                     });
                 }
             }
-        });
+        } else {
+            // Mobile: Sticky visual viewport at top, text blocks reveal and trigger image change as they scroll
+            const mobTextBlocks = document.querySelectorAll('.workflow-step-text-block');
+            const imagePanes = document.querySelectorAll('.workflow-image-pane');
+            
+            if (mobTextBlocks.length > 0 && imagePanes.length > 0) {
+                // Ensure initial visible state
+                gsap.set(imagePanes[0], { opacity: 1, scale: 1 });
+                
+                mobTextBlocks.forEach((block, index) => {
+                    ScrollTrigger.create({
+                        trigger: block,
+                        start: "top 60%",
+                        end: "bottom 40%",
+                        onEnter: () => activateMobileStep(index),
+                        onEnterBack: () => activateMobileStep(index)
+                    });
+                });
+                
+                function activateMobileStep(index) {
+                    imagePanes.forEach((pane, idx) => {
+                        if (idx === index) {
+                            pane.classList.add('active');
+                        } else {
+                            pane.classList.remove('active');
+                        }
+                    });
+                }
+            }
+        }
     }
 });

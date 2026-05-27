@@ -77,6 +77,15 @@ const translations = {
         "step-publicacion-title": "El Despegue",
         "step-publicacion-desc": "Lanzamos la web. Te configuro el dominio y el hosting más adecuado. Te explico en un vídeo de 5 minutos cómo hacer cambios sencillos por tu cuenta y activo las herramientas de analítica para que veas tus visitas.",
         
+        "tech-js-title": "Javascript ES6+",
+        "tech-js-desc": "Código interactivo a mano",
+        "tech-gsap-title": "GSAP Motion",
+        "tech-gsap-desc": "Efectos de scroll premium",
+        "tech-seo-title": "SEO Local",
+        "tech-seo-desc": "Visibilidad en tu barrio",
+        "tech-speed-title": "Rendimiento",
+        "tech-speed-desc": "Carga instantánea < 1s",
+        
         // About
         "about-decor": "Quién soy",
         "about-title": "Hola, soy Pol Alegre",
@@ -224,6 +233,15 @@ const translations = {
         "step-publicacion-title": "L'Enlairament",
         "step-publicacion-desc": "Llancem la web. Et configuro el domini i el fòsting més adequat. Et explico en un vídeo de 5 minuts com fer canvis senzills pel teu compte i activo les eines d'analítica perquè vegis les teves visites.",
         
+        "tech-js-title": "Javascript ES6+",
+        "tech-js-desc": "Codi interactiu a mà",
+        "tech-gsap-title": "GSAP Motion",
+        "tech-gsap-desc": "Efectes de scroll premium",
+        "tech-seo-title": "SEO Local",
+        "tech-seo-desc": "Visibilitat al teu barri",
+        "tech-speed-title": "Rendiment",
+        "tech-speed-desc": "Càrrega instantània < 1s",
+        
         // About
         "about-decor": "Qui sóc",
         "about-title": "Hola, sóc en Pol Alegre",
@@ -370,6 +388,15 @@ const translations = {
         
         "step-publicacion-title": "The Launch",
         "step-publicacion-desc": "We launch the site. I hook up your domain and high-speed hosting. I explain in a quick 5-minute video how to edit text easily, and activate analytics tracking.",
+        
+        "tech-js-title": "Javascript ES6+",
+        "tech-js-desc": "Handwritten dynamic code",
+        "tech-gsap-title": "GSAP Motion",
+        "tech-gsap-desc": "Premium scroll effects",
+        "tech-seo-title": "Local SEO",
+        "tech-seo-desc": "Rank high in Google Maps",
+        "tech-speed-title": "Performance",
+        "tech-speed-desc": "Instant page load < 1s",
         
         // About
         "about-decor": "About me",
