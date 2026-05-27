@@ -340,5 +340,52 @@ document.addEventListener('DOMContentLoaded', () => {
             opacity: 0.3,
             ease: "none"
         });
+
+        // Workflow step images parallax and reveal/expansion
+        const stepImages = document.querySelectorAll('.workflow-step-image');
+        
+        stepImages.forEach((wrapper) => {
+            const img = wrapper.querySelector('.step-image-parallax');
+            
+            // 1. Reveal/expand container: clip-path inset and scale up
+            gsap.fromTo(wrapper, 
+                { 
+                    scale: 0.9, 
+                    opacity: 0.6,
+                    clipPath: "inset(10% 10% 10% 10% round 24px)",
+                    borderColor: "rgba(255, 255, 255, 0.05)"
+                },
+                {
+                    scale: 1,
+                    opacity: 1,
+                    clipPath: "inset(0% 0% 0% 0% round 16px)",
+                    borderColor: "rgba(255, 255, 255, 0.12)",
+                    ease: "power1.out",
+                    scrollTrigger: {
+                        trigger: wrapper,
+                        start: "top 92%",
+                        end: "top 60%",
+                        scrub: 0.5
+                    }
+                }
+            );
+
+            // 2. Parallax vertical move of the image itself
+            if (img) {
+                gsap.fromTo(img,
+                    { yPercent: -15 },
+                    {
+                        yPercent: 15,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: wrapper,
+                            start: "top bottom",
+                            end: "bottom top",
+                            scrub: true
+                        }
+                    }
+                );
+            }
+        });
     }
 });

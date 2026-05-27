@@ -732,12 +732,19 @@ h1, h2, h3, h4 {
 }
 
 .workflow-steps-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    row-gap: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     position: relative;
     z-index: 5;
+}
+
+.workflow-step-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    align-items: center;
+    width: 100%;
 }
 
 .workflow-step-card {
@@ -745,23 +752,70 @@ h1, h2, h3, h4 {
     max-width: 460px;
 }
 
-/* Alternating steps alignment */
-.workflow-steps-grid > :nth-child(odd) {
+/* Alternating steps alignment on desktop */
+.workflow-step-item:nth-child(odd) .workflow-step-card {
+    grid-column: 1;
     justify-self: end;
     text-align: right;
 }
 
-.workflow-steps-grid > :nth-child(even) {
+.workflow-step-item:nth-child(odd) .workflow-step-image {
+    grid-column: 2;
+    justify-self: start;
+}
+
+.workflow-step-item:nth-child(even) .workflow-step-card {
+    grid-column: 2;
     justify-self: start;
     text-align: left;
 }
 
-.workflow-steps-grid > :nth-child(odd) .card-inner {
+.workflow-step-item:nth-child(even) .workflow-step-image {
+    grid-column: 1;
+    justify-self: end;
+}
+
+.workflow-step-item:nth-child(odd) .workflow-step-card .card-inner {
     padding: 24px 24px 24px 32px;
 }
 
-.workflow-steps-grid > :nth-child(even) .card-inner {
+.workflow-step-item:nth-child(even) .workflow-step-card .card-inner {
     padding: 24px 32px 24px 24px;
+}
+
+/* Step Image Styling */
+.workflow-step-image {
+    width: 100%;
+    max-width: 460px;
+    aspect-ratio: 16 / 10;
+    border-radius: var(--border-radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bg-card);
+    overflow: hidden;
+    position: relative;
+    clip-path: inset(0% 0% 0% 0% round 16px);
+    transition: border-color var(--transition-normal);
+}
+
+.workflow-step-image:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.step-image-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.step-image-parallax {
+    width: 100%;
+    height: 130%; /* taller for parallax movement range */
+    object-fit: cover;
+    position: absolute;
+    top: -15%;
+    left: 0;
+    will-change: transform;
 }
 
 .step-number {
@@ -1343,22 +1397,33 @@ h1, h2, h3, h4 {
     }
     
     .workflow-steps-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 40px;
+    }
+    
+    .workflow-step-item {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
     }
     
     .workflow-step-card {
         max-width: 100%;
     }
     
-    .workflow-steps-grid > :nth-child(odd),
-    .workflow-steps-grid > :nth-child(even) {
+    .workflow-step-image {
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+    
+    .workflow-step-item:nth-child(odd) .workflow-step-card,
+    .workflow-step-item:nth-child(even) .workflow-step-card {
         justify-self: start;
         text-align: left;
     }
     
-    .workflow-steps-grid > :nth-child(odd) .card-inner,
-    .workflow-steps-grid > :nth-child(even) .card-inner {
+    .workflow-step-item:nth-child(odd) .workflow-step-card .card-inner,
+    .workflow-step-item:nth-child(even) .workflow-step-card .card-inner {
         padding: 20px 20px 20px 28px;
     }
     
