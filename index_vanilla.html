@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Security Content Security Policy -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
+      content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; frame-ancestors 'none';"
     />
 
     <!-- SEO Meta Tags -->
@@ -41,7 +40,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -54,6 +53,10 @@
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- GSAP & ScrollTrigger CDN (Deferred) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 
     <!-- App Translations Dictionary & Scripts (Deferred for FCP speed) -->
     <script src="translations.js" defer></script>
@@ -162,56 +165,74 @@
     <main>
       <!-- Hero Section -->
       <section class="hero-section" id="hero">
-        <div class="hero-decor-container">
-          <!-- Clean, warm vignette layer instead of floating neon orbs -->
-          <div class="vignette-overlay"></div>
-        </div>
+        <div class="hero-spotlight"></div>
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
         <div class="container hero-container">
-          <div class="hero-wrapper">
-            <div
-              class="hero-badge animate-fade-in"
-              id="hero-badge-badge"
-              data-i18n="hero-badge"
-            >
-              <span class="badge-dot"></span>
-              Páginas web hechas a mano &middot; Badalona
+          <div class="hero-grid">
+            <div class="hero-text-side animate-fade-in">
+              <div class="hero-badge" id="hero-badge-badge" data-i18n="hero-badge">
+                <span class="badge-dot"></span>
+                Páginas web hechas a mano &middot; Badalona
+              </div>
+              <h1 class="hero-title animate-slide-up" id="hero-main-title" data-i18n="hero-title">
+                Diseño y programo webs para negocios de <span class="gradient-text">Badalona</span>. Sin rodeos.
+              </h1>
+              <p class="hero-subtitle animate-slide-up-delayed" id="hero-main-subtitle" data-i18n="hero-subtitle">
+                Soy Pol Alegre. Ayudo a comercios, despachos y profesionales locales a conseguir clientes en internet con una web rápida, clara y que funciona. Quedamos, nos tomamos un café y lo planeamos.
+              </p>
+              <div class="hero-actions animate-slide-up-delayed" id="hero-main-actions">
+                <a href="#contacto" class="btn btn-primary btn-glow" id="btn-hero-contacto" data-i18n="btn-hero-contacto">
+                  Hablemos de tu web
+                </a>
+                <a href="#como-trabajamos" class="btn btn-outline" id="btn-hero-proceso" data-i18n="btn-hero-proceso">
+                  Mi proceso
+                </a>
+              </div>
             </div>
-            <h1
-              class="hero-title animate-slide-up"
-              id="hero-main-title"
-              data-i18n="hero-title"
-            >
-              Diseño y programo webs para negocios de
-              <span class="gradient-text">Badalona</span>. Sin rodeos.
-            </h1>
-            <p
-              class="hero-subtitle animate-slide-up-delayed"
-              id="hero-main-subtitle"
-              data-i18n="hero-subtitle"
-            >
-              Soy Pol Alegre. Ayudo a comercios, despachos y profesionales
-              locales a conseguir clientes en internet con una web rápida, clara
-              y que funciona. Quedamos, nos tomamos un café y lo planeamos.
-            </p>
-            <div
-              class="hero-actions animate-slide-up-delayed"
-              id="hero-main-actions"
-            >
-              <a
-                href="#contacto"
-                class="btn btn-primary btn-glow"
-                id="btn-hero-contacto"
-                data-i18n="btn-hero-contacto"
-              >
-                Hablemos de tu web
-              </a>
-              <a
-                href="#como-trabajamos"
-                class="btn btn-outline"
-                id="btn-hero-proceso"
-                data-i18n="btn-hero-proceso"
-                >Mi proceso</a
-              >
+            <div class="hero-interactive-side animate-fade-in-delayed">
+              <div class="tech-stack-collage">
+                <div class="tech-card card-js" data-depth="0.15">
+                  <span class="tech-icon">⚡</span>
+                  <div class="tech-info">
+                    <h4 data-i18n="tech-js-title">Javascript ES6+</h4>
+                    <p data-i18n="tech-js-desc">Código interactivo a mano</p>
+                  </div>
+                </div>
+                <div class="tech-card card-gsap" data-depth="0.30">
+                  <span class="tech-icon">✨</span>
+                  <div class="tech-info">
+                    <h4 data-i18n="tech-gsap-title">GSAP Motion</h4>
+                    <p data-i18n="tech-gsap-desc">Efectos de scroll premium</p>
+                  </div>
+                </div>
+                <div class="tech-card card-seo" data-depth="0.20">
+                  <span class="tech-icon">📈</span>
+                  <div class="tech-info">
+                    <h4 data-i18n="tech-seo-title">SEO Local</h4>
+                    <p data-i18n="tech-seo-desc">Visibilidad en tu barrio</p>
+                  </div>
+                </div>
+                <div class="tech-card card-speed" data-depth="0.35">
+                  <span class="tech-icon">🚀</span>
+                  <div class="tech-info">
+                    <h4 data-i18n="tech-speed-title">Rendimiento</h4>
+                    <p data-i18n="tech-speed-desc">Carga instantánea &lt; 1s</p>
+                  </div>
+                </div>
+                <div class="tech-card card-code" data-depth="0.10">
+                  <div class="editor-header">
+                    <span class="dot-red"></span>
+                    <span class="dot-yellow"></span>
+                    <span class="dot-green"></span>
+                  </div>
+                  <pre><code>const web = {
+  velocidad: "100%",
+  diseño: "único",
+  seo: "top"
+};</code></pre>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -501,102 +522,94 @@
                 </a>
               </div>
             </div>
+      <!-- Process / How I work Section -->
+      <section class="workflow-intro-section" id="como-trabajamos">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-decor-tag" data-i18n="method-decor">Metodología</span>
+            <h2 class="section-title" data-i18n="method-title">Paso a paso, sin líos</h2>
+            <p class="section-subtitle" data-i18n="method-subtitle">
+              Así es como trabajo contigo para llevar tu negocio a internet. Haz scroll para ver el proceso.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Process / How I work Section -->
-      <section class="workflow-section" id="como-trabajamos">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="section-decor-tag" data-i18n="method-decor"
-              >Metodología</span
-            >
-            <h2 class="section-title" data-i18n="method-title">
-              Paso a paso, sin líos
-            </h2>
-            <p class="section-subtitle" data-i18n="method-subtitle">
-              Así es como trabajo contigo para llevar tu negocio a internet.
-            </p>
-          </div>
+      <!-- Sticky-Scroll Methodology Section -->
+      <section class="workflow-sticky-section">
+        <div class="workflow-sticky-container">
+          <div class="workflow-sticky-inner">
+            <!-- Left side: Narrative steps -->
+            <div class="workflow-left-text">
 
-          <div class="workflow-timeline-wrapper reveal">
-            <div class="timeline-indicator-track">
-              <div
-                class="timeline-indicator-fill"
-                id="timeline-scroll-fill"
-              ></div>
-            </div>
-
-            <div class="workflow-steps-grid">
               <!-- Step 1 -->
-              <div class="workflow-step-card spotlight-card" id="step-reunion">
-                <div class="card-glow-layer"></div>
-                <div class="card-inner">
-                  <span class="step-number" data-i18n="step-reunion-title"
-                    >01. Café &amp; Ideas</span
-                  >
-                  <p class="step-desc" data-i18n="step-reunion-desc">
-                    Quedamos en tu negocio o en alguna cafetería de la Rambla de
-                    Badalona. Me cuentas qué haces, cómo es tu cliente y qué
-                    esperas de la web. De ahí salimos con un plan estructurado y
-                    un precio cerrado de antemano.
-                  </p>
-                </div>
+              <div class="workflow-step-text-block" id="text-step-1">
+                <span class="step-badge-premium" data-i18n="step-badge-1">Paso 01</span>
+                <h3 class="cinematic-title" data-i18n="step-reunion-title">Café &amp; Ideas</h3>
+                <p class="cinematic-desc" data-i18n="step-reunion-desc">
+                  Quedamos en tu negocio o en alguna cafetería de la Rambla de
+                  Badalona. Me cuentas qué haces, cómo es tu cliente y qué
+                  esperas de la web. De ahí salimos con un plan estructurado y
+                  un precio cerrado de antemano.
+                </p>
               </div>
 
               <!-- Step 2 -->
-              <div class="workflow-step-card spotlight-card" id="step-diseno">
-                <div class="card-glow-layer"></div>
-                <div class="card-inner">
-                  <span class="step-number" data-i18n="step-diseno-title"
-                    >02. El Boceto</span
-                  >
-                  <p class="step-desc" data-i18n="step-diseno-desc">
-                    Diseño una propuesta visual exclusiva para tu negocio. Nada
-                    de plantillas genéricas. Revisamos la disposición, los
-                    textos y los colores juntos, ajustando todo lo necesario
-                    hasta que digas: 'Esto es exactamente mi negocio'.
-                  </p>
-                </div>
+              <div class="workflow-step-text-block" id="text-step-2">
+                <span class="step-badge-premium" data-i18n="step-badge-2">Paso 02</span>
+                <h3 class="cinematic-title" data-i18n="step-diseno-title">El Boceto</h3>
+                <p class="cinematic-desc" data-i18n="step-diseno-desc">
+                  Diseño una propuesta visual exclusiva para tu negocio. Nada
+                  de plantillas genéricas. Revisamos la disposición, los
+                  textos y los colores juntos, ajustando todo lo necesario
+                  hasta que digas: 'Esto es exactamente mi negocio'.
+                </p>
               </div>
 
               <!-- Step 3 -->
-              <div
-                class="workflow-step-card spotlight-card"
-                id="step-desarrollo"
-              >
-                <div class="card-glow-layer"></div>
-                <div class="card-inner">
-                  <span class="step-number" data-i18n="step-desarrollo-title"
-                    >03. El Codi</span
-                  >
-                  <p class="step-desc" data-i18n="step-desarrollo-desc">
-                    Escribo el código de tu web a mano. Me aseguro de que cargue
-                    al instante en móviles y esté optimizada técnicamente para
-                    que Google empiece a indexarte y a mostrarte a tus vecinos
-                    de Badalona.
-                  </p>
-                </div>
+              <div class="workflow-step-text-block" id="text-step-3">
+                <span class="step-badge-premium" data-i18n="step-badge-3">Paso 03</span>
+                <h3 class="cinematic-title" data-i18n="step-desarrollo-title">El Código</h3>
+                <p class="cinematic-desc" data-i18n="step-desarrollo-desc">
+                  Escribo el código de tu web a mano. Me aseguro de que cargue
+                  al instante en móviles y esté optimizada técnicamente para
+                  que Google empiece a indexarte y a mostrarte a tus vecinos
+                  de Badalona.
+                </p>
               </div>
 
               <!-- Step 4 -->
-              <div
-                class="workflow-step-card spotlight-card"
-                id="step-publicacion"
-              >
-                <div class="card-glow-layer"></div>
-                <div class="card-inner">
-                  <span class="step-number" data-i18n="step-publicacion-title"
-                    >04. El Despegue</span
-                  >
-                  <p class="step-desc" data-i18n="step-publicacion-desc">
-                    Lanzamos la web. Te configuro el dominio y el hosting más
-                    adecuado. Te explico en un vídeo de 5 minutos cómo hacer
-                    cambios sencillos por tu cuenta y activo las herramientas de
-                    analítica para que veas tus visitas.
-                  </p>
-                </div>
+              <div class="workflow-step-text-block" id="text-step-4">
+                <span class="step-badge-premium" data-i18n="step-badge-4">Paso 04</span>
+                <h3 class="cinematic-title" data-i18n="step-publicacion-title">El Despegue</h3>
+                <p class="cinematic-desc" data-i18n="step-publicacion-desc">
+                  Lanzamos la web. Te configuro el dominio y el hosting más
+                  adecuado. Te explico en un vídeo de 5 minutos cómo hacer
+                  cambios sencillos por tu cuenta y activo las herramientas de
+                  analítica para que veas tus visitas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Central Timeline Axis -->
+            <div class="workflow-center-timeline">
+              <div class="timeline-axis"></div>
+              <div class="timeline-progress-fill"></div>
+              <!-- Node markers -->
+              <div class="timeline-node node-1 active" data-step="1"></div>
+              <div class="timeline-node node-2" data-step="2"></div>
+              <div class="timeline-node node-3" data-step="3"></div>
+              <div class="timeline-node node-4" data-step="4"></div>
+            </div>
+
+            <!-- Right side: Visual assets viewport -->
+            <div class="workflow-right-visual">
+              <div class="workflow-image-viewport">
+                <div class="workflow-image-pane active" id="pane-step-1" style="background-image: url('assets/hero-step1.png');"></div>
+                <div class="workflow-image-pane" id="pane-step-2" style="background-image: url('assets/hero-step2.png');"></div>
+                <div class="workflow-image-pane" id="pane-step-3" style="background-image: url('assets/hero-step3.png');"></div>
+                <div class="workflow-image-pane" id="pane-step-4" style="background-image: url('assets/hero-step4.png');"></div>
+                <div class="workflow-image-overlay"></div>
               </div>
             </div>
           </div>
@@ -938,7 +951,7 @@
           </div>
 
           <div class="contact-form-wrapper reveal" id="contact-form-col">
-            <form class="contact-form" id="contact-form" novalidate>
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqejgdne" method="POST" novalidate>
               <div class="form-group">
                 <label for="form-name" data-i18n="form-label-name"
                   >Tu nombre o el de tu Negocio</label
@@ -946,6 +959,7 @@
                 <input
                   type="text"
                   id="form-name"
+                  name="name"
                   data-i18n-placeholder="form-placeholder-name"
                   placeholder="Ej. Panadería Rambla o María López"
                   required
@@ -961,6 +975,7 @@
                 <input
                   type="email"
                   id="form-email"
+                  name="email"
                   data-i18n-placeholder="form-placeholder-email"
                   placeholder="Ej. maria@tucomercio.com"
                   required
@@ -977,6 +992,7 @@
                 <input
                   type="tel"
                   id="form-phone"
+                  name="phone"
                   data-i18n-placeholder="form-placeholder-phone"
                   placeholder="Ej. 612 345 678"
                   required
@@ -991,6 +1007,7 @@
                 >
                 <textarea
                   id="form-message"
+                  name="message"
                   rows="5"
                   data-i18n-placeholder="form-placeholder-msg"
                   placeholder="Cuéntame brevemente qué tipo de negocio tienes y tus ideas principales..."

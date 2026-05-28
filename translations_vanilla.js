@@ -32,7 +32,7 @@ const translations = {
         "services-title": "¿Qué necesitas?",
         "services-subtitle": "Tres formas claras de ayudarte a tener una presencia profesional en internet, explicadas de forma sencilla.",
         
-        "service-price-landing": "Desde 299€",
+        "service-price-landing": "350€",
         "service-title-landing": "Página de Aterrizaje",
         "service-desc-landing": "Una sola página estructurada de principio a fin para un único objetivo: presentar tu servicio estrella y hacer que te llamen o te manden un WhatsApp.",
         "service-bullet-landing-1": "Adaptada perfectamente a teléfonos móviles",
@@ -40,7 +40,7 @@ const translations = {
         "service-bullet-landing-3": "Ideal para campañas o servicios muy concretos",
         "service-link-landing": "Hablemos sobre tu landing",
         
-        "service-price-corporate": "Desde 599€",
+        "service-price-corporate": "Desde 500€",
         "service-title-corporate": "Web Completa",
         "service-desc-corporate": "El sitio web clásico para tu despacho, clínica o comercio. Varias secciones (Inicio, Quiénes somos, Servicios, Blog) para transmitir total confianza a tus clientes.",
         "service-bullet-corporate-1": "Secciones ilimitadas y adaptadas a tu marca",
@@ -61,17 +61,30 @@ const translations = {
         "method-title": "Paso a paso, sin líos",
         "method-subtitle": "Así es como trabajo contigo para llevar tu negocio a internet.",
         
-        "step-reunion-title": "01. Café & Ideas",
+        "step-badge-1": "Paso 01",
+        "step-badge-2": "Paso 02",
+        "step-badge-3": "Paso 03",
+        "step-badge-4": "Paso 04",
+        "step-reunion-title": "Café &amp; Ideas",
         "step-reunion-desc": "Quedamos en tu negocio o en alguna cafetería de la Rambla de Badalona. Me cuentas qué haces, cómo es tu cliente y qué esperas de la web. De ahí salimos con un plan estructurado y un precio cerrado de antemano.",
         
-        "step-diseno-title": "02. El Boceto",
+        "step-diseno-title": "El Boceto",
         "step-diseno-desc": "Diseño una propuesta visual exclusiva para tu negocio. Nada de plantillas genéricas. Revisamos la disposición, los textos y los colores juntos, ajustando todo lo necesario hasta que digas: 'Esto es exactamente mi negocio'.",
         
-        "step-desarrollo-title": "03. El Código",
+        "step-desarrollo-title": "El Código",
         "step-desarrollo-desc": "Escribo el código de tu web a mano. Me aseguro de que cargue al instante en móviles y esté optimizada técnicamente para que Google empiece a indexarte y a mostrarte a tus vecinos de Badalona.",
         
-        "step-publicacion-title": "04. El Despegue",
+        "step-publicacion-title": "El Despegue",
         "step-publicacion-desc": "Lanzamos la web. Te configuro el dominio y el hosting más adecuado. Te explico en un vídeo de 5 minutos cómo hacer cambios sencillos por tu cuenta y activo las herramientas de analítica para que veas tus visitas.",
+        
+        "tech-js-title": "Javascript ES6+",
+        "tech-js-desc": "Código interactivo a mano",
+        "tech-gsap-title": "GSAP Motion",
+        "tech-gsap-desc": "Efectos de scroll premium",
+        "tech-seo-title": "SEO Local",
+        "tech-seo-desc": "Visibilidad en tu barrio",
+        "tech-speed-title": "Rendimiento",
+        "tech-speed-desc": "Carga instantánea < 1s",
         
         // About
         "about-decor": "Quién soy",
@@ -175,7 +188,7 @@ const translations = {
         "services-title": "Què necessites?",
         "services-subtitle": "Tres formes clares d'ajudar-te a tenir una presència professional a internet, explicades de manera senzilla.",
         
-        "service-price-landing": "Des de 299€",
+        "service-price-landing": "350€",
         "service-title-landing": "Pàgina d'Aterratge (Landing)",
         "service-desc-landing": "Una sola pàgina estructurada de principi a fi per a un únic objectiu: presentar el teu servei estrella i fer que et truquin o et enviïn un WhatsApp.",
         "service-bullet-landing-1": "Adaptada perfectament a telèfons mòbils",
@@ -183,7 +196,7 @@ const translations = {
         "service-bullet-landing-3": "Ideal per a campanyes o serveis molt concrets",
         "service-link-landing": "Parlem sobre la teva landing",
         
-        "service-price-corporate": "Des de 599€",
+        "service-price-corporate": "Des de 500€",
         "service-title-corporate": "Web Completa",
         "service-desc-corporate": "El lloc web clàssic per al teu despatx, clínica o comerç. Diverses seccions (Inici, Qui som, Serveis, Blog) per transmetre total confiança als teus clients.",
         "service-bullet-corporate-1": "Seccions il·limitades i adaptades a la teva marca",
@@ -204,17 +217,30 @@ const translations = {
         "method-title": "Pas a pas, sense embolics",
         "method-subtitle": "Així és com treballo amb tu per portar el teu negoci a internet.",
         
-        "step-reunion-title": "01. Cafè & Idees",
+        "step-badge-1": "Pas 01",
+        "step-badge-2": "Pas 02",
+        "step-badge-3": "Pas 03",
+        "step-badge-4": "Pas 04",
+        "step-reunion-title": "Cafè &amp; Idees",
         "step-reunion-desc": "Quedem al teu negoci o en alguna cafeteria de la Rambla de Badalona. Em comptes què fas, com és el teu client i què esperes de la web. D'allà sortim amb un pla estructurat i un preu tancat per endavant.",
         
-        "step-diseno-title": "02. El Esbós",
+        "step-diseno-title": "L'Esbós",
         "step-diseno-desc": "Dissenyo una proposta visual exclusiva per al teu negoci. Gens de plantilles genèriques. Revisem la disposició, els textos i els colors junts, ajustant tot el necessari fins que diguis: 'Això és exactament el meu negoci'.",
         
-        "step-desarrollo-title": "03. El Codi",
+        "step-desarrollo-title": "El Codi",
         "step-desarrollo-desc": "Escric el codi de la teva web a mà. M'asseguro que carregui a l'instant en mòbils i estigui optimitzada tècnicament perquè Google comenci a indexar-te i a mostrar-te als teus veïns de Badalona.",
         
-        "step-publicacion-title": "04. L'Enlairament",
+        "step-publicacion-title": "L'Enlairament",
         "step-publicacion-desc": "Llancem la web. Et configuro el domini i el fòsting més adequat. Et explico en un vídeo de 5 minuts com fer canvis senzills pel teu compte i activo les eines d'analítica perquè vegis les teves visites.",
+        
+        "tech-js-title": "Javascript ES6+",
+        "tech-js-desc": "Codi interactiu a mà",
+        "tech-gsap-title": "GSAP Motion",
+        "tech-gsap-desc": "Efectes de scroll premium",
+        "tech-seo-title": "SEO Local",
+        "tech-seo-desc": "Visibilitat al teu barri",
+        "tech-speed-title": "Rendiment",
+        "tech-speed-desc": "Càrrega instantània < 1s",
         
         // About
         "about-decor": "Qui sóc",
@@ -318,7 +344,7 @@ const translations = {
         "services-title": "How can I help you?",
         "services-subtitle": "Three clear ways to establish a professional presence on the web, explained simply.",
         
-        "service-price-landing": "From €299",
+        "service-price-landing": "€350",
         "service-title-landing": "Landing Page",
         "service-desc-landing": "A single-page website structured from top to bottom with one single goal: showcase your star service and get clients calling or sending a WhatsApp.",
         "service-bullet-landing-1": "Fully optimized for mobile phones",
@@ -326,7 +352,7 @@ const translations = {
         "service-bullet-landing-3": "Perfect for specific campaigns or single services",
         "service-link-landing": "Let's discuss your landing page",
         
-        "service-price-corporate": "From €599",
+        "service-price-corporate": "From €500",
         "service-title-corporate": "Full Website",
         "service-desc-corporate": "The classic multi-page site for clinics, local offices, or retail. Multiple pages (Home, About, Services, Blog) to build total trust with your customers.",
         "service-bullet-corporate-1": "Unlimited pages tailored to your brand identity",
@@ -347,17 +373,30 @@ const translations = {
         "method-title": "Step by step, no fuss",
         "method-subtitle": "This is how we work together to bring your local business online.",
         
-        "step-reunion-title": "01. Coffee & Ideas",
+        "step-badge-1": "Step 01",
+        "step-badge-2": "Step 02",
+        "step-badge-3": "Step 03",
+        "step-badge-4": "Step 04",
+        "step-reunion-title": "Coffee &amp; Ideas",
         "step-reunion-desc": "We meet at your business or a cozy coffee shop at the Rambla de Badalona. You tell me what you do, who your clients are, and your goals. We leave with a clear plan and a fixed budget.",
         
-        "step-diseno-title": "02. The Sketch",
+        "step-diseno-title": "The Sketch",
         "step-diseno-desc": "I design a unique visual mockup for your business from scratch. No cheap generic templates. We review layouts, texts, and colors together, adjusting everything until you love it.",
         
-        "step-desarrollo-title": "03. The Code",
+        "step-desarrollo-title": "The Code",
         "step-desarrollo-desc": "I write your website code by hand. I make sure it loads instantly on mobile devices and is technically optimized so Google starts placing you above local competition.",
         
-        "step-publicacion-title": "04. The Launch",
+        "step-publicacion-title": "The Launch",
         "step-publicacion-desc": "We launch the site. I hook up your domain and high-speed hosting. I explain in a quick 5-minute video how to edit text easily, and activate analytics tracking.",
+        
+        "tech-js-title": "Javascript ES6+",
+        "tech-js-desc": "Handwritten dynamic code",
+        "tech-gsap-title": "GSAP Motion",
+        "tech-gsap-desc": "Premium scroll effects",
+        "tech-seo-title": "Local SEO",
+        "tech-seo-desc": "Rank high in Google Maps",
+        "tech-speed-title": "Performance",
+        "tech-speed-desc": "Instant page load < 1s",
         
         // About
         "about-decor": "About me",
