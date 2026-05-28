@@ -89,9 +89,9 @@ export const translations = {
         // About
         "about-decor": "Quién soy",
         "about-title": "Hola, soy Pol Alegre",
-        "about-lead": "No soy una agencia de 15 personas con oficinas de diseño en Barcelona que te cobra por cada correo. Soy un desarrollador freelance de Badalona, y hablo directo.",
-        "about-body-1": "Nací y vivo en Badalona (de los que cruzan el Pont del Petroli a pasear los domingos). Sé lo difícil que es levantar la persiana de un negocio de barrio todos los días, y por eso decidí ofrecer mis servicios de forma clara: precios cerrados, comunicación directa por WhatsApp y soporte rápido cuando lo necesitas.",
-        "about-body-2": "No uso plantillas genéricas de WordPress que tardan 10 segundos en cargar. Hago páginas web rápidas, limpias y estructuradas con código moderno para que tus clientes te llamen o te escriban.",
+        "about-lead": "Acabo de terminar mi formación técnica en desarrollo web y estoy listo para crear páginas web rápidas y de calidad. Sin rodeos, trato presencial y directo.",
+        "about-body-1": "Nací y vivo en Badalona (de los que cruzan el Pont del Petroli a pasear los domingos). Aunque acabo de finalizar mis estudios, llevo programando mis propios proyectos desde hace tiempo. Entiendo perfectamente lo difícil que es para un comercio de barrio destacar en internet, y por eso decidí ofrecer mis servicios de forma clara: precios cerrados, comunicación rápida y soporte de confianza.",
+        "about-body-2": "No uso plantillas genéricas de WordPress cargadas de complementos que tardan 10 segundos en cargar. Hago páginas web rápidas, limpias y estructuradas a mano con código moderno para que tus clientes te encuentren y te contacten de inmediato.",
         
         "about-val-title-1": "Al lado de tu negocio",
         "about-val-desc-1": "Trabajo en el Centre, Gorg, Llefià, Bufalà... si pasa cualquier cosa, me acerco a tu local a solucionarlo.",
@@ -157,7 +157,7 @@ export const translations = {
         "footer-tagline": "Páginas web a mano, rápidas y legibles para comercios y negocios locales en Badalona.",
         "footer-links-title": "Enlaces",
         "footer-contact-title": "Contacto",
-        "footer-made-by": "Hecho a mano en Badalona 🏖️",
+        "footer-made-by": "Hecho a mano en Badalona",
         "footer-rights": "&copy; 2026 Pol Alegre Martinez. Todos los derechos reservados."
     },
     ca: {
@@ -245,9 +245,9 @@ export const translations = {
         // About
         "about-decor": "Qui sóc",
         "about-title": "Hola, sóc en Pol Alegre",
-        "about-lead": "No sóc una agència de 15 persones amb oficines de disseny a Barcelona que et cobra per cada correu. Sóc un desenvolupador freelance de Badalona, i parlo directe.",
-        "about-body-1": "Vaig néixer i visc a Badalona (dels que creuen el Pont del Petroli a passejar els diumenges). Sé com és de difícil aixecar la persiana d'un negoci de barri cada dia, i per això vaig decidir oferir els meus serveis de forma clara: preus tancats, comunicació directa per WhatsApp i suport ràpid quan ho necessites.",
-        "about-body-2": "No utilitzo plantilles genèriques de WordPress que triguen 10 segons a carregar. Faig pàgines web ràpides, netes i estructurades amb codi modern perquè els teus clients et truquin o et escriguin.",
+        "about-lead": "Acabo d'acabar la meva formació tècnica en desenvolupament web i estic llest per crear pàgines web ràpides i de qualitat. Sense embuts, tracte presencial i directe.",
+        "about-body-1": "Vaig néixer i visc a Badalona (dels que creuen el Pont del Petroli a passejar els diumenges). Encara que acabo de finalitzar els meus estudis, fa temps que programo els meus propis projectes. Entenc perfectament el difícil que és per a un comerç de barri destacar a internet, i per això vaig decidir oferir els meus serveis de forma clara: preus tancats, comunicació ràpida i suport de confiança.",
+        "about-body-2": "No utilitzo plantilles genèriques de WordPress carregades d'afegits que triguen 10 segons a carregar. Faig pàgines web ràpides, netes i estructurades a mà amb codi modern perquè els teus clients et trobin i et contactin d'immediat.",
         
         "about-val-title-1": "Al costat del teu negoci",
         "about-val-desc-1": "Treballo al Centre, Gorg, Llefià, Bufalà... si passa qualsevol cosa, m'apropo al teu local a solucionar-ho.",
@@ -313,7 +313,7 @@ export const translations = {
         "footer-tagline": "Pàgines web a mà, ràpides i llegibles per a comerços i negocis locals a Badalona.",
         "footer-links-title": "Enllaços",
         "footer-contact-title": "Contacte",
-        "footer-made-by": "Fet a mà a Badalona 🏖️",
+        "footer-made-by": "Fet a mà a Badalona",
         "footer-rights": "&copy; 2026 Pol Alegre Martinez. Tots els drets reservats."
     },
     en: {
@@ -401,9 +401,9 @@ export const translations = {
         // About
         "about-decor": "About me",
         "about-title": "Hi, I'm Pol Alegre",
-        "about-lead": "I am not a 15-person agency with fancy Barcelona offices charging you just for replying to an email. I'm a freelance developer from Badalona, and I talk straight.",
-        "about-body-1": "I was born and live in Badalona (one of those who walk along the Pont del Petroli on Sundays). I know how hard it is to run a local neighborhood business every day. That's why I offer clear services: fixed prices, direct WhatsApp communication, and quick support.",
-        "about-body-2": "I don't use heavy generic WordPress templates that take 10 seconds to load. I make clean, fast, and structured sites using modern code so your clients call or write to you.",
+        "about-lead": "I have just completed my technical web development training and I'm ready to build fast, high-quality websites. Straight up, face-to-face and direct.",
+        "about-body-1": "I was born and live in Badalona (one of those who walk along the Pont del Petroli on Sundays). Although I recently finished my studies, I have been building my own projects for quite some time. I understand how challenging it is for a neighborhood business to stand out online, which is why I offer clear services: flat pricing, fast response times, and trustworthy support.",
+        "about-body-2": "I don't use heavy, generic WordPress templates loaded with plugins that take 10 seconds to load. I hand-code clean, fast, and structured sites using modern technology so your clients can find and reach you instantly.",
         
         "about-val-title-1": "Right next to your business",
         "about-val-desc-1": "I cover Centre, Gorg, Llefià, Bufalà... if anything happens, I'm nearby to visit and fix it.",
@@ -469,7 +469,7 @@ export const translations = {
         "footer-tagline": "Handcrafted, fast, and highly legible websites for local businesses and shops in Badalona.",
         "footer-links-title": "Links",
         "footer-contact-title": "Contact",
-        "footer-made-by": "Handcrafted in Badalona 🏖️",
+        "footer-made-by": "Handcrafted in Badalona",
         "footer-rights": "&copy; 2026 Pol Alegre Martinez. All rights reserved."
     }
 };

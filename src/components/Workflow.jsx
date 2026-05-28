@@ -74,19 +74,6 @@ export default function Workflow({ t }) {
     }
   }, [isMobile]);
 
-  // Framer Motion transforms for the text block animations in desktop
-  const text1Opacity = useTransform(scrollYProgress, [0, 0.15, 0.25], [1, 1, 0]);
-  const text1Y = useTransform(scrollYProgress, [0, 0.15, 0.25], [0, 0, -40]);
-
-  const text2Opacity = useTransform(scrollYProgress, [0.15, 0.22, 0.45, 0.55], [0, 1, 1, 0]);
-  const text2Y = useTransform(scrollYProgress, [0.15, 0.22, 0.45, 0.55], [40, 0, 0, -40]);
-
-  const text3Opacity = useTransform(scrollYProgress, [0.45, 0.52, 0.75, 0.85], [0, 1, 1, 0]);
-  const text3Y = useTransform(scrollYProgress, [0.45, 0.52, 0.75, 0.85], [40, 0, 0, -40]);
-
-  const text4Opacity = useTransform(scrollYProgress, [0.75, 0.82, 1.0], [0, 1, 1]);
-  const text4Y = useTransform(scrollYProgress, [0.75, 0.82, 1.0], [40, 0, 0]);
-
   return (
     <>
       <section className="workflow-intro-section" id="como-trabajamos">
@@ -109,15 +96,16 @@ export default function Workflow({ t }) {
                 className="workflow-step-text-block"
                 id="text-step-1"
                 data-step-index={0}
-                style={
+                animate={
                   isMobile
                     ? {}
                     : {
-                        opacity: text1Opacity,
-                        y: text1Y,
+                        opacity: activeStep === 0 ? 1 : 0,
+                        y: activeStep === 0 ? 0 : activeStep > 0 ? -40 : 40,
                         pointerEvents: activeStep === 0 ? 'all' : 'none',
                       }
                 }
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               >
                 <span className="step-badge-premium">{t('step-badge-1')}</span>
                 <h3 className="cinematic-title" dangerouslySetInnerHTML={{ __html: t('step-reunion-title') }}></h3>
@@ -129,15 +117,16 @@ export default function Workflow({ t }) {
                 className="workflow-step-text-block"
                 id="text-step-2"
                 data-step-index={1}
-                style={
+                animate={
                   isMobile
                     ? {}
                     : {
-                        opacity: text2Opacity,
-                        y: text2Y,
+                        opacity: activeStep === 1 ? 1 : 0,
+                        y: activeStep === 1 ? 0 : activeStep > 1 ? -40 : 40,
                         pointerEvents: activeStep === 1 ? 'all' : 'none',
                       }
                 }
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               >
                 <span className="step-badge-premium">{t('step-badge-2')}</span>
                 <h3 className="cinematic-title" dangerouslySetInnerHTML={{ __html: t('step-diseno-title') }}></h3>
@@ -149,15 +138,16 @@ export default function Workflow({ t }) {
                 className="workflow-step-text-block"
                 id="text-step-3"
                 data-step-index={2}
-                style={
+                animate={
                   isMobile
                     ? {}
                     : {
-                        opacity: text3Opacity,
-                        y: text3Y,
+                        opacity: activeStep === 2 ? 1 : 0,
+                        y: activeStep === 2 ? 0 : activeStep > 2 ? -40 : 40,
                         pointerEvents: activeStep === 2 ? 'all' : 'none',
                       }
                 }
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               >
                 <span className="step-badge-premium">{t('step-badge-3')}</span>
                 <h3 className="cinematic-title" dangerouslySetInnerHTML={{ __html: t('step-desarrollo-title') }}></h3>
@@ -169,15 +159,16 @@ export default function Workflow({ t }) {
                 className="workflow-step-text-block"
                 id="text-step-4"
                 data-step-index={3}
-                style={
+                animate={
                   isMobile
                     ? {}
                     : {
-                        opacity: text4Opacity,
-                        y: text4Y,
+                        opacity: activeStep === 3 ? 1 : 0,
+                        y: activeStep === 3 ? 0 : activeStep > 3 ? -40 : 40,
                         pointerEvents: activeStep === 3 ? 'all' : 'none',
                       }
                 }
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               >
                 <span className="step-badge-premium">{t('step-badge-4')}</span>
                 <h3 className="cinematic-title" dangerouslySetInnerHTML={{ __html: t('step-publicacion-title') }}></h3>

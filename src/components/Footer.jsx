@@ -1,3 +1,5 @@
+import { MapPin, Mail } from 'lucide-react';
+
 export default function Footer({ t }) {
   return (
     <footer className="footer">
@@ -57,9 +59,12 @@ export default function Footer({ t }) {
 
         <div className="footer-contact">
           <h4>{t('footer-contact-title')}</h4>
-          <p>📍 Badalona, Barcelona</p>
-          <p>
-            ✉️ <a href="mailto:polalegre.dev@gmail.com">polalegre.dev@gmail.com</a>
+          <p style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <MapPin size={14} style={{ color: 'var(--accent-blue)' }} /> Badalona, Barcelona
+          </p>
+          <p style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '6px' }}>
+            <Mail size={14} style={{ color: 'var(--accent-blue)' }} />
+            <a href="mailto:polalegre.dev@gmail.com">polalegre.dev@gmail.com</a>
           </p>
         </div>
       </div>

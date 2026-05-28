@@ -41,9 +41,9 @@ function App() {
       <Navbar lang={lang} setLang={setLang} t={t} />
       <main>
         <Hero t={t} />
+        <About t={t} />
         <Services t={t} />
         <Workflow t={t} />
-        <About t={t} />
         <Projects t={t} />
         <Contact lang={lang} t={t} />
       </main>

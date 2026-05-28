@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { Zap, Move, TrendingUp, Gauge } from 'lucide-react';
 
 export default function Hero({ t }) {
   const heroRef = useRef(null);
@@ -91,7 +92,9 @@ export default function Hero({ t }) {
           <div className="hero-interactive-side animate-fade-in-delayed">
             <div className="tech-stack-collage">
               <motion.div style={createTiltStyles(0.15)} className="tech-card card-js">
-                <span className="tech-icon">⚡</span>
+                <span className="tech-icon">
+                  <Zap size={16} style={{ color: '#ffb900' }} />
+                </span>
                 <div className="tech-info">
                   <h4>{t('tech-js-title')}</h4>
                   <p>{t('tech-js-desc')}</p>
@@ -99,7 +102,9 @@ export default function Hero({ t }) {
               </motion.div>
 
               <motion.div style={createTiltStyles(0.3)} className="tech-card card-gsap">
-                <span className="tech-icon">✨</span>
+                <span className="tech-icon">
+                  <Move size={16} style={{ color: 'var(--accent-pink)' }} />
+                </span>
                 <div className="tech-info">
                   <h4>{t('tech-gsap-title')}</h4>
                   <p>{t('tech-gsap-desc')}</p>
@@ -107,7 +112,9 @@ export default function Hero({ t }) {
               </motion.div>
 
               <motion.div style={createTiltStyles(0.2)} className="tech-card card-seo">
-                <span className="tech-icon">📈</span>
+                <span className="tech-icon">
+                  <TrendingUp size={16} style={{ color: 'var(--accent-clay)' }} />
+                </span>
                 <div className="tech-info">
                   <h4>{t('tech-seo-title')}</h4>
                   <p>{t('tech-seo-desc')}</p>
@@ -115,7 +122,9 @@ export default function Hero({ t }) {
               </motion.div>
 
               <motion.div style={createTiltStyles(0.35)} className="tech-card card-speed">
-                <span className="tech-icon">🚀</span>
+                <span className="tech-icon">
+                  <Gauge size={16} style={{ color: '#10b981' }} />
+                </span>
                 <div className="tech-info">
                   <h4>{t('tech-speed-title')}</h4>
                   <p>{t('tech-speed-desc')}</p>
