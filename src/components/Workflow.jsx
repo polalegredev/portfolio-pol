@@ -110,6 +110,12 @@ export default function Workflow({ t }) {
                 <span className="step-badge-premium">{t('step-badge-1')}</span>
                 <h3 className="cinematic-title" dangerouslySetInnerHTML={{ __html: t('step-reunion-title') }}></h3>
                 <p className="cinematic-desc" dangerouslySetInnerHTML={{ __html: t('step-reunion-desc') }}></p>
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/hero-step1.png`}
+                  alt="Café & Ideas"
+                  className="mobile-step-img"
+                  loading="lazy"
+                />
               </motion.div>
 
               {/* Step 2 */}
@@ -131,6 +137,12 @@ export default function Workflow({ t }) {
                 <span className="step-badge-premium">{t('step-badge-2')}</span>
                 <h3 className="cinematic-title" dangerouslySetInnerHTML={{ __html: t('step-diseno-title') }}></h3>
                 <p className="cinematic-desc" dangerouslySetInnerHTML={{ __html: t('step-diseno-desc') }}></p>
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/hero-step2.png`}
+                  alt="El Boceto"
+                  className="mobile-step-img"
+                  loading="lazy"
+                />
               </motion.div>
 
               {/* Step 3 */}
@@ -152,6 +164,12 @@ export default function Workflow({ t }) {
                 <span className="step-badge-premium">{t('step-badge-3')}</span>
                 <h3 className="cinematic-title" dangerouslySetInnerHTML={{ __html: t('step-desarrollo-title') }}></h3>
                 <p className="cinematic-desc" dangerouslySetInnerHTML={{ __html: t('step-desarrollo-desc') }}></p>
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/hero-step3.png`}
+                  alt="El Código"
+                  className="mobile-step-img"
+                  loading="lazy"
+                />
               </motion.div>
 
               {/* Step 4 */}
@@ -173,6 +191,12 @@ export default function Workflow({ t }) {
                 <span className="step-badge-premium">{t('step-badge-4')}</span>
                 <h3 className="cinematic-title" dangerouslySetInnerHTML={{ __html: t('step-publicacion-title') }}></h3>
                 <p className="cinematic-desc" dangerouslySetInnerHTML={{ __html: t('step-publicacion-desc') }}></p>
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/hero-step4.png`}
+                  alt="El Despegue"
+                  className="mobile-step-img"
+                  loading="lazy"
+                />
               </motion.div>
             </div>
 
