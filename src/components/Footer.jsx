@@ -6,38 +6,12 @@ export default function Footer({ t }) {
       <div className="container footer-container">
         <div className="footer-brand">
           <a href="#hero" className="footer-logo">
-            <svg
+            <img
+              src={`${import.meta.env.BASE_URL}assets/logo.png`}
+              alt="Logo Pol Alegre"
               className="logo-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                d="M 8, 17.5 V 6.5 L 16, 17.5"
-                stroke="url(#logo-grad-footer)"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-              <path
-                d="M 8, 6.5 H 12 A 2.75, 2.75 0 0 1 12, 12 H 8"
-                stroke="url(#logo-grad-footer)"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id="logo-grad-footer"
-                  x1="0%"
-                  y1="100%"
-                  x2="100%"
-                  y2="0%"
-                >
-                  <stop offset="0%" stopColor="var(--accent-blue)"></stop>
-                  <stop offset="100%" stopColor="var(--accent-clay)"></stop>
-                </linearGradient>
-              </defs>
-            </svg>
+              style={{ borderRadius: '4px' }}
+            />
             <span className="logo-text">Pol Alegre</span>
           </a>
           <p className="footer-tagline">{t('footer-tagline')}</p>
