@@ -15,7 +15,7 @@ export default function Projects({ t }) {
           <div className="project-card reveal active" id="proj-restaurant">
             <div className="project-img-wrapper">
               <img
-                src="/assets/project-restaurant.png"
+                src={`${import.meta.env.BASE_URL}assets/project-restaurant.png`}
                 alt="Mockup El Racó Badalona"
                 className="project-img"
                 loading="lazy"
@@ -39,7 +39,7 @@ export default function Projects({ t }) {
           <div className="project-card reveal active" id="proj-physio">
             <div className="project-img-wrapper">
               <img
-                src="/assets/project-physio.png"
+                src={`${import.meta.env.BASE_URL}assets/project-physio.png`}
                 alt="Mockup Fisioterapia Bufalà"
                 className="project-img"
                 loading="lazy"
@@ -63,7 +63,7 @@ export default function Projects({ t }) {
           <div className="project-card reveal active" id="proj-shop">
             <div className="project-img-wrapper">
               <img
-                src="/assets/project-shop.png"
+                src={`${import.meta.env.BASE_URL}assets/project-shop.png`}
                 alt="Mockup BadaModa Concept"
                 className="project-img"
                 loading="lazy"

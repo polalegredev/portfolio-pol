@@ -194,19 +194,19 @@ export default function Workflow({ t }) {
               <div className="workflow-image-viewport">
                 <div
                   className={`workflow-image-pane ${activeStep === 0 ? 'active' : ''}`}
-                  style={{ backgroundImage: "url('/assets/hero-step1.png')" }}
+                  style={{ backgroundImage: `url("${import.meta.env.BASE_URL}assets/hero-step1.png")` }}
                 ></div>
                 <div
                   className={`workflow-image-pane ${activeStep === 1 ? 'active' : ''}`}
-                  style={{ backgroundImage: "url('/assets/hero-step2.png')" }}
+                  style={{ backgroundImage: `url("${import.meta.env.BASE_URL}assets/hero-step2.png")` }}
                 ></div>
                 <div
                   className={`workflow-image-pane ${activeStep === 2 ? 'active' : ''}`}
-                  style={{ backgroundImage: "url('/assets/hero-step3.png')" }}
+                  style={{ backgroundImage: `url("${import.meta.env.BASE_URL}assets/hero-step3.png")` }}
                 ></div>
                 <div
                   className={`workflow-image-pane ${activeStep === 3 ? 'active' : ''}`}
-                  style={{ backgroundImage: "url('/assets/hero-step4.png')" }}
+                  style={{ backgroundImage: `url("${import.meta.env.BASE_URL}assets/hero-step4.png")` }}
                 ></div>
                 <div className="workflow-image-overlay"></div>
               </div>

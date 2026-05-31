@@ -29,7 +29,7 @@ export default function About({ t }) {
                 <span className="editor-title">pol_alegre_avatar.png</span>
               </div>
               <img
-                src="/assets/pol-alegre.png"
+                src={`${import.meta.env.BASE_URL}assets/pol-alegre.png`}
                 alt="Pol Alegre Martinez"
                 className="about-profile-img"
                 loading="lazy"
