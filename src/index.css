@@ -1140,7 +1140,11 @@ h1, h2, h3, h4 {
 }
 
 .bento-value-3 {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
+}
+
+.bento-skills {
+    grid-column: 3;
 }
 
 .bento-value .card-inner {
@@ -1792,7 +1796,7 @@ h1, h2, h3, h4 {
         padding: 24px;
     }
     
-    .bento-value-1, .bento-value-2, .bento-value-3 {
+    .bento-value-1, .bento-value-2, .bento-value-3, .bento-skills {
         grid-column: span 1;
     }
     
@@ -1897,10 +1901,10 @@ h1, h2, h3, h4 {
         margin-top: 20px;
     }
     
-    .card-js { top: 10%; left: 0%; }
-    .card-gsap { top: 48%; left: -5%; }
-    .card-seo { top: 5%; right: 0%; }
-    .card-speed { top: 62%; right: -5%; }
+    .card-js { top: 10%; left: 2%; }
+    .card-gsap { top: 48%; left: 2%; }
+    .card-seo { top: 5%; right: 2%; }
+    .card-speed { top: 62%; right: 2%; }
     .card-code { bottom: 10%; left: 22%; width: 170px; }
     .card-code pre { font-size: 0.65rem; }
     

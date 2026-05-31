@@ -89,7 +89,6 @@ export default function About({ t }) {
           <div 
             className="bento-box bento-value bento-value-3 spotlight-card"
             onMouseMove={handleCardMouseMove}
-            style={{ gridColumn: '1 / span 2' }}
           >
             <div className="card-glow-layer"></div>
             <div className="card-inner">
@@ -105,9 +104,8 @@ export default function About({ t }) {
 
           {/* Box 6: Skills & Tech stack (New!) */}
           <div 
-            className="bento-box bento-value spotlight-card"
+            className="bento-box bento-value bento-skills spotlight-card"
             onMouseMove={handleCardMouseMove}
-            style={{ gridColumn: '3' }}
           >
             <div className="card-glow-layer"></div>
             <div className="card-inner">
