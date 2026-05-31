@@ -47,6 +47,10 @@ export default function Contact({ lang, t }) {
     return !Object.values(newErrors).some((hasError) => hasError);
   };
 
+  const sanitizeInput = (str) => {
+    return str.replace(/<[^>]*>/g, '').trim();
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -68,10 +72,10 @@ export default function Contact({ lang, t }) {
     setIsSubmitting(true);
 
     const payload = {
-      name: formData.name.trim(),
-      email: formData.email.trim(),
-      phone: formData.phone.replace(/\s+/g, '').trim(),
-      message: formData.message.trim(),
+      name: sanitizeInput(formData.name),
+      email: sanitizeInput(formData.email),
+      phone: sanitizeInput(formData.phone.replace(/\s+/g, '')),
+      message: sanitizeInput(formData.message),
     };
 
     fetch('https://formspree.io/f/mqejgdne', {
@@ -264,7 +268,7 @@ export default function Contact({ lang, t }) {
             </div>
 
             {/* Honeypot spam protection hidden field */}
-            <div className="form-group" style={{ display: 'none !important' }}>
+            <div className="form-group" style={{ display: 'none', position: 'absolute', width: 0, height: 0, opacity: 0, pointerEvents: 'none' }}>
               <label htmlFor="form-website">Website (dejar en blanco)</label>
               <input
                 type="text"
