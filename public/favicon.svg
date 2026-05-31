@@ -19,13 +19,11 @@
   <!-- Background rounded tile -->
   <rect width="22" height="22" x="1" y="1" rx="6" fill="#030014" stroke="rgba(99, 102, 241, 0.2)" stroke-width="1" />
   
-  <!-- Styled Monogram (P + A) -->
+  <!-- Styled Minimalist Monogram (P + A) -->
   <g stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)">
-    <!-- P Stem & Loop -->
-    <path d="M 7.5, 16.5 V 7.5 H 12 A 2.25, 2.25 0 0 1 12, 12 H 7.5" />
-    <!-- A Frame -->
-    <path d="M 11.5, 12 L 14.5, 7.5 L 17.5, 16.5" />
-    <!-- A Crossbar -->
-    <path d="M 10, 14.2 H 15.5" />
+    <!-- Stem and Right Leg of A -->
+    <path d="M 8, 17.5 V 6.5 L 16, 17.5" />
+    <!-- Loop of P and Crossbar of A -->
+    <path d="M 8, 6.5 H 12 A 2.75, 2.75 0 0 1 12, 12 H 8" />
   </g>
 </svg>

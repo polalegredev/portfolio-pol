@@ -32,19 +32,13 @@ export default function Navbar({ lang, setLang, t }) {
             strokeWidth="2"
           >
             <path
-              d="M 7.5, 16.5 V 7.5 H 12 A 2.25, 2.25 0 0 1 12, 12 H 7.5"
+              d="M 8, 17.5 V 6.5 L 16, 17.5"
               stroke="url(#logo-grad)"
               strokeLinecap="round"
               strokeLinejoin="round"
             ></path>
             <path
-              d="M 11.5, 12 L 14.5, 7.5 L 17.5, 16.5"
-              stroke="url(#logo-grad)"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M 10, 14.2 H 15.5"
+              d="M 8, 6.5 H 12 A 2.75, 2.75 0 0 1 12, 12 H 8"
               stroke="url(#logo-grad)"
               strokeLinecap="round"
               strokeLinejoin="round"
