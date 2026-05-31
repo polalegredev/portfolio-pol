@@ -29,22 +29,22 @@ export default function Navbar({ lang, setLang, t }) {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.8"
+            strokeWidth="2"
           >
-            <circle
-              cx="12"
-              cy="12"
-              r="10"
-              stroke="rgba(255,255,255,0.15)"
-            ></circle>
             <path
-              d="M8.5 16V8h3.5a2.5 2.5 0 0 1 0 5H8.5M12 13l3.5 3"
+              d="M 7.5, 16.5 V 7.5 H 12 A 2.25, 2.25 0 0 1 12, 12 H 7.5"
               stroke="url(#logo-grad)"
               strokeLinecap="round"
               strokeLinejoin="round"
             ></path>
             <path
-              d="M10 14.5h4"
+              d="M 11.5, 12 L 14.5, 7.5 L 17.5, 16.5"
+              stroke="url(#logo-grad)"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M 10, 14.2 H 15.5"
               stroke="url(#logo-grad)"
               strokeLinecap="round"
               strokeLinejoin="round"
