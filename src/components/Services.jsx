@@ -48,14 +48,17 @@ export default function Services({ t }) {
               <h3 className="service-title-text">
                 {t('service-title-landing')}
               </h3>
+
+              <div className="service-price-block">
+                <span className="price-label">{t('service-price-landing-label')}</span>
+                <span className="price-value">{t('service-price-landing-value')}</span>
+              </div>
               
               <p className="service-desc-text">
                 {t('service-desc-landing')}
               </p>
 
-              <div className="service-price-wrapper">
-                <span className="price-amount">{t('service-price-landing')}</span>
-              </div>
+              <div className="service-divider"></div>
 
               <ul className="service-bullets">
                 {Array.isArray(t('service-bullets-landing')) && t('service-bullets-landing').map((bullet, idx) => (
@@ -116,14 +119,17 @@ export default function Services({ t }) {
               <h3 className="service-title-text">
                 {t('service-title-corporate')}
               </h3>
+
+              <div className="service-price-block">
+                <span className="price-label">{t('service-price-corporate-label')}</span>
+                <span className="price-value">{t('service-price-corporate-value')}</span>
+              </div>
               
               <p className="service-desc-text">
                 {t('service-desc-corporate')}
               </p>
 
-              <div className="service-price-wrapper">
-                <span className="price-amount">{t('service-price-corporate')}</span>
-              </div>
+              <div className="service-divider"></div>
 
               <ul className="service-bullets">
                 {Array.isArray(t('service-bullets-corporate')) && t('service-bullets-corporate').map((bullet, idx) => (
@@ -182,14 +188,20 @@ export default function Services({ t }) {
               <h3 className="service-title-text">
                 {t('service-title-maint')}
               </h3>
+
+              <div className="service-price-block">
+                <span className="price-label">{t('service-price-maint-label')}</span>
+                <span className="price-value">
+                  {t('service-price-maint-value')}
+                  <span className="price-suffix">{t('service-price-maint-suffix')}</span>
+                </span>
+              </div>
               
               <p className="service-desc-text">
                 {t('service-desc-maint')}
               </p>
 
-              <div className="service-price-wrapper">
-                <span className="price-amount">{t('service-price-maint')}</span>
-              </div>
+              <div className="service-divider"></div>
 
               <ul className="service-bullets">
                 {Array.isArray(t('service-bullets-maint')) && t('service-bullets-maint').map((bullet, idx) => (

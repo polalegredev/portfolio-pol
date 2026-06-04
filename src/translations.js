@@ -31,7 +31,8 @@ export const translations = {
         "services-title": "Servicios de Diseño Web en Badalona",
         "services-subtitle": "Tres formas claras de ayudarte a tener una presencia profesional en internet, explicadas de forma sencilla.",
         
-        "service-price-landing": "Desde 350€",
+        "service-price-landing-label": "Desde",
+        "service-price-landing-value": "350€",
         "service-title-landing": "Landing Page Profesional",
         "service-desc-landing": "Una página diseñada para promocionar un servicio específico y convertir visitantes en clientes. Ideal para campañas publicitarias, profesionales independientes o negocios que quieren captar contactos rápidamente.",
         "service-bullets-landing": [
@@ -44,7 +45,8 @@ export const translations = {
         ],
         "service-link-landing": "Hablemos de tu landing",
         
-        "service-price-corporate": "Desde 500€",
+        "service-price-corporate-label": "Desde",
+        "service-price-corporate-value": "500€",
         "service-title-corporate": "Página Web Corporativa",
         "service-desc-corporate": "La solución ideal para empresas, clínicas, despachos y comercios. Una página profesional que transmite confianza y ayuda a posicionar tu negocio en Google.",
         "service-bullets-corporate": [
@@ -60,7 +62,9 @@ export const translations = {
         ],
         "service-link-corporate": "Hablemos sobre tu web",
         
-        "service-price-maint": "Desde 49€/mes",
+        "service-price-maint-label": "Desde",
+        "service-price-maint-value": "49€",
+        "service-price-maint-suffix": "/mes",
         "service-title-maint": "Mantenimiento Web y SEO Local",
         "service-desc-maint": "Para que no tengas que preocuparte por la parte técnica. Mantengo tu web actualizada, segura y optimizada para mejorar su visibilidad en Google.",
         "service-bullets-maint": [
@@ -249,7 +253,8 @@ export const translations = {
         "services-title": "Serveis de Disseny Web a Badalona",
         "services-subtitle": "Tres formes clares d'ajudar-te a tenir una presència professional a internet, explicades de manera senzilla.",
         
-        "service-price-landing": "Des de 350€",
+        "service-price-landing-label": "Des de",
+        "service-price-landing-value": "350€",
         "service-title-landing": "Landing Page Professional",
         "service-desc-landing": "Una pàgina dissenyada per promocionar un servei específic i convertir visitants en clients. Ideal per a campanyes publicitàries, professionals independents o negocis que volen captar contactes ràpidament.",
         "service-bullets-landing": [
@@ -262,7 +267,8 @@ export const translations = {
         ],
         "service-link-landing": "Parlem de la teva landing",
         
-        "service-price-corporate": "Des de 500€",
+        "service-price-corporate-label": "Des de",
+        "service-price-corporate-value": "500€",
         "service-title-corporate": "Pàgina Web Corporativa",
         "service-desc-corporate": "La solució ideal per a empreses, clíniques, despatxos i comerços. Una pàgina professional que transmet confiança i ajuda a posicionar el teu negoci a Google.",
         "service-bullets-corporate": [
@@ -278,7 +284,9 @@ export const translations = {
         ],
         "service-link-corporate": "Parlem sobre la teva web",
         
-        "service-price-maint": "Des de 49€/mes",
+        "service-price-maint-label": "Des de",
+        "service-price-maint-value": "49€",
+        "service-price-maint-suffix": "/mes",
         "service-title-maint": "Mantenimiento Web y SEO Local",
         "service-desc-maint": "Perquè no t'hagis de preocupar per la part tècnica. Mantinc la teva web actualitzada, segura i optimitzada per millorar la seva visibilitat a Google.",
         "service-bullets-maint": [
@@ -467,7 +475,8 @@ export const translations = {
         "services-title": "Web Design Services in Badalona",
         "services-subtitle": "Three clear ways to establish a professional presence on the web, explained simply.",
         
-        "service-price-landing": "From €350",
+        "service-price-landing-label": "From",
+        "service-price-landing-value": "€350",
         "service-title-landing": "Professional Landing Page",
         "service-desc-landing": "A single-page website designed to promote a specific service and convert visitors into customers. Perfect for ad campaigns, independent professionals, or businesses looking to capture contacts quickly.",
         "service-bullets-landing": [
@@ -480,7 +489,8 @@ export const translations = {
         ],
         "service-link-landing": "Let's talk about your landing page",
         
-        "service-price-corporate": "From €500",
+        "service-price-corporate-label": "From",
+        "service-price-corporate-value": "€500",
         "service-title-corporate": "Corporate Website",
         "service-desc-corporate": "The ideal solution for companies, clinics, offices, and retail. A professional page that builds trust and helps position your business on Google.",
         "service-bullets-corporate": [
@@ -496,10 +506,11 @@ export const translations = {
         ],
         "service-link-corporate": "Let's talk about your website",
         
-        "service-price-maint": "From €49/mo",
+        "service-price-maint-label": "From",
+        "service-price-maint-value": "€49",
+        "service-price-maint-suffix": "/month",
         "service-title-maint": "Web Maintenance & Local SEO",
         "service-desc-maint": "So you don't have to worry about the technical details. I keep your website updated, secure, and optimized to improve its visibility on Google.",
-        "service-price-maint": "From €49/month",
         "service-bullets-maint": [
             "Periodic updates",
             "Backups",
