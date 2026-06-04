@@ -54,48 +54,22 @@ export default function Services({ t }) {
                 {t('service-desc-landing')}
               </p>
               <ul className="service-bullets">
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-landing-1')}
-                </li>
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-landing-2')}
-                </li>
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-landing-3')}
-                </li>
+                {Array.isArray(t('service-bullets-landing')) && t('service-bullets-landing').map((bullet, idx) => (
+                  <li key={idx}>
+                    <svg
+                      className="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      width="14"
+                      height="14"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    {bullet}
+                  </li>
+                ))}
               </ul>
               <a
                 href="#contacto"
@@ -152,48 +126,22 @@ export default function Services({ t }) {
                 {t('service-desc-corporate')}
               </p>
               <ul className="service-bullets">
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-corporate-1')}
-                </li>
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-corporate-2')}
-                </li>
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-corporate-3')}
-                </li>
+                {Array.isArray(t('service-bullets-corporate')) && t('service-bullets-corporate').map((bullet, idx) => (
+                  <li key={idx}>
+                    <svg
+                      className="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      width="14"
+                      height="14"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    {bullet}
+                  </li>
+                ))}
               </ul>
               <a
                 href="#contacto"
@@ -249,48 +197,22 @@ export default function Services({ t }) {
                 {t('service-desc-maint')}
               </p>
               <ul className="service-bullets">
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-maint-1')}
-                </li>
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-maint-2')}
-                </li>
-                <li>
-                  <svg
-                    className="icon-check"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    width="14"
-                    height="14"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  {t('service-bullet-maint-3')}
-                </li>
+                {Array.isArray(t('service-bullets-maint')) && t('service-bullets-maint').map((bullet, idx) => (
+                  <li key={idx}>
+                    <svg
+                      className="icon-check"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      width="14"
+                      height="14"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    {bullet}
+                  </li>
+                ))}
               </ul>
               <a
                 href="#contacto"

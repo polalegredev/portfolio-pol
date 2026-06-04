@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { Zap, Move, TrendingUp, Gauge } from 'lucide-react';
+import { Zap, Move, TrendingUp, Gauge, Check } from 'lucide-react';
+
 
 export default function Hero({ t }) {
   const heroRef = useRef(null);
@@ -79,6 +80,14 @@ export default function Hero({ t }) {
             <p className="hero-subtitle animate-slide-up-delayed" id="hero-main-subtitle">
               {t('hero-subtitle')}
             </p>
+            <ul className="hero-bullets-list animate-slide-up-delayed">
+              {Array.isArray(t('hero-bullets')) && t('hero-bullets').map((bullet, idx) => (
+                <li key={idx} className="hero-bullet-item">
+                  <Check size={16} className="hero-bullet-icon" />
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
             <div className="hero-actions animate-slide-up-delayed" id="hero-main-actions">
               <a href="#contacto" className="btn btn-primary btn-glow" id="btn-hero-contacto">
                 {t('btn-hero-contacto')}

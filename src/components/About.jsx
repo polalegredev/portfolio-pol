@@ -113,7 +113,7 @@ export default function About({ t }) {
                 <div className="bento-val-icon-wrapper val-color-purple">
                   <Sparkles size={18} />
                 </div>
-                <h4>Tecnologías</h4>
+                <h4>{t('about-skills-title')}</h4>
               </div>
               <div className="skills-badge-container">
                 <span className="skill-badge">React</span>

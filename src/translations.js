@@ -13,69 +13,91 @@ export const translations = {
         "nav-contacto": "Hablemos",
         
         // Hero Section
-        "hero-badge": "Páginas web hechas a mano &middot; Badalona",
-        "hero-title": "Diseño y programo webs para negocios de <span class=\"gradient-text\">Badalona</span>. Sin rodeos.",
-        "hero-subtitle": "Soy Pol Alegre. Ayudo a comercios, despachos y profesionales locales a conseguir clientes en internet con una web rápida, clara y que funciona. Quedamos, nos tomamos un café y lo planeamos.",
-        "btn-hero-contacto": "Hablemos de tu web",
-        "btn-hero-proceso": "Mi proceso",
-        
-        // Features
-        "feat-local-title": "Trato de tú a tú",
-        "feat-local-desc": "Quedamos en tu local para hablar del proyecto. Sin intermediarios, sin emails fríos, sin esperas.",
-        "feat-performance-title": "Código ultra-rápido",
-        "feat-performance-desc": "Hago webs limpias que cargan en menos de un segundo. Google las adora y tus clientes no se desesperan.",
-        "feat-trust-title": "Propiedad total",
-        "feat-trust-desc": "La web, el dominio y el hosting son tuyos. Presupuestos cerrados de antemano, sin cuotas obligatorias.",
+        "hero-badge": "DISEÑADOR WEB EN BADALONA",
+        "hero-title": "Páginas web rápidas, profesionales y preparadas para conseguir clientes",
+        "hero-subtitle": "Soy Pol Alegre, diseñador y desarrollador web en Badalona. Ayudo a autónomos, comercios, clínicas, despachos y pequeñas empresas a conseguir más clientes gracias a páginas web modernas, rápidas y optimizadas para Google. Cada proyecto está desarrollado a medida, sin plantillas genéricas y con un objetivo claro: que tu negocio destaque en internet y convierta visitas en contactos reales.",
+        "hero-bullets": [
+            "Diseño web personalizado",
+            "Optimización SEO Local",
+            "Adaptación completa para móviles",
+            "Velocidad de carga optimizada",
+            "Soporte cercano y directo"
+        ],
+        "btn-hero-contacto": "Hablemos de tu proyecto",
+        "btn-hero-proceso": "Cómo trabajo",
         
         // Services
         "services-decor": "Servicios",
-        "services-title": "¿Qué necesitas?",
+        "services-title": "Servicios de Diseño Web en Badalona",
         "services-subtitle": "Tres formas claras de ayudarte a tener una presencia profesional en internet, explicadas de forma sencilla.",
         
-        "service-price-landing": "350€",
-        "service-title-landing": "Página de Aterrizaje",
-        "service-desc-landing": "Una sola página estructurada de principio a fin para un único objetivo: presentar tu servicio estrella y hacer que te llamen o te manden un WhatsApp.",
-        "service-bullet-landing-1": "Adaptada perfectamente a teléfonos móviles",
-        "service-bullet-landing-2": "Formulario de contacto rápido y enlace directo a WhatsApp",
-        "service-bullet-landing-3": "Ideal para campañas o servicios muy concretos",
-        "service-link-landing": "Hablemos sobre tu landing",
+        "service-price-landing": "Desde 350€",
+        "service-title-landing": "Landing Page Profesional",
+        "service-desc-landing": "Una página diseñada para promocionar un servicio específico y convertir visitantes en clientes. Ideal para campañas publicitarias, profesionales independientes o negocios que quieren captar contactos rápidamente.",
+        "service-bullets-landing": [
+            "Diseño personalizado",
+            "Adaptación móvil",
+            "Formulario de contacto",
+            "Botón directo de WhatsApp",
+            "Optimización SEO básica",
+            "Alta velocidad de carga"
+        ],
+        "service-link-landing": "Hablemos de tu landing",
         
         "service-price-corporate": "Desde 500€",
-        "service-title-corporate": "Web Completa",
-        "service-desc-corporate": "El sitio web clásico para tu despacho, clínica o comercio. Varias secciones (Inicio, Quiénes somos, Servicios, Blog) para transmitir total confianza a tus clientes.",
-        "service-bullet-corporate-1": "Secciones ilimitadas y adaptadas a tu marca",
-        "service-bullet-corporate-2": "SEO On-Page para que tus vecinos te encuentren en Google",
-        "service-bullet-corporate-3": "Gestor de contenido para que puedas editar textos tú mismo",
+        "service-title-corporate": "Página Web Corporativa",
+        "service-desc-corporate": "La solución ideal para empresas, clínicas, despachos y comercios. Una página profesional que transmite confianza y ayuda a posicionar tu negocio en Google.",
+        "service-bullets-corporate": [
+            "Inicio",
+            "Sobre Nosotros",
+            "Servicios",
+            "Contacto",
+            "Blog",
+            "SEO On Page",
+            "Optimización de velocidad",
+            "Diseño responsive",
+            "Panel de gestión"
+        ],
         "service-link-corporate": "Hablemos sobre tu web",
         
         "service-price-maint": "Desde 49€/mes",
-        "service-title-maint": "Mantenimiento y SEO Local",
-        "service-desc-maint": "Para que te olvides de la parte técnica. Me encargo de que tu web esté actualizada y segura, además de optimizar tu ficha de Google Maps para que destaques en Badalona.",
-        "service-bullet-maint-1": "Copias de seguridad semanales y actualizaciones de seguridad",
-        "service-bullet-maint-2": "Soporte rápido para pequeños cambios (fotos, horarios, textos)",
-        "service-bullet-maint-3": "Optimización SEO para búsquedas locales en tu zona",
+        "service-title-maint": "Mantenimiento Web y SEO Local",
+        "service-desc-maint": "Para que no tengas que preocuparte por la parte técnica. Mantengo tu web actualizada, segura y optimizada para mejorar su visibilidad en Google.",
+        "service-bullets-maint": [
+            "Actualizaciones periódicas",
+            "Copias de seguridad",
+            "Soporte técnico",
+            "Cambios de contenido",
+            "Optimización SEO Local",
+            "Gestión de Google Business Profile"
+        ],
         "service-link-maint": "Pregúntame sobre soporte",
         
+        // Why Choose Me
+        "why-title": "Un desarrollador web local que entiende tu negocio",
+        "why-body-1": "A diferencia de muchas agencias, trato directamente contigo durante todo el proyecto. Conozco el mercado local de Badalona y sé cómo buscan los clientes servicios y negocios en internet.",
+        "why-body-2": "Mi objetivo no es simplemente crear una página bonita. Mi objetivo es ayudarte a generar más oportunidades de negocio.",
+        
         // Methodology
-        "method-decor": "Metodología",
-        "method-title": "Paso a paso, sin líos",
-        "method-subtitle": "Así es como trabajo contigo para llevar tu negocio a internet.",
+        "method-decor": "Cómo trabajo",
+        "method-title": "Un proceso simple, transparente y sin sorpresas",
+        "method-subtitle": "Defino cada fase del proyecto con total claridad para que estés al corriente de todo.",
         
         "step-badge-1": "Paso 01",
         "step-badge-2": "Paso 02",
         "step-badge-3": "Paso 03",
         "step-badge-4": "Paso 04",
-        "step-reunion-title": "Café &amp; Ideas",
-        "step-reunion-desc": "Quedamos en tu negocio o en alguna cafetería de la Rambla de Badalona. Me cuentas qué haces, cómo es tu cliente y qué esperas de la web. De ahí salimos con un plan estructurado y un precio cerrado de antemano.",
+        "step-reunion-title": "Paso 1 · Café y Estrategia",
+        "step-reunion-desc": "Nos reunimos en tu negocio, en una cafetería de Badalona o realizamos una videollamada. Analizamos tus objetivos, tus servicios y tu competencia para definir una estrategia clara. Saldrás de la reunión con una idea concreta del proyecto y un presupuesto cerrado.",
         
-        "step-diseno-title": "El Boceto",
-        "step-diseno-desc": "Diseño una propuesta visual exclusiva para tu negocio. Nada de plantillas genéricas. Revisamos la disposición, los textos y los colores juntos, ajustando todo lo necesario hasta que digas: 'Esto es exactamente mi negocio'.",
+        "step-diseno-title": "Paso 2 · Diseño de la Web",
+        "step-diseno-desc": "Creo una propuesta visual exclusiva para tu negocio. Revisamos juntos la estructura, los colores y los contenidos hasta que reflejen exactamente la imagen que quieres transmitir. Nada de plantillas genéricas.",
         
-        "step-desarrollo-title": "El Código",
-        "step-desarrollo-desc": "Escribo el código de tu web a mano. Me aseguro de que cargue al instante en móviles y esté optimizada técnicamente para que Google empiece a indexarte y a mostrarte a tus vecinos de Badalona.",
+        "step-desarrollo-title": "Paso 3 · Desarrollo y Optimización",
+        "step-desarrollo-desc": "Programo tu página web utilizando tecnologías modernas. Optimizo la velocidad de carga, la experiencia de usuario y la estructura SEO para que Google pueda entender correctamente tu sitio.",
         
-        "step-publicacion-title": "El Despegue",
-        "step-publicacion-desc": "Lanzamos la web. Te configuro el dominio y el hosting más adecuado. Te explico en un vídeo de 5 minutos cómo hacer cambios sencillos por tu cuenta y activo las herramientas de analítica para que veas tus visitas.",
+        "step-publicacion-title": "Paso 4 · Publicación y Lanzamiento",
+        "step-publicacion-desc": "Publicamos la web y configuramos todo lo necesario: dominio, hosting, Google Analytics, Google Search Console y seguridad HTTPS. Además te explico cómo realizar cambios básicos para que tengas el control total.",
         
         "tech-js-title": "Javascript ES6+",
         "tech-js-desc": "Código interactivo a mano",
@@ -87,22 +109,61 @@ export const translations = {
         "tech-speed-desc": "Carga instantánea < 1s",
         
         // About
-        "about-decor": "Quién soy",
+        "about-decor": "Sobre Mí",
         "about-title": "Hola, soy Pol Alegre",
-        "about-lead": "Acabo de terminar mi formación técnica en desarrollo web y estoy listo para crear páginas web rápidas y de calidad. Sin rodeos, trato presencial y directo.",
-        "about-body-1": "Nací y vivo en Badalona (de los que cruzan el Pont del Petroli a pasear los domingos). Aunque acabo de finalizar mis estudios, llevo programando mis propios proyectos desde hace tiempo. Entiendo perfectamente lo difícil que es para un comercio de barrio destacar en internet, y por eso decidí ofrecer mis servicios de forma clara: precios cerrados, comunicación rápida y soporte de confianza.",
-        "about-body-2": "No uso plantillas genéricas de WordPress cargadas de complementos que tardan 10 segundos en cargar. Hago páginas web rápidas, limpias y estructuradas a mano con código moderno para que tus clientes te encuentren y te contacten de inmediato.",
+        "about-lead": "Soy desarrollador web freelance en Badalona y me dedico a crear páginas web profesionales para negocios que quieren mejorar su presencia online y atraer más clientes.",
+        "about-body-1": "Nací y vivo en Badalona. Conozco perfectamente la realidad de los negocios locales y las dificultades que muchos tienen para destacar en internet frente a la competencia. Por eso ofrezco un servicio sencillo, transparente y cercano.",
+        "about-body-2": "No utilizo plantillas pesadas ni soluciones genéricas llenas de complementos innecesarios. Desarrollo cada proyecto desde cero utilizando tecnologías modernas para conseguir páginas web rápidas, seguras y optimizadas para buscadores. Mi objetivo es que tengas una web que represente tu negocio de forma profesional y que te ayude a generar oportunidades reales.",
         
-        "about-val-title-1": "Al lado de tu negocio",
-        "about-val-desc-1": "Trabajo en el Centre, Gorg, Llefià, Bufalà... si pasa cualquier cosa, me acerco a tu local a solucionarlo.",
-        "about-val-title-2": "Cero plantillas prefabricadas",
-        "about-val-desc-2": "Diseño tu web desde un lienzo en blanco para que tu marca tenga una identidad real en internet.",
-        "about-val-title-3": "Trasparencia absoluta",
-        "about-val-desc-3": "Tú eres el propietario de todo. Te entrego los accesos de tu hosting y dominio desde el primer día.",
+        "about-val-title-1": "Cerca de tu negocio",
+        "about-val-desc-1": "Trabajo con empresas y profesionales de Badalona, Centre, Gorg, Bufalà, Llefià, Casagemes, Montigalà, La Salut y alrededores. Si lo prefieres podemos reunirnos presencialmente para hablar de tu proyecto.",
+        "about-val-title-2": "Diseño web a medida",
+        "about-val-desc-2": "Cada negocio es diferente. Por eso cada página web que desarrollo tiene una identidad propia y está diseñada específicamente para tu marca.",
+        "about-val-title-3": "Transparencia total",
+        "about-val-desc-3": "El dominio, el hosting y todos los accesos son tuyos desde el primer día. Sin permanencias ni dependencias.",
+        "about-skills-title": "Tecnologías",
         
         "editor-desc": "Desarrollador Web",
         "editor-loc": "Badalona, Barcelona",
         
+        // Target Audience
+        "target-title": "Diseño web en Badalona para empresas y autónomos",
+        "target-subtitle": "Si buscas un diseñador web en Badalona que pueda ayudarte a crear una página profesional y preparada para conseguir clientes, estás en el lugar adecuado. Trabajo con:",
+        "target-items": [
+            "Autónomos", "Comercios", "Restaurantes", "Clínicas", "Psicólogos",
+            "Fisioterapeutas", "Gestorías", "Abogados", "Arquitectos",
+            "Empresas de reformas", "Electricistas", "Empresas de servicios"
+        ],
+        "target-conclusion": "Cada proyecto está diseñado para mejorar la visibilidad online del negocio y convertir visitas en oportunidades reales.",
+
+        // SEO Optimized
+        "seo-title": "Páginas web optimizadas para Google",
+        "seo-subtitle": "Todas las webs que desarrollo incluyen una base sólida de SEO técnico. El objetivo es crear una página web que no solo se vea bien, sino que también tenga posibilidades reales de posicionarse en Google.",
+        "seo-bullets": [
+            "Velocidad optimizada",
+            "Diseño responsive",
+            "Estructura SEO profesional",
+            "Optimización de imágenes",
+            "URLs amigables",
+            "Configuración de Google Search Console",
+            "Configuración de Google Analytics",
+            "Preparación para SEO Local",
+            "Buenas prácticas Core Web Vitals"
+        ],
+
+        // FAQ
+        "faq-title": "Preguntas Frecuentes",
+        "faq-q1": "¿Cuánto cuesta una página web en Badalona?",
+        "faq-a1": "Las landing pages comienzan desde 350€ y las páginas corporativas desde 500€.",
+        "faq-q2": "¿Cuánto tarda el proyecto?",
+        "faq-a2": "La mayoría de webs se completan entre una y tres semanas.",
+        "faq-q3": "¿Incluyes SEO?",
+        "faq-a3": "Sí. Todas las páginas se entregan optimizadas técnicamente para facilitar su posicionamiento.",
+        "faq-q4": "¿Podré editar el contenido?",
+        "faq-a4": "Sí. Tendrás acceso completo para modificar textos, imágenes y contenidos.",
+        "faq-q5": "¿Trabajas solo en Badalona?",
+        "faq-a5": "No. También colaboro con empresas de Barcelona, Santa Coloma, Sant Adrià, Montgat y Tiana.",
+
         // Portfolio
         "portfolio-decor": "Casos de ejemplo",
         "portfolio-title": "Conceptos reales para Badalona",
@@ -128,8 +189,8 @@ export const translations = {
         
         // Contact
         "contact-decor": "Contacto",
-        "contact-title": "¿Hablamos de tu web?",
-        "contact-desc": "Cuéntame qué negocio tienes y qué necesitas conseguir. Te responderé en menos de 24 horas y, si quieres, quedamos para tomar un café por Badalona.",
+        "contact-title": "Hablemos de tu proyecto",
+        "contact-desc": "¿Necesitas una página web profesional para tu negocio? Cuéntame qué necesitas y te prepararé una propuesta clara, sin compromiso y adaptada a tus objetivos.",
         
         "contact-method-email": "Escríbeme por email",
         "contact-method-wa": "Escríbeme por WhatsApp",
@@ -143,7 +204,7 @@ export const translations = {
         "form-placeholder-phone": "Ej. 612 345 678",
         "form-label-msg": "¿Qué tienes en mente para la web?",
         "form-placeholder-msg": "Cuéntame brevemente qué tipo de negocio tienes y tus ideas principales...",
-        "form-btn-submit": "Enviar consulta",
+        "form-btn-submit": "Solicitar presupuesto",
         
         "error-name": "Dime cómo te llamas o el nombre de tu negocio.",
         "error-email": "Introduce un correo electrónico correcto para que te responda.",
@@ -158,7 +219,8 @@ export const translations = {
         "footer-links-title": "Enlaces",
         "footer-contact-title": "Contacto",
         "footer-made-by": "Hecho a mano en Badalona",
-        "footer-rights": "&copy; 2026 Pol Alegre Martinez. Todos los derechos reservados."
+        "footer-rights": "&copy; 2026 Pol Alegre Martinez. Todos los derechos reservados.",
+        "footer-seo": "Diseñador web en Badalona especializado en diseño web profesional, desarrollo web a medida, SEO local, posicionamiento web y mantenimiento de páginas web. Ayudo a autónomos, comercios y empresas de Badalona a conseguir más visibilidad online mediante páginas web rápidas, modernas y optimizadas para Google."
     },
     ca: {
         // Navbar
@@ -169,69 +231,91 @@ export const translations = {
         "nav-contacto": "Parlem",
         
         // Hero Section
-        "hero-badge": "Pàgines web fetes a mà &middot; Badalona",
-        "hero-title": "Dissenyo i programo webs per a negocis de <span class=\"gradient-text\">Badalona</span>. Sense embuts.",
-        "hero-subtitle": "Sóc en Pol Alegre. Ajudo a comerços, despatxos i professionals locals a aconseguir clients a internet amb una web ràpida, clara i que funciona. Quedem, ens prenem un cafè i ho planifiquem.",
-        "btn-hero-contacto": "Parlem de la teva web",
-        "btn-hero-proceso": "El meu procés",
-        
-        // Features
-        "feat-local-title": "Tracte de tu a tu",
-        "feat-local-desc": "Quedem al teu local per parlar del projecte. Sense intermediaris, sense emails freds, sense esperes.",
-        "feat-performance-title": "Codi ultra-ràpid",
-        "feat-performance-desc": "Faig webs netes que carreguen en menys d'un segon. Google les adora i els teus clients no es desesperen.",
-        "feat-trust-title": "Propietat total",
-        "feat-trust-desc": "La web, el domini i el fòsting són teus. Pressupostos tancats per endavant, sense quotes obligatòries.",
+        "hero-badge": "DISSENYADOR WEB A BADALONA",
+        "hero-title": "Pàgines web ràpides, professionals i preparades per aconseguir clients",
+        "hero-subtitle": "Sóc en Pol Alegre, dissenyador i desenvolupador web a Badalona. Ajudo a autònoms, comerços, clíniques, despatxos i petites empreses a aconseguir més clients gràcies a pàgines web modernes, ràpides i optimitzades per a Google. Cada projecte està desenvolupat a mida, sense plantilles genèriques i amb un objectiu clar: que el teu negoci destaqui a internet i converteixi visites en contactes reals.",
+        "hero-bullets": [
+            "Disseny web personalitzat",
+            "Optimització SEO Local",
+            "Adaptació completa per a mòbils",
+            "Velocitat de càrrega optimitzada",
+            "Suport proper i directe"
+        ],
+        "btn-hero-contacto": "Parlem del teu projecte",
+        "btn-hero-proceso": "Com treballo",
         
         // Services
         "services-decor": "Serveis",
-        "services-title": "Què necessites?",
+        "services-title": "Serveis de Disseny Web a Badalona",
         "services-subtitle": "Tres formes clares d'ajudar-te a tenir una presència professional a internet, explicades de manera senzilla.",
         
-        "service-price-landing": "350€",
-        "service-title-landing": "Pàgina d'Aterratge (Landing)",
-        "service-desc-landing": "Una sola pàgina estructurada de principi a fi per a un únic objectiu: presentar el teu servei estrella i fer que et truquin o et enviïn un WhatsApp.",
-        "service-bullet-landing-1": "Adaptada perfectament a telèfons mòbils",
-        "service-bullet-landing-2": "Formulari de contacte ràpid i enllaç directe a WhatsApp",
-        "service-bullet-landing-3": "Ideal per a campanyes o serveis molt concrets",
-        "service-link-landing": "Parlem sobre la teva landing",
+        "service-price-landing": "Des de 350€",
+        "service-title-landing": "Landing Page Professional",
+        "service-desc-landing": "Una pàgina dissenyada per promocionar un servei específic i convertir visitants en clients. Ideal per a campanyes publicitàries, professionals independents o negocis que volen captar contactes ràpidament.",
+        "service-bullets-landing": [
+            "Disseny personalitzat",
+            "Adaptació mòbil",
+            "Formulari de contacte",
+            "Botó directe de WhatsApp",
+            "Optimització SEO bàsica",
+            "Alta velocitat de càrrega"
+        ],
+        "service-link-landing": "Parlem de la teva landing",
         
         "service-price-corporate": "Des de 500€",
-        "service-title-corporate": "Web Completa",
-        "service-desc-corporate": "El lloc web clàssic per al teu despatx, clínica o comerç. Diverses seccions (Inici, Qui som, Serveis, Blog) per transmetre total confiança als teus clients.",
-        "service-bullet-corporate-1": "Seccions il·limitades i adaptades a la teva marca",
-        "service-bullet-corporate-2": "SEO On-Page perquè els teus veïns et trobin a Google",
-        "service-bullet-corporate-3": "Gestor de contingut perquè puguis editar textos tu mateix",
+        "service-title-corporate": "Pàgina Web Corporativa",
+        "service-desc-corporate": "La solució ideal per a empreses, clíniques, despatxos i comerços. Una pàgina professional que transmet confiança i ajuda a posicionar el teu negoci a Google.",
+        "service-bullets-corporate": [
+            "Inici",
+            "Sobre Nosaltres",
+            "Serveis",
+            "Contacte",
+            "Blog",
+            "SEO On Page",
+            "Optimització de velocitat",
+            "Disseny responsive",
+            "Panell de gestió"
+        ],
         "service-link-corporate": "Parlem sobre la teva web",
         
         "service-price-maint": "Des de 49€/mes",
-        "service-title-maint": "Manteniment i SEO Local",
-        "service-desc-maint": "Perquè t'oblidis de la part tècnica. Em cargo que la teva web estigui actualitzada i segura, a més d'optimitzar la teva fitxa de Google Maps perquè destaquis a Badalona.",
-        "service-bullet-maint-1": "Còpies de seguretat setmanals i actualitzacions de seguretat",
-        "service-bullet-maint-2": "Suport ràpid per a petits canvis (fotos, horaris, textos)",
-        "service-bullet-maint-3": "Optimització SEO per a cerques locals a la teva zona",
+        "service-title-maint": "Mantenimiento Web y SEO Local",
+        "service-desc-maint": "Perquè no t'hagis de preocupar per la part tècnica. Mantinc la teva web actualitzada, segura i optimitzada per millorar la seva visibilitat a Google.",
+        "service-bullets-maint": [
+            "Actualitzacions periòdiques",
+            "Còpies de seguretat",
+            "Suport tècnic",
+            "Canvis de contingut",
+            "Optimització SEO Local",
+            "Gestió de Google Business Profile"
+        ],
         "service-link-maint": "Pregunta'm sobre suport",
         
+        // Why Choose Me
+        "why-title": "Un desenvolupador web local que entén el teu negoci",
+        "why-body-1": "A diferència de moltes agències, tracto directament amb tu durant tot el projecte. Conec el mercat local de Badalona i sé com busquen els clients serveis i negocis a internet.",
+        "why-body-2": "El meu objectiu no és simplement crear una pàgina bonica. El meu objectiu és ajudar-te a generar més oportunitats de negoci.",
+        
         // Methodology
-        "method-decor": "Metodologia",
-        "method-title": "Pas a pas, sense embolics",
-        "method-subtitle": "Així és com treballo amb tu per portar el teu negoci a internet.",
+        "method-decor": "Com treballo",
+        "method-title": "Un procés simple, transparent i sense sorpreses",
+        "method-subtitle": "Defino cada fase del projecte amb total claredat perquè estiguis al corrent de tot.",
         
         "step-badge-1": "Pas 01",
         "step-badge-2": "Pas 02",
         "step-badge-3": "Pas 03",
         "step-badge-4": "Pas 04",
-        "step-reunion-title": "Cafè &amp; Idees",
-        "step-reunion-desc": "Quedem al teu negoci o en alguna cafeteria de la Rambla de Badalona. Em comptes què fas, com és el teu client i què esperes de la web. D'allà sortim amb un pla estructurat i un preu tancat per endavant.",
+        "step-reunion-title": "Pas 1 · Cafè i Estratègia",
+        "step-reunion-desc": "Ens reunim al teu negoci, en una cafeteria de Badalona o fem una trucada de vídeo. Analitzem els teus objectius, els teus serveis i la teva competència per definir una estratègia clara. Sortiràs de la reunió amb una idea concreta del projecte i un pressupost tancat.",
         
-        "step-diseno-title": "L'Esbós",
-        "step-diseno-desc": "Dissenyo una proposta visual exclusiva per al teu negoci. Gens de plantilles genèriques. Revisem la disposició, els textos i els colors junts, ajustant tot el necessari fins que diguis: 'Això és exactament el meu negoci'.",
+        "step-diseno-title": "Pas 2 · Disseny de la Web",
+        "step-diseno-desc": "Creo una proposta visual exclusiva per al teu negoci. Revisem junts l'estructura, els colors i els continguts fins que reflecteixin exactament la imatge que vols transmetre. Gens de plantilles genèriques.",
         
-        "step-desarrollo-title": "El Codi",
-        "step-desarrollo-desc": "Escric el codi de la teva web a mà. M'asseguro que carregui a l'instant en mòbils i estigui optimitzada tècnicament perquè Google comenci a indexar-te i a mostrar-te als teus veïns de Badalona.",
+        "step-desarrollo-title": "Pas 3 · Desenvolupament i Optimització",
+        "step-desarrollo-desc": "Programo la teva pàgina web utilitzant tecnologies modernes. Optimitzo la velocitat de càrrega, l'experiència d'usuari i l'estructura SEO perquè Google pugui entendre correctament el teu lloc.",
         
-        "step-publicacion-title": "L'Enlairament",
-        "step-publicacion-desc": "Llancem la web. Et configuro el domini i el fòsting més adequat. Et explico en un vídeo de 5 minuts com fer canvis senzills pel teu compte i activo les eines d'analítica perquè vegis les teves visites.",
+        "step-publicacion-title": "Pas 4 · Publicació i Llançament",
+        "step-publicacion-desc": "Publiquem la web i configurem tot el necessari: domini, allotjament, Google Analytics, Google Search Console i seguretat HTTPS. A més, t'explico com fer canvis bàsics perquè tinguis el control total.",
         
         "tech-js-title": "Javascript ES6+",
         "tech-js-desc": "Codi interactiu a mà",
@@ -243,22 +327,61 @@ export const translations = {
         "tech-speed-desc": "Càrrega instantània < 1s",
         
         // About
-        "about-decor": "Qui sóc",
+        "about-decor": "Sobre mi",
         "about-title": "Hola, sóc en Pol Alegre",
-        "about-lead": "Acabo d'acabar la meva formació tècnica en desenvolupament web i estic llest per crear pàgines web ràpides i de qualitat. Sense embuts, tracte presencial i directe.",
-        "about-body-1": "Vaig néixer i visc a Badalona (dels que creuen el Pont del Petroli a passejar els diumenges). Encara que acabo de finalitzar els meus estudis, fa temps que programo els meus propis projectes. Entenc perfectament el difícil que és per a un comerç de barri destacar a internet, i per això vaig decidir oferir els meus serveis de forma clara: preus tancats, comunicació ràpida i suport de confiança.",
-        "about-body-2": "No utilitzo plantilles genèriques de WordPress carregades d'afegits que triguen 10 segons a carregar. Faig pàgines web ràpides, netes i estructurades a mà amb codi modern perquè els teus clients et trobin i et contactin d'immediat.",
+        "about-lead": "Sóc desenvolupador web freelance a Badalona i em dedico a crear pàgines web professionals per a negocis que volen millorar la seva presència online i atreure més clients.",
+        "about-body-1": "Vaig néixer i visc a Badalona. Conec perfectament la realitat dels negocis locals i les dificultats que molts tenen per destacar a internet davant de la competència. Per això ofreixo un servei senzill, transparent i proper.",
+        "about-body-2": "No utilitzo plantilles pesades ni solucions genèriques plenes de complements innecessaris. Desenvolupo cada projecte des de zero utilitzant tecnologies modernes per aconseguir pàgines web ràpides, segures i optimitzades per a cercadors. El meu objectiu és que tinguis una web que representi el teu negoci de forma professional i que t'ajudi a generar oportunitats reals.",
         
-        "about-val-title-1": "Al costat del teu negoci",
-        "about-val-desc-1": "Treballo al Centre, Gorg, Llefià, Bufalà... si passa qualsevol cosa, m'apropo al teu local a solucionar-ho.",
-        "about-val-title-2": "Zero plantilles prefabricades",
-        "about-val-desc-2": "Dissenyo la teva web des d'un llenç en blanc perquè la teva marca tingui una identitat real a internet.",
-        "about-val-title-3": "Transparència absoluta",
-        "about-val-desc-3": "Tu ets el propietari de tot. Et lliuro els accessos del teu fòsting i domini des del primer dia.",
+        "about-val-title-1": "A prop del teu negoci",
+        "about-val-desc-1": "Treballo amb empreses i professionals de Badalona, Centre, Gorg, Bufalà, Llefià, Casagemes, Montigalà, La Salut i voltants. Si ho prefereixes, ens podem reunir presencialment per parlar del teu projecte.",
+        "about-val-title-2": "Disseny web a mida",
+        "about-val-desc-2": "Cada negoci és diferent. Per això cada pàgina web que desenvolupo té una identitat pròpia i està dissenyada específicament per a la teva marca.",
+        "about-val-title-3": "Transparència total",
+        "about-val-desc-3": "El domini, l'allotjament i tots els accessos són teus des del primer dia. Sense permanències ni dependències.",
+        "about-skills-title": "Tecnologies",
         
         "editor-desc": "Desenvolupador Web",
         "editor-loc": "Badalona, Barcelona",
         
+        // Target Audience
+        "target-title": "Disseny web a Badalona per a empreses i autònoms",
+        "target-subtitle": "Si busques un dissenyador web a Badalona que pugui ajudar-te a crear una pàgina professional i preparada per aconseguir clients, estàs al lloc adequat. Treballo amb:",
+        "target-items": [
+            "Autònoms", "Comerços", "Restaurants", "Clíniques", "Psicòlegs",
+            "Fisioterapeutes", "Gestories", "Advocats", "Arquitectes",
+            "Empreses de reformes", "Electricistes", "Empreses de serveis"
+        ],
+        "target-conclusion": "Cada projecte està dissenyat per millorar la visibilitat online del negoci i convertir visites en oportunitats reals.",
+
+        // SEO Optimized
+        "seo-title": "Pàgines web optimitzades per a Google",
+        "seo-subtitle": "Totes les webs que desenvolupo inclouen una base sòlida de SEO tècnic. L'objectiu és crear una pàgina web que no només es vegi bé, sinó que també tingui possibilitats reals de posicionar-se a Google.",
+        "seo-bullets": [
+            "Velocitat optimitzada",
+            "Disseny responsive",
+            "Estructura SEO professional",
+            "Optimització d'imatges",
+            "URLs amigables",
+            "Configuració de Google Search Console",
+            "Configuració de Google Analytics",
+            "Preparació per a SEO Local",
+            "Bones pràctiques Core Web Vitals"
+        ],
+
+        // FAQ
+        "faq-title": "Preguntes Freqüents",
+        "faq-q1": "Quant costa una pàgina web a Badalona?",
+        "faq-a1": "Les landing pages comencen des de 350€ i les pàgines corporatives des de 500€.",
+        "faq-q2": "Quant triga el projecte?",
+        "faq-a2": "La majoria de webs es completen entre una i tres setmanes.",
+        "faq-q3": "Enllesteixes SEO?",
+        "faq-a3": "Sí. Totes les pàgines s'entreguen optimitzades tècnicament per facilitar el seu posicionament.",
+        "faq-q4": "Podré editar el contingut?",
+        "faq-a4": "Sí. Tindràs accés complet per modificar textos, imatges i continguts.",
+        "faq-q5": "Treballes només a Badalona?",
+        "faq-a5": "No. També col·laboro amb empreses de Barcelona, Santa Coloma, Sant Adrià, Montgat i Tiana.",
+
         // Portfolio
         "portfolio-decor": "Casos d'exemple",
         "portfolio-title": "Conceptes reals per a Badalona",
@@ -284,8 +407,8 @@ export const translations = {
         
         // Contact
         "contact-decor": "Contacte",
-        "contact-title": "Parlem de la teva web?",
-        "contact-desc": "Explica'm quin negoci tens i què necessites aconseguir. Et respondré en menys de 24 hores i, si vols, quedem per prendre un cafè per Badalona.",
+        "contact-title": "Parlem del teu projecte",
+        "contact-desc": "Necessites una pàgina web professional per al teu negoci? Explica'm què necessites i et prepararé una proposta clara, sense compromís i adaptada als teus objectius.",
         
         "contact-method-email": "Escriu-me per email",
         "contact-method-wa": "Escriu-me per WhatsApp",
@@ -299,7 +422,7 @@ export const translations = {
         "form-placeholder-phone": "Ex. 612 345 678",
         "form-label-msg": "Què tens al cap per a la web?",
         "form-placeholder-msg": "Explica'm breument quin tipus de negoci tens i les teves idees principals...",
-        "form-btn-submit": "Enviar consulta",
+        "form-btn-submit": "Sol·licitar pressupost",
         
         "error-name": "Digue'm com et dius o el nom del teu negoci.",
         "error-email": "Introdueix un correu electrònic correcte perquè et respongui.",
@@ -314,7 +437,8 @@ export const translations = {
         "footer-links-title": "Enllaços",
         "footer-contact-title": "Contacte",
         "footer-made-by": "Fet a mà a Badalona",
-        "footer-rights": "&copy; 2026 Pol Alegre Martinez. Tots els drets reservats."
+        "footer-rights": "&copy; 2026 Pol Alegre Martinez. Tots els drets reservats.",
+        "footer-seo": "Dissenyador web a Badalona especialitzat en disseny web professional, desenvolupament web a mida, SEO local, posicionament web i manteniment de pàgines web. Ajudo a autònoms, comerços i empreses de Badalona a aconseguir més visibilitat online mitjançant pàgines web ràpides, modernes i optimitzades per a Google."
     },
     en: {
         // Navbar
@@ -325,69 +449,92 @@ export const translations = {
         "nav-contacto": "Let's talk",
         
         // Hero Section
-        "hero-badge": "Handcrafted websites &middot; Badalona",
-        "hero-title": "I design and build websites for local businesses in <span class=\"gradient-text\">Badalona</span>. Straight up.",
-        "hero-subtitle": "I'm Pol Alegre. I help local shops, offices, and professionals win online customers with clean, ultra-fast websites that deliver. We meet, have a coffee, and sketch the plan.",
-        "btn-hero-contacto": "Let's discuss your web",
-        "btn-hero-proceso": "My process",
-        
-        // Features
-        "feat-local-title": "One-on-one support",
-        "feat-local-desc": "We meet directly at your shop. No account managers, no cold emails, no agency delays.",
-        "feat-performance-title": "Ultra-fast code",
-        "feat-performance-desc": "I build lightweight sites that load in under a second. Google loves it, and your clients stay.",
-        "feat-trust-title": "100% Ownership",
-        "feat-trust-desc": "The website, domain, and hosting are yours. Flat upfront pricing, zero mandatory monthly fees.",
+        "hero-badge": "WEB DESIGNER IN BADALONA",
+        "hero-title": "Fast, professional websites geared to win clients",
+        "hero-subtitle": "I'm Pol Alegre, a web designer and developer in Badalona. I help freelancers, shops, clinics, offices, and small businesses attract more clients through modern, fast, Google-optimized websites. Every project is custom-developed without generic templates and has a clear goal: to make your business stand out online and convert visits into real contacts.",
+        "hero-bullets": [
+            "Custom web design",
+            "Local SEO optimization",
+            "Full mobile responsiveness",
+            "Optimized loading speed",
+            "Close and direct support"
+        ],
+        "btn-hero-contacto": "Let's discuss your project",
+        "btn-hero-proceso": "How I work",
         
         // Services
         "services-decor": "Services",
-        "services-title": "How can I help you?",
+        "services-title": "Web Design Services in Badalona",
         "services-subtitle": "Three clear ways to establish a professional presence on the web, explained simply.",
         
-        "service-price-landing": "€350",
-        "service-title-landing": "Landing Page",
-        "service-desc-landing": "A single-page website structured from top to bottom with one single goal: showcase your star service and get clients calling or sending a WhatsApp.",
-        "service-bullet-landing-1": "Fully optimized for mobile phones",
-        "service-bullet-landing-2": "Quick contact form and direct WhatsApp links",
-        "service-bullet-landing-3": "Perfect for specific campaigns or single services",
-        "service-link-landing": "Let's discuss your landing page",
+        "service-price-landing": "From €350",
+        "service-title-landing": "Professional Landing Page",
+        "service-desc-landing": "A single-page website designed to promote a specific service and convert visitors into customers. Perfect for ad campaigns, independent professionals, or businesses looking to capture contacts quickly.",
+        "service-bullets-landing": [
+            "Custom design",
+            "Mobile responsive",
+            "Contact form",
+            "Direct WhatsApp button",
+            "Basic SEO optimization",
+            "High loading speed"
+        ],
+        "service-link-landing": "Let's talk about your landing page",
         
         "service-price-corporate": "From €500",
-        "service-title-corporate": "Full Website",
-        "service-desc-corporate": "The classic multi-page site for clinics, local offices, or retail. Multiple pages (Home, About, Services, Blog) to build total trust with your customers.",
-        "service-bullet-corporate-1": "Unlimited pages tailored to your brand identity",
-        "service-bullet-corporate-2": "On-Page SEO so local neighbors find you on Google",
-        "service-bullet-corporate-3": "Easy-to-use editor so you can update text yourself",
-        "service-link-corporate": "Let's discuss your website",
+        "service-title-corporate": "Corporate Website",
+        "service-desc-corporate": "The ideal solution for companies, clinics, offices, and retail. A professional page that builds trust and helps position your business on Google.",
+        "service-bullets-corporate": [
+            "Home",
+            "About Us",
+            "Services",
+            "Contact",
+            "Blog",
+            "On-Page SEO",
+            "Speed optimization",
+            "Responsive design",
+            "Admin management panel"
+        ],
+        "service-link-corporate": "Let's talk about your website",
         
         "service-price-maint": "From €49/mo",
-        "service-title-maint": "Support & Local SEO",
-        "service-desc-maint": "Forget about hosting, bugs, or updates. I keep your web secure and fast, and optimize your Google Maps profile so you stand out in Badalona searches.",
-        "service-bullet-maint-1": "Weekly secure backups and platform patches",
-        "service-bullet-maint-2": "Fast support response for content updates (hours, photos, texts)",
-        "service-bullet-maint-3": "SEO improvements for local searches in your neighborhood",
-        "service-link-maint": "Ask me about maintenance",
+        "service-title-maint": "Web Maintenance & Local SEO",
+        "service-desc-maint": "So you don't have to worry about the technical details. I keep your website updated, secure, and optimized to improve its visibility on Google.",
+        "service-price-maint": "From €49/month",
+        "service-bullets-maint": [
+            "Periodic updates",
+            "Backups",
+            "Technical support",
+            "Content changes",
+            "Local SEO optimization",
+            "Google Business Profile management"
+        ],
+        "service-link-maint": "Ask me about support",
+        
+        // Why Choose Me
+        "why-title": "A local web developer who understands your business",
+        "why-body-1": "Unlike many agencies, you deal directly with me throughout the entire project. I know the local Badalona market and understand how clients search for services and businesses online.",
+        "why-body-2": "My goal is not just to build a beautiful page. My goal is to help you generate more business opportunities.",
         
         // Methodology
-        "method-decor": "Methodology",
-        "method-title": "Step by step, no fuss",
-        "method-subtitle": "This is how we work together to bring your local business online.",
+        "method-decor": "How I work",
+        "method-title": "A simple, transparent process with no surprises",
+        "method-subtitle": "I define each phase of the project with absolute clarity so you stay informed.",
         
         "step-badge-1": "Step 01",
         "step-badge-2": "Step 02",
         "step-badge-3": "Step 03",
         "step-badge-4": "Step 04",
-        "step-reunion-title": "Coffee &amp; Ideas",
-        "step-reunion-desc": "We meet at your business or a cozy coffee shop at the Rambla de Badalona. You tell me what you do, who your clients are, and your goals. We leave with a clear plan and a fixed budget.",
+        "step-reunion-title": "Step 1 · Coffee and Strategy",
+        "step-reunion-desc": "We meet at your business, at a coffee shop in Badalona, or hold a video call. We analyze your goals, your services, and your competitors to define a clear strategy. You'll leave the meeting with a concrete project plan and a flat, upfront budget.",
         
-        "step-diseno-title": "The Sketch",
-        "step-diseno-desc": "I design a unique visual mockup for your business from scratch. No cheap generic templates. We review layouts, texts, and colors together, adjusting everything until you love it.",
+        "step-diseno-title": "Step 2 · Web Design",
+        "step-diseno-desc": "I design a visual proposal exclusively for your business. We review layouts, colors, and content together until they reflect exactly the image you want to project. No generic templates.",
         
-        "step-desarrollo-title": "The Code",
-        "step-desarrollo-desc": "I write your website code by hand. I make sure it loads instantly on mobile devices and is technically optimized so Google starts placing you above local competition.",
+        "step-desarrollo-title": "Step 3 · Development & Optimization",
+        "step-desarrollo-desc": "I code your website using modern technologies. I optimize loading speed, user experience, and SEO structure so Google can crawl and understand your site properly.",
         
-        "step-publicacion-title": "The Launch",
-        "step-publicacion-desc": "We launch the site. I hook up your domain and high-speed hosting. I explain in a quick 5-minute video how to edit text easily, and activate analytics tracking.",
+        "step-publicacion-title": "Step 4 · Publication & Launch",
+        "step-publicacion-desc": "We publish the website and set up everything: domain, hosting, Google Analytics, Google Search Console, and HTTPS security. I also explain how to make basic content changes so you have full control.",
         
         "tech-js-title": "Javascript ES6+",
         "tech-js-desc": "Handwritten dynamic code",
@@ -401,20 +548,59 @@ export const translations = {
         // About
         "about-decor": "About me",
         "about-title": "Hi, I'm Pol Alegre",
-        "about-lead": "I have just completed my technical web development training and I'm ready to build fast, high-quality websites. Straight up, face-to-face and direct.",
-        "about-body-1": "I was born and live in Badalona (one of those who walk along the Pont del Petroli on Sundays). Although I recently finished my studies, I have been building my own projects for quite some time. I understand how challenging it is for a neighborhood business to stand out online, which is why I offer clear services: flat pricing, fast response times, and trustworthy support.",
-        "about-body-2": "I don't use heavy, generic WordPress templates loaded with plugins that take 10 seconds to load. I hand-code clean, fast, and structured sites using modern technology so your clients can find and reach you instantly.",
+        "about-lead": "I am a freelance web developer in Badalona dedicated to building professional websites for businesses looking to enhance their online presence and attract more customers.",
+        "about-body-1": "I was born and live in Badalona. I understand the reality of local businesses and the challenges many face to stand out online against competitors. That's why I offer a simple, transparent, and personal service.",
+        "about-body-2": "I don't use bloated templates or generic solutions full of unnecessary plugins. I develop every project from scratch using modern technology to deliver fast, secure, search-engine-optimized websites. My goal is to give you a site that represents your business professionally and helps you generate real opportunities.",
         
-        "about-val-title-1": "Right next to your business",
-        "about-val-desc-1": "I cover Centre, Gorg, Llefià, Bufalà... if anything happens, I'm nearby to visit and fix it.",
-        "about-val-title-2": "No prefabricated templates",
-        "about-val-desc-2": "I design your site from a blank canvas to ensure your brand has an authentic online identity.",
-        "about-val-title-3": "100% transparency",
-        "about-val-desc-3": "You own everything. I deliver full access credentials to your hosting and domain from day one.",
+        "about-val-title-1": "Close to your business",
+        "about-val-desc-1": "I work with companies and professionals in Badalona, Centre, Gorg, Bufalà, Llefià, Casagemes, Montigalà, La Salut, and nearby areas. If you prefer, we can meet face-to-face to talk about your project.",
+        "about-val-title-2": "Custom web design",
+        "about-val-desc-2": "Every business is different. That's why each website I develop has its own identity and is designed specifically for your brand.",
+        "about-val-title-3": "Total transparency",
+        "about-val-desc-3": "The domain, hosting, and all login credentials are yours from day one. No lock-ins or dependencies.",
+        "about-skills-title": "Technologies",
         
         "editor-desc": "Web Developer",
         "editor-loc": "Badalona, Barcelona",
         
+        // Target Audience
+        "target-title": "Web design in Badalona for companies and freelancers",
+        "target-subtitle": "If you are looking for a web designer in Badalona who can help you build a professional, client-ready website, you are in the right place. I work with:",
+        "target-items": [
+            "Freelancers", "Shops", "Restaurants", "Clinics", "Psychologists",
+            "Physiotherapists", "Accountants", "Lawyers", "Architects",
+            "Renovation businesses", "Electricians", "Service companies"
+        ],
+        "target-conclusion": "Each project is designed to improve your business's online visibility and convert visits into real opportunities.",
+
+        // SEO Optimized
+        "seo-title": "Google-optimized websites",
+        "seo-subtitle": "All websites I develop include a solid foundation of technical SEO. The goal is to build a website that not only looks good, but also has real chances of ranking on Google.",
+        "seo-bullets": [
+            "Optimized speed",
+            "Responsive design",
+            "Professional SEO structure",
+            "Image optimization",
+            "Friendly URLs",
+            "Google Search Console configuration",
+            "Google Analytics configuration",
+            "Local SEO readiness",
+            "Core Web Vitals best practices"
+        ],
+
+        // FAQ
+        "faq-title": "Frequently Asked Questions",
+        "faq-q1": "How much does a website in Badalona cost?",
+        "faq-a1": "Landing pages start from €350 and corporate websites from €500.",
+        "faq-q2": "How long does the project take?",
+        "faq-a2": "Most websites are completed within one to three weeks.",
+        "faq-q3": "Do you include SEO?",
+        "faq-a3": "Yes. All websites are delivered technically optimized to facilitate search engine positioning.",
+        "faq-q4": "Will I be able to edit the content?",
+        "faq-a4": "Yes. You will have full access to modify text, images, and content.",
+        "faq-q5": "Do you work only in Badalona?",
+        "faq-a5": "No. I also collaborate with businesses in Barcelona, Santa Coloma, Sant Adrià, Montgat, and Tiana.",
+
         // Portfolio
         "portfolio-decor": "Concept cases",
         "portfolio-title": "Real concepts for Badalona",
@@ -440,8 +626,8 @@ export const translations = {
         
         // Contact
         "contact-decor": "Contact",
-        "contact-title": "Let's discuss your website",
-        "contact-desc": "Tell me about your business and goals. I'll reply in less than 24 hours, and if you want, we can meet for coffee around Badalona.",
+        "contact-title": "Let's talk about your project",
+        "contact-desc": "Do you need a professional website for your business? Tell me what you need and I will prepare a clear proposal, with no obligation, tailored to your goals.",
         
         "contact-method-email": "Send me an email",
         "contact-method-wa": "Write me on WhatsApp",
@@ -455,7 +641,7 @@ export const translations = {
         "form-placeholder-phone": "e.g. 612 345 678",
         "form-label-msg": "What do you have in mind?",
         "form-placeholder-msg": "Briefly tell me about your business type and main ideas...",
-        "form-btn-submit": "Send message",
+        "form-btn-submit": "Request quote",
         
         "error-name": "Please enter your name or business name.",
         "error-email": "Please enter a valid email address.",
@@ -470,6 +656,7 @@ export const translations = {
         "footer-links-title": "Links",
         "footer-contact-title": "Contact",
         "footer-made-by": "Handcrafted in Badalona",
-        "footer-rights": "&copy; 2026 Pol Alegre Martinez. All rights reserved."
+        "footer-rights": "&copy; 2026 Pol Alegre Martinez. All rights reserved.",
+        "footer-seo": "Web designer in Badalona specializing in professional web design, custom web development, local SEO, search engine optimization, and website maintenance. I help freelancers, shops, and businesses in Badalona get more online visibility through fast, modern, and Google-optimized websites."
     }
 };
