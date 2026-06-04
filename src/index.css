@@ -821,8 +821,8 @@ h1, h2, h3, h4 {
 /* Floating Popular Badge */
 .service-popular-badge {
     position: absolute;
-    top: -12px;
-    right: 24px;
+    top: 40px;
+    right: 32px;
     font-family: var(--font-body);
     font-size: 0.7rem;
     font-weight: 700;
