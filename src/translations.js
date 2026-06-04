@@ -83,20 +83,20 @@ export const translations = {
         "method-title": "Un proceso simple, transparente y sin sorpresas",
         "method-subtitle": "Defino cada fase del proyecto con total claridad para que estés al corriente de todo.",
         
-        "step-badge-1": "Paso 01",
-        "step-badge-2": "Paso 02",
-        "step-badge-3": "Paso 03",
-        "step-badge-4": "Paso 04",
-        "step-reunion-title": "Paso 1 · Café y Estrategia",
+        "step-badge-1": "01",
+        "step-badge-2": "02",
+        "step-badge-3": "03",
+        "step-badge-4": "04",
+        "step-reunion-title": "Café y Estrategia",
         "step-reunion-desc": "Nos reunimos en tu negocio, en una cafetería de Badalona o realizamos una videollamada. Analizamos tus objetivos, tus servicios y tu competencia para definir una estrategia clara. Saldrás de la reunión con una idea concreta del proyecto y un presupuesto cerrado.",
         
-        "step-diseno-title": "Paso 2 · Diseño de la Web",
+        "step-diseno-title": "Diseño de la Web",
         "step-diseno-desc": "Creo una propuesta visual exclusiva para tu negocio. Revisamos juntos la estructura, los colores y los contenidos hasta que reflejen exactamente la imagen que quieres transmitir. Nada de plantillas genéricas.",
         
-        "step-desarrollo-title": "Paso 3 · Desarrollo y Optimización",
+        "step-desarrollo-title": "Desarrollo y Optimización",
         "step-desarrollo-desc": "Programo tu página web utilizando tecnologías modernas. Optimizo la velocidad de carga, la experiencia de usuario y la estructura SEO para que Google pueda entender correctamente tu sitio.",
         
-        "step-publicacion-title": "Paso 4 · Publicación y Lanzamiento",
+        "step-publicacion-title": "Publicación y Lanzamiento",
         "step-publicacion-desc": "Publicamos la web y configuramos todo lo necesario: dominio, hosting, Google Analytics, Google Search Console y seguridad HTTPS. Además te explico cómo realizar cambios básicos para que tengas el control total.",
         
         "tech-js-title": "Javascript ES6+",
@@ -112,8 +112,8 @@ export const translations = {
         "about-decor": "Sobre Mí",
         "about-title": "Hola, soy Pol Alegre",
         "about-lead": "Soy desarrollador web freelance en Badalona y me dedico a crear páginas web profesionales para negocios que quieren mejorar su presencia online y atraer más clientes.",
-        "about-body-1": "Nací y vivo en Badalona. Conozco perfectamente la realidad de los negocios locales y las dificultades que muchos tienen para destacar en internet frente a la competencia. Por eso ofrezco un servicio sencillo, transparente y cercano.",
-        "about-body-2": "No utilizo plantillas pesadas ni soluciones genéricas llenas de complementos innecesarios. Desarrollo cada proyecto desde cero utilizando tecnologías modernas para conseguir páginas web rápidas, seguras y optimizadas para buscadores. Mi objetivo es que tengas una web que represente tu negocio de forma profesional y que te ayude a generar oportunidades reales.",
+        "about-body-1": "Nací y vivo en Badalona. A diferencia de las agencias tradicionales, trato directamente contigo durante todo el proyecto, garantizando un soporte cercano, transparente y sin intermediarios.",
+        "about-body-2": "No utilizo plantillas genéricas. Desarrollo cada página web a medida para que cargue en menos de un segundo, sea fácil de usar y esté optimizada para posicionar tu negocio en Google y atraer clientes locales.",
         
         "about-val-title-1": "Cerca de tu negocio",
         "about-val-desc-1": "Trabajo con empresas y profesionales de Badalona, Centre, Gorg, Bufalà, Llefià, Casagemes, Montigalà, La Salut y alrededores. Si lo prefieres podemos reunirnos presencialmente para hablar de tu proyecto.",
@@ -301,20 +301,20 @@ export const translations = {
         "method-title": "Un procés simple, transparent i sense sorpreses",
         "method-subtitle": "Defino cada fase del projecte amb total claredat perquè estiguis al corrent de tot.",
         
-        "step-badge-1": "Pas 01",
-        "step-badge-2": "Pas 02",
-        "step-badge-3": "Pas 03",
-        "step-badge-4": "Pas 04",
-        "step-reunion-title": "Pas 1 · Cafè i Estratègia",
+        "step-badge-1": "01",
+        "step-badge-2": "02",
+        "step-badge-3": "03",
+        "step-badge-4": "04",
+        "step-reunion-title": "Cafè i Estratègia",
         "step-reunion-desc": "Ens reunim al teu negoci, en una cafeteria de Badalona o fem una trucada de vídeo. Analitzem els teus objectius, els teus serveis i la teva competència per definir una estratègia clara. Sortiràs de la reunió amb una idea concreta del projecte i un pressupost tancat.",
         
-        "step-diseno-title": "Pas 2 · Disseny de la Web",
+        "step-diseno-title": "Disseny de la Web",
         "step-diseno-desc": "Creo una proposta visual exclusiva per al teu negoci. Revisem junts l'estructura, els colors i els continguts fins que reflecteixin exactament la imatge que vols transmetre. Gens de plantilles genèriques.",
         
-        "step-desarrollo-title": "Pas 3 · Desenvolupament i Optimització",
+        "step-desarrollo-title": "Desenvolupament i Optimització",
         "step-desarrollo-desc": "Programo la teva pàgina web utilitzant tecnologies modernes. Optimitzo la velocitat de càrrega, l'experiència d'usuari i l'estructura SEO perquè Google pugui entendre correctament el teu lloc.",
         
-        "step-publicacion-title": "Pas 4 · Publicació i Llançament",
+        "step-publicacion-title": "Publicació i Llançament",
         "step-publicacion-desc": "Publiquem la web i configurem tot el necessari: domini, allotjament, Google Analytics, Google Search Console i seguretat HTTPS. A més, t'explico com fer canvis bàsics perquè tinguis el control total.",
         
         "tech-js-title": "Javascript ES6+",
@@ -330,8 +330,8 @@ export const translations = {
         "about-decor": "Sobre mi",
         "about-title": "Hola, sóc en Pol Alegre",
         "about-lead": "Sóc desenvolupador web freelance a Badalona i em dedico a crear pàgines web professionals per a negocis que volen millorar la seva presència online i atreure més clients.",
-        "about-body-1": "Vaig néixer i visc a Badalona. Conec perfectament la realitat dels negocis locals i les dificultats que molts tenen per destacar a internet davant de la competència. Per això ofreixo un servei senzill, transparent i proper.",
-        "about-body-2": "No utilitzo plantilles pesades ni solucions genèriques plenes de complements innecessaris. Desenvolupo cada projecte des de zero utilitzant tecnologies modernes per aconseguir pàgines web ràpides, segures i optimitzades per a cercadors. El meu objectiu és que tinguis una web que representi el teu negoci de forma professional i que t'ajudi a generar oportunitats reals.",
+        "about-body-1": "Vaig néixer i visc a Badalona. A diferència de les agències tradicionals, tracto directament amb tu durant tot el projecte, garantint un suport proper, transparent i sense intermediaris.",
+        "about-body-2": "No utilitzo plantilles genèriques. Desenvolupo cada pàgina web a mida perquè carregui en menys d'un segon, sigui fàcil d'utilitzar i estigui optimitzada per posicionar el teu negoci a Google i atreure clients locals.",
         
         "about-val-title-1": "A prop del teu negoci",
         "about-val-desc-1": "Treballo amb empreses i professionals de Badalona, Centre, Gorg, Bufalà, Llefià, Casagemes, Montigalà, La Salut i voltants. Si ho prefereixes, ens podem reunir presencialment per parlar del teu projecte.",
@@ -520,20 +520,20 @@ export const translations = {
         "method-title": "A simple, transparent process with no surprises",
         "method-subtitle": "I define each phase of the project with absolute clarity so you stay informed.",
         
-        "step-badge-1": "Step 01",
-        "step-badge-2": "Step 02",
-        "step-badge-3": "Step 03",
-        "step-badge-4": "Step 04",
-        "step-reunion-title": "Step 1 · Coffee and Strategy",
+        "step-badge-1": "01",
+        "step-badge-2": "02",
+        "step-badge-3": "03",
+        "step-badge-4": "04",
+        "step-reunion-title": "Coffee and Strategy",
         "step-reunion-desc": "We meet at your business, at a coffee shop in Badalona, or hold a video call. We analyze your goals, your services, and your competitors to define a clear strategy. You'll leave the meeting with a concrete project plan and a flat, upfront budget.",
         
-        "step-diseno-title": "Step 2 · Web Design",
+        "step-diseno-title": "Web Design",
         "step-diseno-desc": "I design a visual proposal exclusively for your business. We review layouts, colors, and content together until they reflect exactly the image you want to project. No generic templates.",
         
-        "step-desarrollo-title": "Step 3 · Development & Optimization",
+        "step-desarrollo-title": "Development & Optimization",
         "step-desarrollo-desc": "I code your website using modern technologies. I optimize loading speed, user experience, and SEO structure so Google can crawl and understand your site properly.",
         
-        "step-publicacion-title": "Step 4 · Publication & Launch",
+        "step-publicacion-title": "Publication & Launch",
         "step-publicacion-desc": "We publish the website and set up everything: domain, hosting, Google Analytics, Google Search Console, and HTTPS security. I also explain how to make basic content changes so you have full control.",
         
         "tech-js-title": "Javascript ES6+",
@@ -549,8 +549,8 @@ export const translations = {
         "about-decor": "About me",
         "about-title": "Hi, I'm Pol Alegre",
         "about-lead": "I am a freelance web developer in Badalona dedicated to building professional websites for businesses looking to enhance their online presence and attract more customers.",
-        "about-body-1": "I was born and live in Badalona. I understand the reality of local businesses and the challenges many face to stand out online against competitors. That's why I offer a simple, transparent, and personal service.",
-        "about-body-2": "I don't use bloated templates or generic solutions full of unnecessary plugins. I develop every project from scratch using modern technology to deliver fast, secure, search-engine-optimized websites. My goal is to give you a site that represents your business professionally and helps you generate real opportunities.",
+        "about-body-1": "I was born and live in Badalona. Unlike traditional agencies, you deal directly with me throughout the entire project, ensuring close, transparent, and direct support without intermediaries.",
+        "about-body-2": "I don't use generic templates. I build every website custom from scratch so it loads in under a second, is easy to use, and is fully optimized to rank your business on Google and attract local clients.",
         
         "about-val-title-1": "Close to your business",
         "about-val-desc-1": "I work with companies and professionals in Badalona, Centre, Gorg, Bufalà, Llefià, Casagemes, Montigalà, La Salut, and nearby areas. If you prefer, we can meet face-to-face to talk about your project.",

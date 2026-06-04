@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Workflow from './components/Workflow';
 import About from './components/About';
-import WhyChooseMe from './components/WhyChooseMe';
 import TargetAudience from './components/TargetAudience';
 import SeoOptimized from './components/SeoOptimized';
 import Projects from './components/Projects';
@@ -46,7 +45,6 @@ function App() {
       <main>
         <Hero t={t} />
         <About t={t} />
-        <WhyChooseMe t={t} />
         <TargetAudience t={t} />
         <Services t={t} />
         <Workflow t={t} />
