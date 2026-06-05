@@ -10,10 +10,13 @@ import Projects from './components/Projects';
 import Faq from './components/Faq';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CookieConsent from './components/CookieConsent';
+import PrivacyModal from './components/PrivacyModal';
 import { translations } from './translations';
 
 function App() {
   const [lang, setLang] = useState('es');
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
 
   // Detect and set initial language preference
   useEffect(() => {
@@ -53,7 +56,9 @@ function App() {
         <Faq t={t} />
         <Contact lang={lang} t={t} />
       </main>
-      <Footer t={t} />
+      <Footer t={t} openPrivacyPolicy={() => setIsPrivacyModalOpen(true)} />
+      <CookieConsent t={t} openPrivacyPolicy={() => setIsPrivacyModalOpen(true)} />
+      <PrivacyModal isOpen={isPrivacyModalOpen} onClose={() => setIsPrivacyModalOpen(false)} t={t} />
     </>
   );
 }

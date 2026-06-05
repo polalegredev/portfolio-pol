@@ -1,6 +1,6 @@
 import { MapPin, Mail } from 'lucide-react';
 
-export default function Footer({ t }) {
+export default function Footer({ t, openPrivacyPolicy }) {
   return (
     <footer className="footer">
       <div className="container footer-container">
@@ -71,7 +71,10 @@ export default function Footer({ t }) {
 
       <div className="footer-bottom">
         <div className="container footer-bottom-container">
-          <p dangerouslySetInnerHTML={{ __html: t('footer-rights') }}></p>
+          <div className="footer-bottom-links" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center' }}>
+            <p dangerouslySetInnerHTML={{ __html: t('footer-rights') }} style={{ margin: 0 }}></p>
+            <button onClick={openPrivacyPolicy} style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: 'inherit', padding: 0, textDecoration: 'underline' }}>{t('privacy-link')}</button>
+          </div>
           <p>{t('footer-made-by')}</p>
         </div>
       </div>

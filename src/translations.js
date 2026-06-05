@@ -224,7 +224,17 @@ export const translations = {
         "footer-contact-title": "Contacto",
         "footer-made-by": "Hecho a mano en Badalona",
         "footer-rights": "&copy; 2026 Pol Alegre Martinez. Todos los derechos reservados.",
-        "footer-seo": "Diseñador web en Badalona especializado en diseño web profesional, desarrollo web a medida, SEO local, posicionamiento web y mantenimiento de páginas web. Ayudo a autónomos, comercios y empresas de Badalona a conseguir más visibilidad online mediante páginas web rápidas, modernas y optimizadas para Google."
+        "footer-seo": "Diseñador web en Badalona especializado en diseño web profesional, desarrollo web a medida, SEO local, posicionamiento web y mantenimiento de páginas web. Ayudo a autónomos, comercios y empresas de Badalona a conseguir más visibilidad online mediante páginas web rápidas, modernas y optimizadas para Google.",
+        
+        // Cookie Consent
+        "cookie-text": "Utilizamos cookies para mejorar tu experiencia, analizar el tráfico y personalizar el contenido. Puedes aceptar todas las cookies o gestionar tus preferencias.",
+        "cookie-accept": "Aceptar",
+        "cookie-reject": "Rechazar",
+
+        // Privacy Policy
+        "privacy-link": "Política de Privacidad",
+        "privacy-title": "Política de Privacidad",
+        "privacy-content": "En cumplimiento con el Reglamento General de Protección de Datos (RGPD) y la normativa aplicable, le informamos de que sus datos personales recabados a través de este sitio web (por ejemplo, a través de formularios de contacto) serán tratados de manera confidencial y con el único propósito de responder a sus consultas o proveer los servicios solicitados. No cedemos datos a terceros sin su consentimiento explícito, salvo obligación legal. Tiene derecho a acceder, rectificar, limitar y suprimir sus datos escribiéndonos un correo electrónico. Utilizamos cookies técnicas necesarias para el funcionamiento de la web y, si usted lo consiente, cookies analíticas para medir el tráfico."
     },
     ca: {
         // Navbar
@@ -446,7 +456,17 @@ export const translations = {
         "footer-contact-title": "Contacte",
         "footer-made-by": "Fet a mà a Badalona",
         "footer-rights": "&copy; 2026 Pol Alegre Martinez. Tots els drets reservats.",
-        "footer-seo": "Dissenyador web a Badalona especialitzat en disseny web professional, desenvolupament web a mida, SEO local, posicionament web i manteniment de pàgines web. Ajudo a autònoms, comerços i empreses de Badalona a aconseguir més visibilitat online mitjançant pàgines web ràpides, modernes i optimitzades per a Google."
+        "footer-seo": "Dissenyador web a Badalona especialitzat en disseny web professional, desenvolupament web a mida, SEO local, posicionament web i manteniment de pàgines web. Ajudo a autònoms, comerços i empreses de Badalona a aconseguir més visibilitat online mitjançant pàgines web ràpides, modernes i optimitzades per a Google.",
+
+        // Cookie Consent
+        "cookie-text": "Utilitzem cookies per millorar la teva experiència, analitzar el trànsit i personalitzar el contingut. Pots acceptar totes les cookies o gestionar les teves preferències.",
+        "cookie-accept": "Acceptar",
+        "cookie-reject": "Rebutjar",
+
+        // Privacy Policy
+        "privacy-link": "Política de Privacitat",
+        "privacy-title": "Política de Privacitat",
+        "privacy-content": "En compliment amb el Reglament General de Protecció de Dades (RGPD) i la normativa aplicable, l'informem que les seves dades personals recollides a través d'aquest lloc web (per exemple, a través de formularis de contacte) seran tractades de manera confidencial i amb l'únic propòsit de respondre a les seves consultes o proveir els serveis sol·licitats. No cedim dades a tercers sense el seu consentiment explícit, excepte obligació legal. Té dret a accedir, rectificar, limitar i suprimir les seves dades escrivint-nos un correu electrònic. Utilitzem cookies tècniques necessàries per al funcionament de la web i, si vostè ho consent, cookies analítiques per mesurar el trànsit."
     },
     en: {
         // Navbar
@@ -668,6 +688,16 @@ export const translations = {
         "footer-contact-title": "Contact",
         "footer-made-by": "Handcrafted in Badalona",
         "footer-rights": "&copy; 2026 Pol Alegre Martinez. All rights reserved.",
-        "footer-seo": "Web designer in Badalona specializing in professional web design, custom web development, local SEO, search engine optimization, and website maintenance. I help freelancers, shops, and businesses in Badalona get more online visibility through fast, modern, and Google-optimized websites."
+        "footer-seo": "Web designer in Badalona specializing in professional web design, custom web development, local SEO, search engine optimization, and website maintenance. I help freelancers, shops, and businesses in Badalona get more online visibility through fast, modern, and Google-optimized websites.",
+
+        // Cookie Consent
+        "cookie-text": "We use cookies to improve your experience, analyze traffic, and personalize content. You can accept all cookies or manage your preferences.",
+        "cookie-accept": "Accept",
+        "cookie-reject": "Reject",
+
+        // Privacy Policy
+        "privacy-link": "Privacy Policy",
+        "privacy-title": "Privacy Policy",
+        "privacy-content": "In compliance with the General Data Protection Regulation (GDPR) and applicable laws, we inform you that your personal data collected through this website (e.g., via contact forms) will be treated confidentially and solely for the purpose of responding to your inquiries or providing the requested services. We do not share data with third parties without your explicit consent, except under legal obligation. You have the right to access, rectify, limit, and delete your data by sending us an email. We use technical cookies necessary for the operation of the website and, if you consent, analytical cookies to measure traffic."
     }
 };
