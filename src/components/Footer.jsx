@@ -6,44 +6,7 @@ export default function Footer({ t, openPrivacyPolicy }) {
       <div className="container footer-container">
         <div className="footer-brand">
           <a href="#hero" className="footer-logo">
-            <svg
-              className="logo-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-            >
-              <path
-                d="M 7, 18 V 6 H 11.5 C 13.8 6, 13.8 11.5, 11.5 11.5 H 7"
-                stroke="url(#logo-grad-footer)"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-              <path
-                d="M 11, 11.5 L 14.5, 6 L 18, 18"
-                stroke="url(#logo-grad-footer)"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-              <path
-                d="M 9.5, 14 H 15.5"
-                stroke="url(#logo-grad-footer)"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id="logo-grad-footer"
-                  x1="0%"
-                  y1="100%"
-                  x2="100%"
-                  y2="0%"
-                >
-                  <stop offset="0%" stopColor="var(--accent-blue)"></stop>
-                  <stop offset="100%" stopColor="var(--accent-clay)"></stop>
-                </linearGradient>
-              </defs>
-            </svg>
+          <img src="/assets/logo.png" alt="Logo PA" style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(99, 102, 241, 0.5))' }} />
             <span className="logo-text">Pol Alegre</span>
           </a>
           <p className="footer-tagline">{t('footer-tagline')}</p>
