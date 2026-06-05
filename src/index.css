@@ -2,7 +2,7 @@
    DESIGN SYSTEM & VARIABLES (Obsidian Space Concept)
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap');
 
 
 :root {
@@ -2524,30 +2524,45 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
-   LOGO DEV NEON STYLES
+   LOGO PREMIUM NEON STYLES
    ========================================================================== */
-.logo-dev {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.6rem; /* Scaled down for navbar/footer */
-    background: transparent;
-    letter-spacing: 1px;
+.logo-premium {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
     display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    letter-spacing: -1.5px;
 }
 
-.logo-dev .blanco {
-    color: #ffffff;
+.logo-premium .blanco-neon {
+    color: #f8f9fa;
     text-shadow: 
-      0 0 3px #fff, 
-      0 0 6px #fff, 
-      0 0 12px #fff;
+      0 0 10px rgba(255, 255, 255, 0.3),
+      0 0 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
 }
 
-.logo-dev .turquesa {
-    color: #00f3ff;
+.logo-premium .turquesa-neon {
+    color: #00f0ff;
     text-shadow: 
-      0 0 3px #00f3ff, 
-      0 0 6px #00f3ff, 
-      0 0 12px #00f3ff,
-      0 0 24px #00f3ff;
+      0 0 8px rgba(0, 240, 255, 0.8), 
+      0 0 16px rgba(0, 240, 255, 0.4), 
+      0 0 30px rgba(0, 240, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.logo-premium:hover .blanco-neon {
+    text-shadow: 
+      0 0 12px rgba(255, 255, 255, 0.6),
+      0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.logo-premium:hover .turquesa-neon {
+    text-shadow: 
+      0 0 10px #00f0ff, 
+      0 0 20px rgba(0, 240, 255, 0.8), 
+      0 0 40px rgba(0, 240, 255, 0.5);
 }
 

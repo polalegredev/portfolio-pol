@@ -24,8 +24,8 @@ export default function Navbar({ lang, setLang, t }) {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="nav-container">
         <a href="#hero" className="nav-logo" id="nav-logo" onClick={handleLinkClick}>
-          <div className="logo-dev" style={{ fontSize: '1.4rem' }}>
-            <span className="turquesa">P</span><span className="blanco">ol</span><span className="turquesa">A</span><span className="blanco">legre.dev</span>
+          <div className="logo-premium" style={{ fontSize: '1.4rem' }}>
+            <span className="turquesa-neon">P</span><span className="blanco-neon">ol</span><span className="turquesa-neon">A</span><span className="blanco-neon">legre</span><span className="turquesa-neon">.</span><span className="blanco-neon">dev</span>
           </div>
         </a>
         

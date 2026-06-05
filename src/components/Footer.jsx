@@ -6,8 +6,8 @@ export default function Footer({ t, openPrivacyPolicy }) {
       <div className="container footer-container">
         <div className="footer-brand">
           <a href="#hero" className="footer-logo">
-            <div className="logo-dev" style={{ fontSize: '1.6rem' }}>
-              <span className="turquesa">P</span><span className="blanco">ol</span><span className="turquesa">A</span><span className="blanco">legre.dev</span>
+            <div className="logo-premium" style={{ fontSize: '1.6rem' }}>
+              <span className="turquesa-neon">P</span><span className="blanco-neon">ol</span><span className="turquesa-neon">A</span><span className="blanco-neon">legre</span><span className="turquesa-neon">.</span><span className="blanco-neon">dev</span>
             </div>
           </a>
           <p className="footer-tagline">{t('footer-tagline')}</p>
