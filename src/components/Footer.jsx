@@ -6,7 +6,9 @@ export default function Footer({ t, openPrivacyPolicy }) {
       <div className="container footer-container">
         <div className="footer-brand">
           <a href="#hero" className="footer-logo">
-          <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="Logo PA" style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(99, 102, 241, 0.5))' }} />
+            <div className="logo-dev" style={{ fontSize: '1.6rem' }}>
+              <span className="turquesa">P</span><span className="blanco">ol</span><span className="turquesa">A</span><span className="blanco">legre.dev</span>
+            </div>
           </a>
           <p className="footer-tagline">{t('footer-tagline')}</p>
         </div>

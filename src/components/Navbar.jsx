@@ -24,7 +24,9 @@ export default function Navbar({ lang, setLang, t }) {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="nav-container">
         <a href="#hero" className="nav-logo" id="nav-logo" onClick={handleLinkClick}>
-          <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="Logo PA" style={{ height: '32px', width: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(99, 102, 241, 0.5))' }} />
+          <div className="logo-dev" style={{ fontSize: '1.4rem' }}>
+            <span className="turquesa">P</span><span className="blanco">ol</span><span className="turquesa">A</span><span className="blanco">legre.dev</span>
+          </div>
         </a>
         
         <nav className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`} id="nav-menu">

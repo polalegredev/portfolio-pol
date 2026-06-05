@@ -2,6 +2,8 @@
    DESIGN SYSTEM & VARIABLES (Obsidian Space Concept)
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
 
 :root {
     /* Colors: Obsidian Deep Indigo Space and Glass Accents */
@@ -2519,5 +2521,33 @@ h1, h2, h3, h4 {
 
 .modal-body {
     font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   LOGO DEV NEON STYLES
+   ========================================================================== */
+.logo-dev {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem; /* Scaled down for navbar/footer */
+    background: transparent;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.logo-dev .blanco {
+    color: #ffffff;
+    text-shadow: 
+      0 0 3px #fff, 
+      0 0 6px #fff, 
+      0 0 12px #fff;
+}
+
+.logo-dev .turquesa {
+    color: #00f3ff;
+    text-shadow: 
+      0 0 3px #00f3ff, 
+      0 0 6px #00f3ff, 
+      0 0 12px #00f3ff,
+      0 0 24px #00f3ff;
 }
 
