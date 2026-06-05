@@ -25,7 +25,6 @@ export default function Navbar({ lang, setLang, t }) {
       <div className="nav-container">
         <a href="#hero" className="nav-logo" id="nav-logo" onClick={handleLinkClick}>
           <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="Logo PA" style={{ height: '32px', width: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(99, 102, 241, 0.5))' }} />
-          <span className="logo-text">Pol Alegre</span>
         </a>
         
         <nav className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`} id="nav-menu">

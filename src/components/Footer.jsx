@@ -7,7 +7,6 @@ export default function Footer({ t, openPrivacyPolicy }) {
         <div className="footer-brand">
           <a href="#hero" className="footer-logo">
           <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="Logo PA" style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(99, 102, 241, 0.5))' }} />
-            <span className="logo-text">Pol Alegre</span>
           </a>
           <p className="footer-tagline">{t('footer-tagline')}</p>
         </div>
