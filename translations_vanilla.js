@@ -45,9 +45,10 @@ const translations = {
         "service-price-corporate": "Desde 500€",
         "service-title-corporate": "Web Completa",
         "service-desc-corporate": "El sitio web clásico para tu despacho, clínica o comercio. Varias secciones (Inicio, Quiénes somos, Servicios, Blog) para transmitir total confianza a tus clientes.",
-        "service-bullet-corporate-1": "Secciones ilimitadas y adaptadas a tu marca",
-        "service-bullet-corporate-2": "SEO On-Page para que tus vecinos te encuentren en Google",
-        "service-bullet-corporate-3": "Gestor de contenido para que puedas editar textos tú mismo",
+        "service-bullet-corporate-1": "Hasta 5 Páginas Propias",
+        "service-bullet-corporate-2": "Preparada para Google (SEO)",
+        "service-bullet-corporate-3": "Contacto y Mapas Avanzados",
+        "service-bullet-corporate-4": "Analítica e Indexación",
         "service-link-corporate": "Hablemos sobre tu web",
         
         "service-price-maint": "Desde 49€/mes",
