@@ -46,7 +46,7 @@ export const translations = {
       "Velocidad y Legalidad: Carga ultra rápida y adaptada a la ley de cookies y privacidad (RGPD)."
     ],
     "service-ideal-landing": "[Ideal para: Negocios locales, profesionales independientes o el lanzamiento de un servicio concreto.]",
-    "service-link-landing": "Lanzar mi landing page",
+    "service-link-landing": "¡Quiero lanzar mi landing!",
 
     "service-price-corporate-label": "Desde",
     "service-price-corporate-value": "350€",
@@ -60,7 +60,7 @@ export const translations = {
       "Analítica e Indexación: Alta en Google para asegurar que tu web existe en internet y puedas medir tus visitas."
     ],
     "service-ideal-corporate": "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
-    "service-link-corporate": "Consolidar mi negocio",
+    "service-link-corporate": "¡Quiero consolidar mi negocio!",
 
     // Why Choose Me
     "why-title": "Un desarrollador web local que entiende tu negocio",
@@ -108,11 +108,11 @@ export const translations = {
     "about-decor": "Sobre Mí",
     "about-title": "Hola, soy Pol Alegre",
     "about-lead":
-      "Soy desarrollador web freelance en Badalona y me dedico a crear páginas web profesionales para negocios que quieren mejorar su presencia online y atraer más clientes.",
+      "Desarrollador web freelance en Badalona. Sin dolores de cabeza técnicos para ti.",
     "about-body-1":
-      "Nací y vivo en Badalona. A diferencia de las agencias tradicionales, trato directamente contigo durante todo el proyecto, garantizando un soporte cercano, transparente y sin intermediarios.",
+      "Sé lo difícil que es llevar un negocio en el día a día. Por eso, no soy una agencia gigante con la que es imposible hablar. Soy un técnico cercano que se encarga de todo tu apartado online para que tú te enfoques exclusivamente en tu negocio.",
     "about-body-2":
-      "No utilizo plantillas genéricas. Desarrollo cada página web a medida para que cargue en menos de un segundo, sea fácil de usar y esté optimizada para posicionar tu negocio en Google y atraer clientes locales.",
+      "Te hablo claro y directo. Diseño páginas web limpias, modernas y preparadas para conseguir clientes, con precios cerrados y comunicación directa por WhatsApp en todo momento.",
 
     "about-val-title-1": "Cerca de tu negocio",
     "about-val-desc-1":

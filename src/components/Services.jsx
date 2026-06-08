@@ -94,8 +94,10 @@ export default function Services({ t }) {
               </div>
 
               <a
-                href="#contacto"
-                className="btn btn-outline service-cta-btn"
+                href="https://wa.me/34640610268?text=%C2%A1Hola%20Pol!%20He%20visto%20tu%20web%20y%20estoy%20interesado%20en%20el%20plan%20Web%20Esencial%20para%20mi%20negocio."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline service-cta-btn btn-wa-contrast"
                 id="link-service-landing"
               >
                 {t("service-link-landing")}
@@ -172,8 +174,10 @@ export default function Services({ t }) {
               </div>
 
               <a
-                href="#contacto"
-                className="btn btn-primary btn-glow service-cta-btn"
+                href="https://wa.me/34640610268?text=%C2%A1Hola%20Pol!%20He%20visto%20tu%20web%20y%20estoy%20interesado%20en%20el%20plan%20Web%20Integral%20para%20mi%20negocio."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-glow service-cta-btn btn-wa-contrast"
                 id="link-service-corporate"
               >
                 {t("service-link-corporate")}
