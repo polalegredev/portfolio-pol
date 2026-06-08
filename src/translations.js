@@ -17,7 +17,7 @@ export const translations = {
     "hero-title":
       "Páginas web rápidas, profesionales y preparadas para conseguir clientes",
     "hero-subtitle":
-      "Soy Pol Alegre, diseñador y desarrollador web en Badalona. Ayudo a autónomos, comercios, clínicas, despachos y pequeñas empresas a conseguir más clientes gracias a páginas web modernas, rápidas y optimizadas para Google. Cada proyecto está desarrollado a medida, sin plantillas genéricas y con un objetivo claro: que tu negocio destaque en internet y convierta visitas en contactos reales.",
+      "Ayudo a negocios locales y profesionales a conseguir más clientes mediante páginas web rápidas, modernas y optimizadas.",
     "hero-bullets": [
       "Diseño web personalizado",
       "Optimización SEO Local",
@@ -32,50 +32,35 @@ export const translations = {
     "services-decor": "Servicios",
     "services-title": "Servicios de Diseño Web en Badalona",
     "services-subtitle":
-      "Tres formas claras de ayudarte a tener una presencia profesional en internet, explicadas de forma sencilla.",
+      "Soluciones web directas, sin rodeos técnicos y enfocadas en lo que tu negocio necesita: conseguir clientes y transmitir confianza.",
 
     "service-price-landing-label": "Desde",
     "service-price-landing-value": "200€",
-    "service-title-landing": "Diseño One-Page Estratégico",
+    "service-title-landing": "Web Esencial (Landing Page)",
     "service-desc-landing":
-      "Todo el contenido clave estructurado en una sola página fluida, atractiva y fácil de navegar.",
+      "El impulso rápido para empezar a captar clientes en internet.",
     "service-bullets-landing": [
-      "Secciones clave para vender",
-      "Optimización Móvil (100% Responsive)",
-      "Conversión Directa",
-      "Velocidad de Carga Optimizada",
-      "Textos Legales Obligatorios",
+      "Estructura One-Page: Toda tu información clave en una sola página fluida y moderna.",
+      "Diseño Móvil Obligatorio: Optimizada al 100% para que se vea perfecta desde cualquier teléfono.",
+      "Conversión Inmediata: Botones directos a tu WhatsApp, llamadas o formulario de contacto.",
+      "Velocidad y Legalidad: Carga ultra rápida y adaptada a la ley de cookies y privacidad (RGPD)."
     ],
-    "service-link-landing": "Hablemos de tu landing",
+    "service-ideal-landing": "[Ideal para: Negocios locales, profesionales independientes o el lanzamiento de un servicio concreto.]",
+    "service-link-landing": "Lanzar mi landing page",
 
     "service-price-corporate-label": "Desde",
     "service-price-corporate-value": "350€",
-    "service-title-corporate": "Página Web Corporativa",
+    "service-title-corporate": "Web Integral (Web Corporativa)",
     "service-desc-corporate":
-      "La solución ideal para empresas, clínicas, despachos y comercios. Una página profesional que transmite confianza y ayuda a posicionar tu negocio en Google.",
+      "Una estructura completa para posicionar tu marca y generar autoridad.",
     "service-bullets-corporate": [
       "Hasta 5 Páginas Propias: Secciones independientes para Inicio, Servicios detallados, Quiénes Somos y Contacto.",
       "Preparada para Google (SEO): Estructura técnica optimizada para ayudarte a posicionar tu negocio en tu zona.",
       "Contacto y Mapas Avanzados: Formulario a medida y mapa interactivo de Google Maps para que te encuentren fácil.",
-      "Analítica e Indexación: Alta en Google para asegurar que tu web existe en internet y puedas medir tus visitas.",
+      "Analítica e Indexación: Alta en Google para asegurar que tu web existe en internet y puedas medir tus visitas."
     ],
-    "service-link-corporate": "Hablemos sobre tu web",
-
-    "service-price-maint-label": "Desde",
-    "service-price-maint-value": "49€",
-    "service-price-maint-suffix": "/mes",
-    "service-title-maint": "Mantenimiento Web y SEO Local",
-    "service-desc-maint":
-      "Para que no tengas que preocuparte por la parte técnica. Mantengo tu web actualizada, segura y optimizada para mejorar su visibilidad en Google.",
-    "service-bullets-maint": [
-      "Actualizaciones periódicas",
-      "Copias de seguridad",
-      "Soporte técnico",
-      "Cambios de contenido",
-      "Optimización SEO Local",
-      "Gestión de Google Business Profile",
-    ],
-    "service-link-maint": "Pregúntame sobre soporte",
+    "service-ideal-corporate": "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
+    "service-link-corporate": "Consolidar mi negocio",
 
     // Why Choose Me
     "why-title": "Un desarrollador web local que entiende tu negocio",

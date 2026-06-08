@@ -89,6 +89,10 @@ export default function Services({ t }) {
                   ))}
               </ul>
 
+              <div className="service-ideal-badge">
+                {t("service-ideal-landing")}
+              </div>
+
               <a
                 href="#contacto"
                 className="btn btn-outline service-cta-btn"
@@ -163,85 +167,16 @@ export default function Services({ t }) {
                   ))}
               </ul>
 
+              <div className="service-ideal-badge">
+                {t("service-ideal-corporate")}
+              </div>
+
               <a
                 href="#contacto"
                 className="btn btn-primary btn-glow service-cta-btn"
                 id="link-service-corporate"
               >
                 {t("service-link-corporate")}
-              </a>
-            </div>
-          </div>
-
-          {/* Card 3: Support & Local SEO */}
-          <div
-            className="service-card spotlight-card reveal active"
-            id="card-maintenance"
-            onMouseMove={handleCardMouseMove}
-          >
-            <div className="card-glow-layer"></div>
-            <div className="card-inner">
-              <div className="service-header">
-                <div className="service-icon-wrapper">
-                  <svg
-                    className="icon-svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    width="24"
-                    height="24"
-                  >
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                  </svg>
-                </div>
-              </div>
-
-              <h3 className="service-title-text">{t("service-title-maint")}</h3>
-
-              <div className="service-price-block">
-                <span className="price-label">
-                  {t("service-price-maint-label")}
-                </span>
-                <span className="price-value">
-                  {t("service-price-maint-value")}
-                  <span className="price-suffix">
-                    {t("service-price-maint-suffix")}
-                  </span>
-                </span>
-              </div>
-
-              <p className="service-desc-text">{t("service-desc-maint")}</p>
-
-              <div className="service-divider"></div>
-
-              <ul className="service-bullets">
-                {Array.isArray(t("service-bullets-maint")) &&
-                  t("service-bullets-maint").map((bullet, idx) => (
-                    <li key={idx}>
-                      <svg
-                        className="icon-check"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        width="14"
-                        height="14"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                      {bullet}
-                    </li>
-                  ))}
-              </ul>
-
-              <a
-                href="#contacto"
-                className="btn btn-outline service-cta-btn"
-                id="link-service-maint"
-              >
-                {t("service-link-maint")}
               </a>
             </div>
           </div>

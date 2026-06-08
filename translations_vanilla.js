@@ -17,7 +17,7 @@ const translations = {
     "hero-title":
       'Diseño y programo webs para negocios de <span class="gradient-text">Badalona</span>. Sin rodeos.',
     "hero-subtitle":
-      "Soy Pol Alegre. Ayudo a comercios, despachos y profesionales locales a conseguir clientes en internet con una web rápida, clara y que funciona. Quedamos, nos tomamos un café y lo planeamos.",
+      "Ayudo a negocios locales y profesionales a conseguir más clientes mediante páginas web rápidas, modernas y optimizadas.",
     "btn-hero-contacto": "Hablemos de tu web",
     "btn-hero-proceso": "Mi proceso",
 
@@ -36,23 +36,23 @@ const translations = {
     "services-decor": "Servicios",
     "services-title": "¿Qué necesitas?",
     "services-subtitle":
-      "Tres formas claras de ayudarte a tener una presencia profesional en internet, explicadas de forma sencilla.",
+      "Soluciones web directas, sin rodeos técnicos y enfocadas en lo que tu negocio necesita: conseguir clientes y transmitir confianza.",
 
     "service-price-landing": "350€",
-    "service-title-landing": "Diseño One-Page Estratégico",
+    "service-title-landing": "Web Esencial (Landing Page)",
     "service-desc-landing":
-      "Todo el contenido clave estructurado en una sola página fluida, atractiva y fácil de navegar.",
-    "service-bullet-landing-1": "Secciones clave para vender",
-    "service-bullet-landing-2": "Optimización Móvil (100% Responsive)",
-    "service-bullet-landing-3": "Conversión Directa",
-    "service-bullet-landing-4": "Velocidad de Carga Optimizada",
-    "service-bullet-landing-5": "Textos Legales Obligatorios",
-    "service-link-landing": "Hablemos sobre tu landing",
+      "El impulso rápido para empezar a captar clientes en internet.",
+    "service-bullet-landing-1": "Estructura One-Page: Toda tu información clave en una sola página fluida y moderna.",
+    "service-bullet-landing-2": "Diseño Móvil Obligatorio: Optimizada al 100% para que se vea perfecta desde cualquier teléfono.",
+    "service-bullet-landing-3": "Conversión Inmediata: Botones directos a tu WhatsApp, llamadas o formulario de contacto.",
+    "service-bullet-landing-4": "Velocidad y Legalidad: Carga ultra rápida y adaptada a la ley de cookies y privacidad (RGPD).",
+    "service-ideal-landing": "[Ideal para: Negocios locales, profesionales independientes o el lanzamiento de un servicio concreto.]",
+    "service-link-landing": "Lanzar mi landing page",
 
     "service-price-corporate": "Desde 500€",
-    "service-title-corporate": "Web Completa",
+    "service-title-corporate": "Web Integral (Web Corporativa)",
     "service-desc-corporate":
-      "El sitio web clásico para tu despacho, clínica o comercio. Varias secciones (Inicio, Quiénes somos, Servicios, Blog) para transmitir total confianza a tus clientes.",
+      "Una estructura completa para posicionar tu marca y generar autoridad.",
     "service-bullet-corporate-1":
       "Hasta 5 Páginas Propias: Secciones independientes para Inicio, Servicios detallados, Quiénes Somos y Contacto.",
     "service-bullet-corporate-2":
@@ -61,19 +61,8 @@ const translations = {
       "Contacto y Mapas Avanzados: Formulario a medida y mapa interactivo de Google Maps para que te encuentren fácil.",
     "service-bullet-corporate-4":
       "Analítica e Indexación: Alta en Google para asegurar que tu web existe en internet y puedas medir tus visitas.",
-    "service-link-corporate": "Hablemos sobre tu web",
-
-    "service-price-maint": "Desde 49€/mes",
-    "service-title-maint": "Mantenimiento y SEO Local",
-    "service-desc-maint":
-      "Para que te olvides de la parte técnica. Me encargo de que tu web esté actualizada y segura, además de optimizar tu ficha de Google Maps para que destaques en Badalona.",
-    "service-bullet-maint-1":
-      "Copias de seguridad semanales y actualizaciones de seguridad",
-    "service-bullet-maint-2":
-      "Soporte rápido para pequeños cambios (fotos, horarios, textos)",
-    "service-bullet-maint-3":
-      "Optimización SEO para búsquedas locales en tu zona",
-    "service-link-maint": "Pregúntame sobre soporte",
+    "service-ideal-corporate": "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
+    "service-link-corporate": "Consolidar mi negocio",
 
     // Methodology
     "method-decor": "Metodología",

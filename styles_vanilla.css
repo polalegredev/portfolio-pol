@@ -1231,7 +1231,7 @@ h4 {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -1307,6 +1307,18 @@ h4 {
   height: 14px;
   color: var(--accent-blue);
   flex-shrink: 0;
+}
+
+.service-ideal-badge {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px 16px;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: 24px;
+  border-left: 3px solid var(--accent-blue);
+  font-style: italic;
+  line-height: 1.5;
 }
 
 .service-link-btn {
