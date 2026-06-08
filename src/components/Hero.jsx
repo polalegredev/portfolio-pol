@@ -1,10 +1,24 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Zap, Move, TrendingUp, Gauge } from 'lucide-react';
 
 
 export default function Hero({ t }) {
   const heroRef = useRef(null);
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = [
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 4500);
+    return () => clearInterval(interval);
+  }, []);
   
   // Motion values to store raw cursor offsets from the center of the hero section
   const mouseX = useMotionValue(0);
@@ -61,11 +75,16 @@ export default function Hero({ t }) {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="hero-video-bg">
-        <video autoPlay loop muted playsInline>
-          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
-        </video>
-        <div className="hero-video-overlay"></div>
+      <div className="hero-carousel-bg">
+        {images.map((src, index) => (
+          <img
+            key={src}
+            src={src}
+            alt="Web Development Background"
+            className={`carousel-image ${index === currentImage ? 'active' : ''}`}
+          />
+        ))}
+        <div className="hero-overlay"></div>
       </div>
 
       <div className="hero-spotlight"></div>
