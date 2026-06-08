@@ -208,7 +208,7 @@ const translations = {
     "hero-title":
       'Dissenyo i programo webs per a negocis de <span class="gradient-text">Badalona</span>. Sense embuts.',
     "hero-subtitle":
-      "Sóc en Pol Alegre. Ajudo a comerços, despatxos i professionals locals a aconseguir clients a internet amb una web ràpida, clara i que funciona. Quedem, ens prenem un cafè i ho planifiquem.",
+      "Ajudo a negocis locals i professionals a aconseguir més clients mitjançant pàgines web ràpides, modernes i optimitzades.",
     "btn-hero-contacto": "Parlem de la teva web",
     "btn-hero-proceso": "El meu procés",
 
@@ -399,7 +399,7 @@ const translations = {
     "hero-title":
       'I design and build websites for local businesses in <span class="gradient-text">Badalona</span>. Straight up.',
     "hero-subtitle":
-      "I'm Pol Alegre. I help local shops, offices, and professionals win online customers with clean, ultra-fast websites that deliver. We meet, have a coffee, and sketch the plan.",
+      "I help local businesses and professionals get more clients through fast, modern, and optimized websites.",
     "btn-hero-contacto": "Let's discuss your web",
     "btn-hero-proceso": "My process",
 

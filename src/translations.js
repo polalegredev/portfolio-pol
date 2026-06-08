@@ -278,7 +278,7 @@ export const translations = {
     "hero-title":
       "Pàgines web ràpides, professionals i preparades per aconseguir clients",
     "hero-subtitle":
-      "Sóc en Pol Alegre, dissenyador i desenvolupador web a Badalona. Ajudo a autònoms, comerços, clíniques, despatxos i petites empreses a aconseguir més clients gràcies a pàgines web modernes, ràpides i optimitzades per a Google. Cada projecte està desenvolupat a mida, sense plantilles genèriques i amb un objectiu clar: que el teu negoci destaqui a internet i converteixi visites en contactes reals.",
+      "Ajudo a negocis locals i professionals a aconseguir més clients mitjançant pàgines web ràpides, modernes i optimitzades.",
     "hero-bullets": [
       "Disseny web personalitzat",
       "Optimització SEO Local",
@@ -538,7 +538,7 @@ export const translations = {
     "hero-badge": "WEB DESIGNER IN BADALONA",
     "hero-title": "Fast, professional websites geared to win clients",
     "hero-subtitle":
-      "I'm Pol Alegre, a web designer and developer in Badalona. I help freelancers, shops, clinics, offices, and small businesses attract more clients through modern, fast, Google-optimized websites. Every project is custom-developed without generic templates and has a clear goal: to make your business stand out online and convert visits into real contacts.",
+      "I help local businesses and professionals get more clients through fast, modern, and optimized websites.",
     "hero-bullets": [
       "Custom web design",
       "Local SEO optimization",
