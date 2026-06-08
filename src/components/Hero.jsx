@@ -63,7 +63,7 @@ export default function Hero({ t }) {
     >
       <div className="hero-video-bg">
         <video autoPlay loop muted playsInline>
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-a-blue-and-pink-wave-3286-large.mp4" type="video/mp4" />
+          <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4" />
         </video>
         <div className="hero-video-overlay"></div>
       </div>
