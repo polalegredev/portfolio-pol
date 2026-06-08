@@ -229,39 +229,37 @@ const translations = {
     "services-subtitle":
       "Tres formes clares d'ajudar-te a tenir una presència professional a internet, explicades de manera senzilla.",
 
-    "service-price-landing": "350€",
-    "service-title-landing": "Pàgina d'Aterratge (Landing)",
+    "service-price-landing": "200€",
+    "service-title-landing": "Web Essencial (Landing Page)",
     "service-desc-landing":
-      "Una sola pàgina estructurada de principi a fi per a un únic objectiu: presentar el teu servei estrella i fer que et truquin o et enviïn un WhatsApp.",
-    "service-bullet-landing-1": "Adaptada perfectament a telèfons mòbils",
+      "L'impuls ràpid per començar a captar clients a internet.",
+    "service-bullet-landing-1":
+      "Estructura One-Page: Tota la teva informació clau en una sola pàgina fluida i moderna.",
     "service-bullet-landing-2":
-      "Formulari de contacte ràpid i enllaç directe a WhatsApp",
-    "service-bullet-landing-3": "Ideal per a campanyes o serveis molt concrets",
-    "service-link-landing": "Parlem sobre la teva landing",
+      "Disseny Mòbil Obligatori: Optimitzada al 100% perquè es vegi perfecta des de qualsevol telèfon.",
+    "service-bullet-landing-3":
+      "Conversió Immediata: Botons directes al teu WhatsApp, trucades o formulari de contacte.",
+    "service-bullet-landing-4":
+      "Velocitat i Legalitat: Càrrega ultra ràpida i adaptada a la llei de cookies i privacitat (RGPD).",
+    "service-ideal-landing":
+      "[Ideal per a: Negocis locals, professionals independents o el llançament d'un servei concret.]",
+    "service-link-landing": "¡Vull llançar la meva landing!",
 
-    "service-price-corporate": "Des de 500€",
-    "service-title-corporate": "Web Completa",
+    "service-price-corporate": "Des de 350€",
+    "service-title-corporate": "Web Integral (Web Corporativa)",
     "service-desc-corporate":
-      "El lloc web clàssic per al teu despatx, clínica o comerç. Diverses seccions (Inici, Qui som, Serveis, Blog) per transmetre total confiança als teus clients.",
+      "Una estructura completa per posicionar la teva marca i generar autoritat.",
     "service-bullet-corporate-1":
-      "Seccions il·limitades i adaptades a la teva marca",
+      "Fins a 5 Pàgines Pròpies: Seccions independents per a Inici, Serveis detallats, Qui Som i Contacte.",
     "service-bullet-corporate-2":
-      "SEO On-Page perquè els teus veïns et trobin a Google",
+      "Preparada per a Google (SEO): Estructura tècnica optimitzada per ajudar-te a posicionar el teu negoci a la teva zona.",
     "service-bullet-corporate-3":
-      "Gestor de contingut perquè puguis editar textos tu mateix",
-    "service-link-corporate": "Parlem sobre la teva web",
-
-    "service-price-maint": "Des de 49€/mes",
-    "service-title-maint": "Manteniment i SEO Local",
-    "service-desc-maint":
-      "Perquè t'oblidis de la part tècnica. Em cargo que la teva web estigui actualitzada i segura, a més d'optimitzar la teva fitxa de Google Maps perquè destaquis a Badalona.",
-    "service-bullet-maint-1":
-      "Còpies de seguretat setmanals i actualitzacions de seguretat",
-    "service-bullet-maint-2":
-      "Suport ràpid per a petits canvis (fotos, horaris, textos)",
-    "service-bullet-maint-3":
-      "Optimització SEO per a cerques locals a la teva zona",
-    "service-link-maint": "Pregunta'm sobre suport",
+      "Contacte i Mapes Avançats: Formulari a mida i mapa interactiu de Google Maps perquè et trobin fàcilment.",
+    "service-bullet-corporate-4":
+      "Analítica i Indexació: Alta a Google per assegurar que la teva web existeix a internet i puguis mesurar les teves visites.",
+    "service-ideal-corporate":
+      "[Ideal per a: Empreses consolidades, clíniques, acadèmies o negocis amb un catàleg ampli de serveis.]",
+    "service-link-corporate": "¡Vull consolidar el meu negoci!",
 
     // Methodology
     "method-decor": "Metodologia",
@@ -302,21 +300,21 @@ const translations = {
     "about-decor": "Qui sóc",
     "about-title": "Hola, sóc en Pol Alegre",
     "about-lead":
-      "No sóc una agència de 15 persones amb oficines de disseny a Barcelona que et cobra per cada correu. Sóc un desenvolupador freelance de Badalona, i parlo directe.",
+      "El meu compromís és ajudar als negocis locals a digitalitzar-se sense mals de cap tècnics.",
     "about-body-1":
-      "Vaig néixer i visc a Badalona (dels que creuen el Pont del Petroli a passejar els diumenges). Sé com és de difícil aixecar la persiana d'un negoci de barri cada dia, i per això vaig decidir oferir els meus serveis de forma clara: preus tancats, comunicació directa per WhatsApp i suport ràpid quan ho necessites.",
+      "Sé com de difícil és portar el dia a dia d'una empresa. Per això m'encarrego de tot el teu apartat online de principi a fi, perquè tu et centris exclusivament en el teu negoci.",
     "about-body-2":
-      "No utilitzo plantilles genèriques de WordPress que triguen 10 segons a carregar. Faig pàgines web ràpides, netes i estructurades amb codi modern perquè els teus clients et truquin o et escriguin.",
+      "No sóc una agència gegant amb la qual és impossible contactar. Et parlo clar i directe: dissenyo pàgines web ràpides, modernes i orientades a captar clients, amb comunicació directa per WhatsApp i zero complicacions.",
 
-    "about-val-title-1": "Al costat del teu negoci",
+    "about-val-title-1": "A prop del teu negoci",
     "about-val-desc-1":
-      "Treballo al Centre, Gorg, Llefià, Bufalà... si passa qualsevol cosa, m'apropo al teu local a solucionar-ho.",
-    "about-val-title-2": "Zero plantilles prefabricades",
+      "Treballo amb empreses de Badalona i rodalies. M'apropo al teu local si fa falta per parlar del projecte en persona.",
+    "about-val-title-2": "Disseny web a mida",
     "about-val-desc-2":
-      "Dissenyo la teva web des d'un llenç en blanc perquè la teva marca tingui una identitat real a internet.",
-    "about-val-title-3": "Transparència absoluta",
+      "No faig servir plantilles prefabricades. Dissenyo la teva web des de zero perquè reflecteixi fidelment la identitat del teu negoci.",
+    "about-val-title-3": "Transparència total",
     "about-val-desc-3":
-      "Tu ets el propietari de tot. Et lliuro els accessos del teu fòsting i domini des del primer dia.",
+      "Sense quotes ocultes. Tu ets el propietari del teu domini i hosting, i t'entrego tots els accessos des del primer dia.",
 
     "editor-desc": "Desenvolupador Web",
     "editor-loc": "Badalona, Barcelona",
@@ -422,38 +420,37 @@ const translations = {
     "services-subtitle":
       "Three clear ways to establish a professional presence on the web, explained simply.",
 
-    "service-price-landing": "€350",
-    "service-title-landing": "Landing Page",
+    "service-price-landing": "€200",
+    "service-title-landing": "Essential Web (Landing Page)",
     "service-desc-landing":
-      "A single-page website structured from top to bottom with one single goal: showcase your star service and get clients calling or sending a WhatsApp.",
-    "service-bullet-landing-1": "Fully optimized for mobile phones",
-    "service-bullet-landing-2": "Quick contact form and direct WhatsApp links",
+      "The quick boost to start attracting clients online.",
+    "service-bullet-landing-1":
+      "One-Page Structure: All your key info on a single, fluid, and modern page.",
+    "service-bullet-landing-2":
+      "Mobile-First Design: 100% optimized to look perfect on any smartphone.",
     "service-bullet-landing-3":
-      "Perfect for specific campaigns or single services",
-    "service-link-landing": "Let's discuss your landing page",
+      "Immediate Conversion: Direct buttons to your WhatsApp, phone calls, or contact form.",
+    "service-bullet-landing-4":
+      "Speed & Legal: Ultra-fast loading times, fully compliant with privacy and cookie laws (GDPR).",
+    "service-ideal-landing":
+      "[Ideal for: Local businesses, independent professionals, or launching a specific service.]",
+    "service-link-landing": "I want to launch my landing page!",
 
-    "service-price-corporate": "From €500",
-    "service-title-corporate": "Full Website",
+    "service-price-corporate": "From €350",
+    "service-title-corporate": "Comprehensive Web (Corporate)",
     "service-desc-corporate":
-      "The classic multi-page site for clinics, local offices, or retail. Multiple pages (Home, About, Services, Blog) to build total trust with your customers.",
+      "A complete structure to position your brand and build authority.",
     "service-bullet-corporate-1":
-      "Unlimited pages tailored to your brand identity",
+      "Up to 5 Pages: Independent sections for Home, Detailed Services, About Us, and Contact.",
     "service-bullet-corporate-2":
-      "On-Page SEO so local neighbors find you on Google",
+      "Google Ready (SEO): Technical structure optimized to help your business rank locally.",
     "service-bullet-corporate-3":
-      "Easy-to-use editor so you can update text yourself",
-    "service-link-corporate": "Let's discuss your website",
-
-    "service-price-maint": "From €49/mo",
-    "service-title-maint": "Support & Local SEO",
-    "service-desc-maint":
-      "Forget about hosting, bugs, or updates. I keep your web secure and fast, and optimize your Google Maps profile so you stand out in Badalona searches.",
-    "service-bullet-maint-1": "Weekly secure backups and platform patches",
-    "service-bullet-maint-2":
-      "Fast support response for content updates (hours, photos, texts)",
-    "service-bullet-maint-3":
-      "SEO improvements for local searches in your neighborhood",
-    "service-link-maint": "Ask me about maintenance",
+      "Advanced Contact & Maps: Custom contact forms and interactive Google Maps for easy location.",
+    "service-bullet-corporate-4":
+      "Analytics & Indexing: Google submission to ensure your website exists and you can track visits.",
+    "service-ideal-corporate":
+      "[Ideal for: Established companies, clinics, academies, or businesses with a wide service catalog.]",
+    "service-link-corporate": "I want to consolidate my business!",
 
     // Methodology
     "method-decor": "Methodology",
@@ -494,21 +491,21 @@ const translations = {
     "about-decor": "About me",
     "about-title": "Hi, I'm Pol Alegre",
     "about-lead":
-      "I am not a 15-person agency with fancy Barcelona offices charging you just for replying to an email. I'm a freelance developer from Badalona, and I talk straight.",
+      "My commitment is to help local businesses digitalize without technical headaches.",
     "about-body-1":
-      "I was born and live in Badalona (one of those who walk along the Pont del Petroli on Sundays). I know how hard it is to run a local neighborhood business every day. That's why I offer clear services: fixed prices, direct WhatsApp communication, and quick support.",
+      "I know how hard it is to run a business day-to-day. That's why I handle your entire online presence from start to finish, so you can focus exclusively on your business.",
     "about-body-2":
-      "I don't use heavy generic WordPress templates that take 10 seconds to load. I make clean, fast, and structured sites using modern code so your clients call or write to you.",
+      "I'm not a giant agency that's impossible to reach. I speak clearly and directly: I design fast, modern websites focused on getting clients, with direct communication via WhatsApp and zero complications.",
 
-    "about-val-title-1": "Right next to your business",
+    "about-val-title-1": "Close to your business",
     "about-val-desc-1":
-      "I cover Centre, Gorg, Llefià, Bufalà... if anything happens, I'm nearby to visit and fix it.",
-    "about-val-title-2": "No prefabricated templates",
+      "I work with businesses in Badalona and surrounding areas. I can come to your location to discuss the project in person.",
+    "about-val-title-2": "Custom web design",
     "about-val-desc-2":
-      "I design your site from a blank canvas to ensure your brand has an authentic online identity.",
-    "about-val-title-3": "100% transparency",
+      "I don't use pre-made templates. I design your website from scratch to faithfully reflect your business's identity.",
+    "about-val-title-3": "Total transparency",
     "about-val-desc-3":
-      "You own everything. I deliver full access credentials to your hosting and domain from day one.",
+      "No hidden fees. You own your domain and hosting, and I give you full access from day one.",
 
     "editor-desc": "Web Developer",
     "editor-loc": "Badalona, Barcelona",
