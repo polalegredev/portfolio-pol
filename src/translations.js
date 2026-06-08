@@ -33,15 +33,14 @@ export const translations = {
         
         "service-price-landing-label": "Desde",
         "service-price-landing-value": "200€",
-        "service-title-landing": "Landing Page Profesional",
-        "service-desc-landing": "Una página diseñada para promocionar un servicio específico y convertir visitantes en clientes. Ideal para campañas publicitarias, profesionales independientes o negocios que quieren captar contactos rápidamente.",
+        "service-title-landing": "Diseño One-Page Estratégico",
+        "service-desc-landing": "Todo el contenido clave estructurado en una sola página fluida, atractiva y fácil de navegar.",
         "service-bullets-landing": [
-            "Diseño personalizado",
-            "Adaptación móvil",
-            "Formulario de contacto",
-            "Botón directo de WhatsApp",
-            "Optimización SEO básica",
-            "Alta velocidad de carga"
+            "Secciones clave para vender: Sección principal de impacto, presentación de tus servicios, testimonios de clientes y bloque de contacto.",
+            "Optimización Móvil (100% Responsive): Tu web se adaptará perfectamente a teléfonos, tablets y ordenadores.",
+            "Conversión Directa: Integración de botones de acción rápida como clic directo a WhatsApp, llamadas telefónicas o formularios limpios.",
+            "Velocidad de Carga Optimizada: Una web rápida para que ningún cliente potencial se vaya por esperar.",
+            "Textos Legales Obligatorios: Configuración del aviso legal, política de privacidad y cookies según la normativa vigente (RGPD)."
         ],
         "service-link-landing": "Hablemos de tu landing",
         
