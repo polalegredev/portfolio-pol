@@ -445,7 +445,7 @@ h1, h2, h3, h4 {
 }
 
 .carousel-image.active {
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .hero-overlay {
