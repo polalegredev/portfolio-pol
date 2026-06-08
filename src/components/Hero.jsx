@@ -1,12 +1,10 @@
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { useRef } from 'react';
-import { Zap, Move, TrendingUp, Gauge } from 'lucide-react';
-
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useRef } from "react";
+import { Zap, Move, TrendingUp, Gauge } from "lucide-react";
 
 export default function Hero({ t }) {
   const heroRef = useRef(null);
 
-  
   // Motion values to store raw cursor offsets from the center of the hero section
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -23,8 +21,14 @@ export default function Hero({ t }) {
     const y = e.clientY - rect.top;
 
     // Update css custom properties for spotlight follow
-    heroRef.current.style.setProperty('--mouse-x', `${(x / rect.width) * 100}%`);
-    heroRef.current.style.setProperty('--mouse-y', `${(y / rect.height) * 100}%`);
+    heroRef.current.style.setProperty(
+      "--mouse-x",
+      `${(x / rect.width) * 100}%`,
+    );
+    heroRef.current.style.setProperty(
+      "--mouse-y",
+      `${(y / rect.height) * 100}%`,
+    );
 
     // Update parallax offsets relative to center
     const centerX = rect.width / 2;
@@ -50,7 +54,7 @@ export default function Hero({ t }) {
       y: moveY,
       rotateX,
       rotateY,
-      transformStyle: 'preserve-3d',
+      transformStyle: "preserve-3d",
     };
   };
 
@@ -75,69 +79,103 @@ export default function Hero({ t }) {
           <div className="hero-text-side animate-fade-in">
             <div className="hero-badge" id="hero-badge-badge">
               <span className="badge-dot"></span>
-              <span dangerouslySetInnerHTML={{ __html: t('hero-badge') }}></span>
+              <span
+                dangerouslySetInnerHTML={{ __html: t("hero-badge") }}
+              ></span>
             </div>
             <h1
               className="hero-title animate-slide-up"
               id="hero-main-title"
-              dangerouslySetInnerHTML={{ __html: t('hero-title') }}
+              dangerouslySetInnerHTML={{ __html: t("hero-title") }}
             ></h1>
-            <p className="hero-subtitle animate-slide-up-delayed" id="hero-main-subtitle">
-              {t('hero-subtitle')}
+            <p
+              className="hero-subtitle animate-slide-up-delayed"
+              id="hero-main-subtitle"
+            >
+              {t("hero-subtitle")}
             </p>
-            <div className="hero-actions animate-slide-up-delayed" id="hero-main-actions">
-              <a href="#contacto" className="btn btn-primary btn-glow" id="btn-hero-contacto">
-                {t('btn-hero-contacto')}
+            <div
+              className="hero-actions animate-slide-up-delayed"
+              id="hero-main-actions"
+            >
+              <a
+                href="#contacto"
+                className="btn btn-primary btn-glow"
+                id="btn-hero-contacto"
+              >
+                {t("btn-hero-contacto")}
               </a>
-              <a href="#como-trabajamos" className="btn btn-outline" id="btn-hero-proceso">
-                {t('btn-hero-proceso')}
+              <a
+                href="#como-trabajamos"
+                className="btn btn-outline"
+                id="btn-hero-proceso"
+              >
+                {t("btn-hero-proceso")}
               </a>
             </div>
           </div>
 
           <div className="hero-interactive-side animate-fade-in-delayed">
             <div className="tech-stack-collage">
-              <motion.div style={createTiltStyles(0.15)} className="tech-card card-js">
+              <motion.div
+                style={createTiltStyles(0.15)}
+                className="tech-card card-js"
+              >
                 <span className="tech-icon">
-                  <Zap size={16} style={{ color: '#ffb900' }} />
+                  <Zap size={16} style={{ color: "#ffb900" }} />
                 </span>
                 <div className="tech-info">
-                  <h4>{t('tech-js-title')}</h4>
-                  <p>{t('tech-js-desc')}</p>
+                  <h4>{t("tech-js-title")}</h4>
+                  <p>{t("tech-js-desc")}</p>
                 </div>
               </motion.div>
 
-              <motion.div style={createTiltStyles(0.3)} className="tech-card card-gsap">
+              <motion.div
+                style={createTiltStyles(0.3)}
+                className="tech-card card-gsap"
+              >
                 <span className="tech-icon">
-                  <Move size={16} style={{ color: 'var(--accent-pink)' }} />
+                  <Move size={16} style={{ color: "var(--accent-pink)" }} />
                 </span>
                 <div className="tech-info">
-                  <h4>{t('tech-gsap-title')}</h4>
-                  <p>{t('tech-gsap-desc')}</p>
+                  <h4>{t("tech-gsap-title")}</h4>
+                  <p>{t("tech-gsap-desc")}</p>
                 </div>
               </motion.div>
 
-              <motion.div style={createTiltStyles(0.2)} className="tech-card card-seo">
+              <motion.div
+                style={createTiltStyles(0.2)}
+                className="tech-card card-seo"
+              >
                 <span className="tech-icon">
-                  <TrendingUp size={16} style={{ color: 'var(--accent-clay)' }} />
+                  <TrendingUp
+                    size={16}
+                    style={{ color: "var(--accent-clay)" }}
+                  />
                 </span>
                 <div className="tech-info">
-                  <h4>{t('tech-seo-title')}</h4>
-                  <p>{t('tech-seo-desc')}</p>
+                  <h4>{t("tech-seo-title")}</h4>
+                  <p>{t("tech-seo-desc")}</p>
                 </div>
               </motion.div>
 
-              <motion.div style={createTiltStyles(0.35)} className="tech-card card-speed">
+              <motion.div
+                style={createTiltStyles(0.35)}
+                className="tech-card card-speed"
+              >
                 <span className="tech-icon">
-                  <Gauge size={16} style={{ color: '#10b981' }} />
+                  <Gauge size={16} style={{ color: "#10b981" }} />
                 </span>
                 <div className="tech-info">
-                  <h4>{t('tech-speed-title')}</h4>
-                  <p>{t('tech-speed-desc')}</p>
+                  <h4>{t("tech-speed-title")}</h4>
+                  <p>{t("tech-speed-desc")}</p>
                 </div>
               </motion.div>
 
-              <motion.div style={createTiltStyles(0.1)} className="tech-card card-code">
+              <motion.div
+                style={createTiltStyles(0.1)}
+                className="tech-card card-code"
+              >
                 <div className="editor-header">
                   <span className="dot-red"></span>
                   <span className="dot-yellow"></span>

@@ -1,25 +1,25 @@
-import { MapPin, Cpu, ShieldCheck, Sparkles } from 'lucide-react';
+import { MapPin, Cpu, ShieldCheck, Sparkles } from "lucide-react";
 
 export default function About({ t }) {
   const handleCardMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
-    e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+    e.currentTarget.style.setProperty("--mouse-x", `${x}px`);
+    e.currentTarget.style.setProperty("--mouse-y", `${y}px`);
   };
 
   return (
     <section className="about-section" id="sobre-mi">
       <div className="container">
         <div className="section-header reveal active">
-          <span className="section-decor-tag">{t('about-decor')}</span>
-          <h2 className="section-title">{t('about-title')}</h2>
+          <span className="section-decor-tag">{t("about-decor")}</span>
+          <h2 className="section-title">{t("about-title")}</h2>
         </div>
 
         <div className="bento-grid reveal active">
           {/* Box 1: Profile photo wrapper */}
-          <div 
+          <div
             className="bento-box bento-profile spotlight-card"
             onMouseMove={handleCardMouseMove}
           >
@@ -39,20 +39,20 @@ export default function About({ t }) {
           </div>
 
           {/* Box 2: Main Copy */}
-          <div 
+          <div
             className="bento-box bento-text spotlight-card"
             onMouseMove={handleCardMouseMove}
           >
             <div className="card-glow-layer"></div>
             <div className="card-inner">
-              <h3>{t('about-lead')}</h3>
-              <p>{t('about-body-1')}</p>
-              <p>{t('about-body-2')}</p>
+              <h3>{t("about-lead")}</h3>
+              <p>{t("about-body-1")}</p>
+              <p>{t("about-body-2")}</p>
             </div>
           </div>
 
           {/* Box 3: Value 1 */}
-          <div 
+          <div
             className="bento-box bento-value bento-value-1 spotlight-card"
             onMouseMove={handleCardMouseMove}
           >
@@ -62,14 +62,14 @@ export default function About({ t }) {
                 <div className="bento-val-icon-wrapper val-color-blue">
                   <MapPin size={18} />
                 </div>
-                <h4>{t('about-val-title-1')}</h4>
+                <h4>{t("about-val-title-1")}</h4>
               </div>
-              <p>{t('about-val-desc-1')}</p>
+              <p>{t("about-val-desc-1")}</p>
             </div>
           </div>
 
           {/* Box 4: Value 2 */}
-          <div 
+          <div
             className="bento-box bento-value bento-value-2 spotlight-card"
             onMouseMove={handleCardMouseMove}
           >
@@ -79,14 +79,14 @@ export default function About({ t }) {
                 <div className="bento-val-icon-wrapper val-color-cyan">
                   <Cpu size={18} />
                 </div>
-                <h4>{t('about-val-title-2')}</h4>
+                <h4>{t("about-val-title-2")}</h4>
               </div>
-              <p>{t('about-val-desc-2')}</p>
+              <p>{t("about-val-desc-2")}</p>
             </div>
           </div>
 
           {/* Box 5: Value 3 */}
-          <div 
+          <div
             className="bento-box bento-value bento-value-3 spotlight-card"
             onMouseMove={handleCardMouseMove}
           >
@@ -96,14 +96,14 @@ export default function About({ t }) {
                 <div className="bento-val-icon-wrapper val-color-green">
                   <ShieldCheck size={18} />
                 </div>
-                <h4>{t('about-val-title-3')}</h4>
+                <h4>{t("about-val-title-3")}</h4>
               </div>
-              <p>{t('about-val-desc-3')}</p>
+              <p>{t("about-val-desc-3")}</p>
             </div>
           </div>
 
           {/* Box 6: Skills & Tech stack (New!) */}
-          <div 
+          <div
             className="bento-box bento-value bento-skills spotlight-card"
             onMouseMove={handleCardMouseMove}
           >
@@ -113,7 +113,7 @@ export default function About({ t }) {
                 <div className="bento-val-icon-wrapper val-color-purple">
                   <Sparkles size={18} />
                 </div>
-                <h4>{t('about-skills-title')}</h4>
+                <h4>{t("about-skills-title")}</h4>
               </div>
               <div className="skills-badge-container">
                 <span className="skill-badge">React</span>

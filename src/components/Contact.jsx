@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Contact({ lang, t }) {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    website: '', // Honeypot field
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    website: "", // Honeypot field
   });
 
   const [errors, setErrors] = useState({
@@ -20,9 +20,9 @@ export default function Contact({ lang, t }) {
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const sendingTexts = {
-    es: 'Enviando consulta...',
-    ca: 'Enviant consulta...',
-    en: 'Sending inquiry...',
+    es: "Enviando consulta...",
+    ca: "Enviant consulta...",
+    en: "Sending inquiry...",
   };
 
   const handleInputChange = (e) => {
@@ -36,8 +36,12 @@ export default function Contact({ lang, t }) {
   const validateForm = () => {
     const newErrors = {
       name: !formData.name.trim(),
-      email: !formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim()),
-      phone: !formData.phone.replace(/\s+/g, '').trim() || !/^[679]\d{8}$/.test(formData.phone.replace(/\s+/g, '').trim()),
+      email:
+        !formData.email.trim() ||
+        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim()),
+      phone:
+        !formData.phone.replace(/\s+/g, "").trim() ||
+        !/^[679]\d{8}$/.test(formData.phone.replace(/\s+/g, "").trim()),
       message: !formData.message.trim() || formData.message.trim().length < 10,
     };
 
@@ -48,21 +52,21 @@ export default function Contact({ lang, t }) {
   };
 
   const sanitizeInput = (str) => {
-    return str.replace(/<[^>]*>/g, '').trim();
+    return str.replace(/<[^>]*>/g, "").trim();
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Honeypot check
-    if (formData.website.trim() !== '') {
-      console.warn('Bot detected and blocked via honeypot.');
+    if (formData.website.trim() !== "") {
+      console.warn("Bot detected and blocked via honeypot.");
       setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-        website: '',
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+        website: "",
       });
       return;
     }
@@ -74,15 +78,15 @@ export default function Contact({ lang, t }) {
     const payload = {
       name: sanitizeInput(formData.name),
       email: sanitizeInput(formData.email),
-      phone: sanitizeInput(formData.phone.replace(/\s+/g, '')),
+      phone: sanitizeInput(formData.phone.replace(/\s+/g, "")),
       message: sanitizeInput(formData.message),
     };
 
-    fetch('https://formspree.io/f/mqejgdne', {
-      method: 'POST',
+    fetch("https://formspree.io/f/mqejgdne", {
+      method: "POST",
       headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+        Accept: "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(payload),
     })
@@ -91,34 +95,34 @@ export default function Contact({ lang, t }) {
         if (response.ok) {
           setSubmitSuccess(true);
           setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            message: '',
-            website: '',
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+            website: "",
           });
           setTimeout(() => {
             setSubmitSuccess(false);
           }, 8000);
         } else {
           alert(
-            lang === 'ca'
+            lang === "ca"
               ? "Error al enviar el formulari. Per favor, intenta-ho més tard."
-              : lang === 'en'
-              ? "Error sending form. Please try again later."
-              : "Error al enviar el formulario. Por favor, inténtalo más tarde."
+              : lang === "en"
+                ? "Error sending form. Please try again later."
+                : "Error al enviar el formulario. Por favor, inténtalo más tarde.",
           );
         }
       })
       .catch((error) => {
         setIsSubmitting(false);
-        console.error('Formspree connection error:', error);
+        console.error("Formspree connection error:", error);
         alert(
-          lang === 'ca'
+          lang === "ca"
             ? "S'ha produït un problema de connexió. Per favor, intenta-ho més tard."
-            : lang === 'en'
-            ? "A connection error occurred. Please try again later."
-            : "Hubo un problema de conexión. Por favor, inténtalo más tarde."
+            : lang === "en"
+              ? "A connection error occurred. Please try again later."
+              : "Hubo un problema de conexión. Por favor, inténtalo más tarde.",
         );
       });
   };
@@ -127,12 +131,15 @@ export default function Contact({ lang, t }) {
     <section className="contact-section" id="contacto">
       <div className="container contact-container">
         <div className="contact-info reveal active" id="contact-details-col">
-          <span className="section-decor-tag">{t('contact-decor')}</span>
-          <h2 className="section-title left-align">{t('contact-title')}</h2>
-          <p className="contact-desc">{t('contact-desc')}</p>
+          <span className="section-decor-tag">{t("contact-decor")}</span>
+          <h2 className="section-title left-align">{t("contact-title")}</h2>
+          <p className="contact-desc">{t("contact-desc")}</p>
 
           <div className="contact-methods">
-            <a href="mailto:polalegre.dev@gmail.com" className="contact-method-item">
+            <a
+              href="mailto:polalegre.dev@gmail.com"
+              className="contact-method-item"
+            >
               <div className="method-icon">
                 <svg
                   className="icon-svg"
@@ -148,7 +155,7 @@ export default function Contact({ lang, t }) {
                 </svg>
               </div>
               <div className="method-text">
-                <span>{t('contact-method-email')}</span>
+                <span>{t("contact-method-email")}</span>
                 <strong>polalegre.dev@gmail.com</strong>
               </div>
             </a>
@@ -173,7 +180,7 @@ export default function Contact({ lang, t }) {
                 </svg>
               </div>
               <div className="method-text">
-                <span>{t('contact-method-wa')}</span>
+                <span>{t("contact-method-wa")}</span>
                 <strong>+34 640 61 02 68</strong>
               </div>
             </a>
@@ -194,81 +201,99 @@ export default function Contact({ lang, t }) {
                 </svg>
               </div>
               <div className="method-text">
-                <span>{t('contact-method-zone')}</span>
+                <span>{t("contact-method-zone")}</span>
                 <strong>Badalona, Barcelona, Santa Coloma y Maresme</strong>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="contact-form-wrapper reveal active" id="contact-form-col">
-          <form className="contact-form" id="contact-form" onSubmit={handleSubmit} noValidate>
-            <div className={`form-group ${errors.name ? 'has-error' : ''}`}>
-              <label htmlFor="form-name">{t('form-label-name')}</label>
+        <div
+          className="contact-form-wrapper reveal active"
+          id="contact-form-col"
+        >
+          <form
+            className="contact-form"
+            id="contact-form"
+            onSubmit={handleSubmit}
+            noValidate
+          >
+            <div className={`form-group ${errors.name ? "has-error" : ""}`}>
+              <label htmlFor="form-name">{t("form-label-name")}</label>
               <input
                 type="text"
                 id="form-name"
                 name="name"
-                placeholder={t('form-placeholder-name')}
+                placeholder={t("form-placeholder-name")}
                 value={formData.name}
                 onChange={handleInputChange}
                 required
               />
               <span className="error-msg" id="error-name">
-                {t('error-name')}
+                {t("error-name")}
               </span>
             </div>
 
-            <div className={`form-group ${errors.email ? 'has-error' : ''}`}>
-              <label htmlFor="form-email">{t('form-label-email')}</label>
+            <div className={`form-group ${errors.email ? "has-error" : ""}`}>
+              <label htmlFor="form-email">{t("form-label-email")}</label>
               <input
                 type="email"
                 id="form-email"
                 name="email"
-                placeholder={t('form-placeholder-email')}
+                placeholder={t("form-placeholder-email")}
                 value={formData.email}
                 onChange={handleInputChange}
                 required
               />
               <span className="error-msg" id="error-email">
-                {t('error-email')}
+                {t("error-email")}
               </span>
             </div>
 
-            <div className={`form-group ${errors.phone ? 'has-error' : ''}`}>
-              <label htmlFor="form-phone">{t('form-label-phone')}</label>
+            <div className={`form-group ${errors.phone ? "has-error" : ""}`}>
+              <label htmlFor="form-phone">{t("form-label-phone")}</label>
               <input
                 type="tel"
                 id="form-phone"
                 name="phone"
-                placeholder={t('form-placeholder-phone')}
+                placeholder={t("form-placeholder-phone")}
                 value={formData.phone}
                 onChange={handleInputChange}
                 required
               />
               <span className="error-msg" id="error-phone">
-                {t('error-phone')}
+                {t("error-phone")}
               </span>
             </div>
 
-            <div className={`form-group ${errors.message ? 'has-error' : ''}`}>
-              <label htmlFor="form-message">{t('form-label-msg')}</label>
+            <div className={`form-group ${errors.message ? "has-error" : ""}`}>
+              <label htmlFor="form-message">{t("form-label-msg")}</label>
               <textarea
                 id="form-message"
                 name="message"
                 rows="5"
-                placeholder={t('form-placeholder-msg')}
+                placeholder={t("form-placeholder-msg")}
                 value={formData.message}
                 onChange={handleInputChange}
                 required
               ></textarea>
               <span className="error-msg" id="error-message">
-                {t('error-message')}
+                {t("error-message")}
               </span>
             </div>
 
             {/* Honeypot spam protection hidden field */}
-            <div className="form-group" style={{ display: 'none', position: 'absolute', width: 0, height: 0, opacity: 0, pointerEvents: 'none' }}>
+            <div
+              className="form-group"
+              style={{
+                display: "none",
+                position: "absolute",
+                width: 0,
+                height: 0,
+                opacity: 0,
+                pointerEvents: "none",
+              }}
+            >
               <label htmlFor="form-website">Website (dejar en blanco)</label>
               <input
                 type="text"
@@ -292,11 +317,14 @@ export default function Contact({ lang, t }) {
                   {sendingTexts[lang]} <span className="spinner"></span>
                 </>
               ) : (
-                t('form-btn-submit')
+                t("form-btn-submit")
               )}
             </button>
 
-            <div className={`form-success-alert ${submitSuccess ? 'show' : ''}`} id="form-success">
+            <div
+              className={`form-success-alert ${submitSuccess ? "show" : ""}`}
+              id="form-success"
+            >
               <svg
                 className="icon-success"
                 viewBox="0 0 24 24"
@@ -309,8 +337,8 @@ export default function Contact({ lang, t }) {
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
               <div className="alert-content">
-                <strong>{t('success-title')}</strong>
-                <p>{t('success-desc')}</p>
+                <strong>{t("success-title")}</strong>
+                <p>{t("success-desc")}</p>
               </div>
             </div>
           </form>

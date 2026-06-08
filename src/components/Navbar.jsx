@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export default function Navbar({ lang, setLang, t }) {
   const [scrolled, setScrolled] = useState(false);
@@ -12,8 +12,8 @@ export default function Navbar({ lang, setLang, t }) {
         setScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleLinkClick = () => {
@@ -21,22 +21,35 @@ export default function Navbar({ lang, setLang, t }) {
   };
 
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
+    <header className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
       <div className="nav-container">
-        <a href="#hero" className="nav-logo" id="nav-logo" onClick={handleLinkClick}>
-          <div className="logo-premium" style={{ fontSize: '1.4rem' }}>
-            <span className="turquesa-neon">P</span><span className="blanco-neon">ol</span><span className="turquesa-neon">A</span><span className="blanco-neon">legre</span><span className="turquesa-neon">.</span><span className="blanco-neon">dev</span>
+        <a
+          href="#hero"
+          className="nav-logo"
+          id="nav-logo"
+          onClick={handleLinkClick}
+        >
+          <div className="logo-premium" style={{ fontSize: "1.4rem" }}>
+            <span className="turquesa-neon">P</span>
+            <span className="blanco-neon">ol</span>
+            <span className="turquesa-neon">A</span>
+            <span className="blanco-neon">legre</span>
+            <span className="turquesa-neon">.</span>
+            <span className="blanco-neon">dev</span>
           </div>
         </a>
-        
-        <nav className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`} id="nav-menu">
+
+        <nav
+          className={`nav-menu ${mobileMenuOpen ? "active" : ""}`}
+          id="nav-menu"
+        >
           <a
             href="#servicios"
             className="nav-link"
             id="link-servicios"
             onClick={handleLinkClick}
           >
-            {t('nav-servicios')}
+            {t("nav-servicios")}
           </a>
           <a
             href="#como-trabajamos"
@@ -44,7 +57,7 @@ export default function Navbar({ lang, setLang, t }) {
             id="link-metodo"
             onClick={handleLinkClick}
           >
-            {t('nav-metodo')}
+            {t("nav-metodo")}
           </a>
           <a
             href="#sobre-mi"
@@ -52,7 +65,7 @@ export default function Navbar({ lang, setLang, t }) {
             id="link-sobre-mi"
             onClick={handleLinkClick}
           >
-            {t('nav-sobre-mi')}
+            {t("nav-sobre-mi")}
           </a>
           <a
             href="#portafolio"
@@ -60,7 +73,7 @@ export default function Navbar({ lang, setLang, t }) {
             id="link-portafolio"
             onClick={handleLinkClick}
           >
-            {t('nav-portafolio')}
+            {t("nav-portafolio")}
           </a>
 
           <a
@@ -69,37 +82,46 @@ export default function Navbar({ lang, setLang, t }) {
             id="btn-nav-contacto"
             onClick={handleLinkClick}
           >
-            {t('nav-contacto')}
+            {t("nav-contacto")}
           </a>
 
           {/* Language Selector */}
           <div className="lang-selector">
-            <button 
-              className={`lang-btn ${lang === 'es' ? 'active' : ''}`} 
-              onClick={() => { setLang('es'); handleLinkClick(); }}
+            <button
+              className={`lang-btn ${lang === "es" ? "active" : ""}`}
+              onClick={() => {
+                setLang("es");
+                handleLinkClick();
+              }}
             >
               ES
             </button>
             <span className="lang-divider">|</span>
-            <button 
-              className={`lang-btn ${lang === 'ca' ? 'active' : ''}`} 
-              onClick={() => { setLang('ca'); handleLinkClick(); }}
+            <button
+              className={`lang-btn ${lang === "ca" ? "active" : ""}`}
+              onClick={() => {
+                setLang("ca");
+                handleLinkClick();
+              }}
             >
               CA
             </button>
             <span className="lang-divider">|</span>
-            <button 
-              className={`lang-btn ${lang === 'en' ? 'active' : ''}`} 
-              onClick={() => { setLang('en'); handleLinkClick(); }}
+            <button
+              className={`lang-btn ${lang === "en" ? "active" : ""}`}
+              onClick={() => {
+                setLang("en");
+                handleLinkClick();
+              }}
             >
               EN
             </button>
           </div>
         </nav>
 
-        <button 
-          className={`nav-toggle ${mobileMenuOpen ? 'active' : ''}`} 
-          id="nav-toggle" 
+        <button
+          className={`nav-toggle ${mobileMenuOpen ? "active" : ""}`}
+          id="nav-toggle"
           aria-label="Abrir menú"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >

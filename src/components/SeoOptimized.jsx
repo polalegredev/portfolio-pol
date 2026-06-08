@@ -1,7 +1,7 @@
-import { Gauge, Search } from 'lucide-react';
+import { Gauge, Search } from "lucide-react";
 
 export default function SeoOptimized({ t }) {
-  const bullets = t('seo-bullets') || [];
+  const bullets = t("seo-bullets") || [];
 
   return (
     <section className="seo-section" id="seo">
@@ -9,16 +9,19 @@ export default function SeoOptimized({ t }) {
         <div className="seo-grid">
           <div className="seo-text-side reveal active">
             <span className="section-decor-tag">SEO Local & Técnico</span>
-            <h2 className="section-title seo-section-title">{t('seo-title')}</h2>
-            <p className="seo-subtitle-text">{t('seo-subtitle')}</p>
-            
+            <h2 className="section-title seo-section-title">
+              {t("seo-title")}
+            </h2>
+            <p className="seo-subtitle-text">{t("seo-subtitle")}</p>
+
             <ul className="seo-bullets-list">
-              {Array.isArray(bullets) && bullets.map((bullet, index) => (
-                <li key={index} className="seo-bullet-item">
-                  <span className="seo-bullet-dot"></span>
-                  <span>{bullet}</span>
-                </li>
-              ))}
+              {Array.isArray(bullets) &&
+                bullets.map((bullet, index) => (
+                  <li key={index} className="seo-bullet-item">
+                    <span className="seo-bullet-dot"></span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
             </ul>
           </div>
 
@@ -38,13 +41,19 @@ export default function SeoOptimized({ t }) {
                     <span>google.es/search?q=disenador+web+badalona</span>
                   </div>
                 </div>
-                
+
                 <div className="seo-mock-results">
                   <div className="seo-result-item">
-                    <div className="seo-result-url">https://polalegre.dev › badalona</div>
-                    <h4 className="seo-result-title">Diseñador Web en Badalona | Pol Alegre Freelance</h4>
+                    <div className="seo-result-url">
+                      https://polalegre.dev › badalona
+                    </div>
+                    <h4 className="seo-result-title">
+                      Diseñador Web en Badalona | Pol Alegre Freelance
+                    </h4>
                     <p className="seo-result-snippet">
-                      ¿Buscas una web rápida, profesional y preparada para conseguir clientes? Diseño páginas a medida en Badalona y cercanías. ¡Llama ahora!
+                      ¿Buscas una web rápida, profesional y preparada para
+                      conseguir clientes? Diseño páginas a medida en Badalona y
+                      cercanías. ¡Llama ahora!
                     </p>
                     <div className="seo-result-rating">
                       ★★★★★ <span className="rating-val">4.9 (42 reviews)</span>
