@@ -38,18 +38,23 @@ const translations = {
     "services-subtitle":
       "Soluciones web directas, sin rodeos técnicos y enfocadas en lo que tu negocio necesita: conseguir clientes y transmitir confianza.",
 
-    "service-price-landing": "350€",
+    "service-price-landing": "200€",
     "service-title-landing": "Web Esencial (Landing Page)",
     "service-desc-landing":
       "El impulso rápido para empezar a captar clientes en internet.",
-    "service-bullet-landing-1": "Estructura One-Page: Toda tu información clave en una sola página fluida y moderna.",
-    "service-bullet-landing-2": "Diseño Móvil Obligatorio: Optimizada al 100% para que se vea perfecta desde cualquier teléfono.",
-    "service-bullet-landing-3": "Conversión Inmediata: Botones directos a tu WhatsApp, llamadas o formulario de contacto.",
-    "service-bullet-landing-4": "Velocidad y Legalidad: Carga ultra rápida y adaptada a la ley de cookies y privacidad (RGPD).",
-    "service-ideal-landing": "[Ideal para: Negocios locales, profesionales independientes o el lanzamiento de un servicio concreto.]",
+    "service-bullet-landing-1":
+      "Estructura One-Page: Toda tu información clave en una sola página fluida y moderna.",
+    "service-bullet-landing-2":
+      "Diseño Móvil Obligatorio: Optimizada al 100% para que se vea perfecta desde cualquier teléfono.",
+    "service-bullet-landing-3":
+      "Conversión Inmediata: Botones directos a tu WhatsApp, llamadas o formulario de contacto.",
+    "service-bullet-landing-4":
+      "Velocidad y Legalidad: Carga ultra rápida y adaptada a la ley de cookies y privacidad (RGPD).",
+    "service-ideal-landing":
+      "[Ideal para: Negocios locales, profesionales independientes o el lanzamiento de un servicio concreto.]",
     "service-link-landing": "¡Quiero lanzar mi landing!",
 
-    "service-price-corporate": "Desde 500€",
+    "service-price-corporate": "Desde 350€",
     "service-title-corporate": "Web Integral (Web Corporativa)",
     "service-desc-corporate":
       "Una estructura completa para posicionar tu marca y generar autoridad.",
@@ -61,7 +66,8 @@ const translations = {
       "Contacto y Mapas Avanzados: Formulario a medida y mapa interactivo de Google Maps para que te encuentren fácil.",
     "service-bullet-corporate-4":
       "Analítica e Indexación: Alta en Google para asegurar que tu web existe en internet y puedas medir tus visitas.",
-    "service-ideal-corporate": "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
+    "service-ideal-corporate":
+      "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
     "service-link-corporate": "¡Quiero consolidar mi negocio!",
 
     // Methodology
@@ -103,21 +109,21 @@ const translations = {
     "about-decor": "Quién soy",
     "about-title": "Hola, soy Pol Alegre",
     "about-lead":
-      "Desarrollador web freelance en Badalona. Sin dolores de cabeza técnicos para ti.",
+      "Mi compromiso es ayudar a los negocios locales a digitalizarse sin dolores de cabeza técnicos.",
     "about-body-1":
-      "Sé lo difícil que es llevar un negocio en el día a día. Por eso, no soy una agencia gigante con la que es imposible hablar. Soy un técnico cercano que se encarga de todo tu apartado online para que tú te enfoques exclusivamente en tu negocio.",
+      "Sé lo difícil que es llevar el día a día de una empresa. Por eso me encargo de todo tu apartado online de principio a fin, para que tú te enfoques exclusivamente en lo tuyo.",
     "about-body-2":
-      "Te hablo claro y directo. Diseño páginas web limpias, modernas y preparadas para conseguir clientes, con precios cerrados y comunicación directa por WhatsApp en todo momento.",
+      "No soy una agencia gigante con la que es imposible contactar. Te hablo claro y directo: diseño páginas web rápidas, modernas y orientadas a captar clientes, con comunicación directa por WhatsApp y cero complicaciones.",
 
-    "about-val-title-1": "Al lado de tu negocio",
+    "about-val-title-1": "Cerca de tu negocio",
     "about-val-desc-1":
-      "Trabajo en el Centre, Gorg, Llefià, Bufalà... si pasa cualquier cosa, me acerco a tu local a solucionarlo.",
-    "about-val-title-2": "Cero plantillas prefabricadas",
+      "Trabajo con empresas de Badalona y alrededores. Me acerco a tu local si hace falta para hablar del proyecto en persona.",
+    "about-val-title-2": "Diseño web a medida",
     "about-val-desc-2":
-      "Diseño tu web desde un lienzo en blanco para que tu marca tenga una identidad real en internet.",
-    "about-val-title-3": "Trasparencia absoluta",
+      "No uso plantillas prefabricadas. Diseño tu web desde cero para que refleje fielmente la identidad de tu negocio.",
+    "about-val-title-3": "Transparencia total",
     "about-val-desc-3":
-      "Tú eres el propietario de todo. Te entrego los accesos de tu hosting y dominio desde el primer día.",
+      "Sin cuotas ocultas. Tú eres el propietario de tu dominio y hosting, y te entrego todos los accesos desde el primer día.",
 
     "editor-desc": "Desarrollador Web",
     "editor-loc": "Badalona, Barcelona",

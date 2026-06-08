@@ -43,9 +43,10 @@ export const translations = {
       "Estructura One-Page: Toda tu información clave en una sola página fluida y moderna.",
       "Diseño Móvil Obligatorio: Optimizada al 100% para que se vea perfecta desde cualquier teléfono.",
       "Conversión Inmediata: Botones directos a tu WhatsApp, llamadas o formulario de contacto.",
-      "Velocidad y Legalidad: Carga ultra rápida y adaptada a la ley de cookies y privacidad (RGPD)."
+      "Velocidad y Legalidad: Carga ultra rápida y adaptada a la ley de cookies y privacidad (RGPD).",
     ],
-    "service-ideal-landing": "[Ideal para: Negocios locales, profesionales independientes o el lanzamiento de un servicio concreto.]",
+    "service-ideal-landing":
+      "[Ideal para: Negocios locales, profesionales independientes o el lanzamiento de un servicio concreto.]",
     "service-link-landing": "¡Quiero lanzar mi landing!",
 
     "service-price-corporate-label": "Desde",
@@ -57,9 +58,10 @@ export const translations = {
       "Hasta 5 Páginas Propias: Secciones independientes para Inicio, Servicios detallados, Quiénes Somos y Contacto.",
       "Preparada para Google (SEO): Estructura técnica optimizada para ayudarte a posicionar tu negocio en tu zona.",
       "Contacto y Mapas Avanzados: Formulario a medida y mapa interactivo de Google Maps para que te encuentren fácil.",
-      "Analítica e Indexación: Alta en Google para asegurar que tu web existe en internet y puedas medir tus visitas."
+      "Analítica e Indexación: Alta en Google para asegurar que tu web existe en internet y puedas medir tus visitas.",
     ],
-    "service-ideal-corporate": "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
+    "service-ideal-corporate":
+      "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
     "service-link-corporate": "¡Quiero consolidar mi negocio!",
 
     // Why Choose Me
@@ -108,21 +110,21 @@ export const translations = {
     "about-decor": "Sobre Mí",
     "about-title": "Hola, soy Pol Alegre",
     "about-lead":
-      "Desarrollador web freelance en Badalona. Sin dolores de cabeza técnicos para ti.",
+      "Mi compromiso es ayudar a los negocios locales a digitalizarse sin dolores de cabeza técnicos.",
     "about-body-1":
-      "Sé lo difícil que es llevar un negocio en el día a día. Por eso, no soy una agencia gigante con la que es imposible hablar. Soy un técnico cercano que se encarga de todo tu apartado online para que tú te enfoques exclusivamente en tu negocio.",
+      "Sé lo difícil que es llevar el día a día de una empresa. Por eso me encargo de todo tu apartado online de principio a fin, para que tú te enfoques exclusivamente en lo tuyo.",
     "about-body-2":
-      "Te hablo claro y directo. Diseño páginas web limpias, modernas y preparadas para conseguir clientes, con precios cerrados y comunicación directa por WhatsApp en todo momento.",
+      "No soy una agencia gigante con la que es imposible contactar. Te hablo claro y directo: diseño páginas web rápidas, modernas y orientadas a captar clientes, con comunicación directa por WhatsApp y cero complicaciones.",
 
     "about-val-title-1": "Cerca de tu negocio",
     "about-val-desc-1":
-      "Trabajo con empresas y profesionales de Badalona, Centre, Gorg, Bufalà, Llefià, Casagemes, Montigalà, La Salut y alrededores. Si lo prefieres podemos reunirnos presencialmente para hablar de tu proyecto.",
+      "Trabajo con empresas de Badalona y alrededores. Me acerco a tu local si hace falta para hablar del proyecto en persona.",
     "about-val-title-2": "Diseño web a medida",
     "about-val-desc-2":
-      "Cada negocio es diferente. Por eso cada página web que desarrollo tiene una identidad propia y está diseñada específicamente para tu marca.",
+      "No uso plantillas prefabricadas. Diseño tu web desde cero para que refleje fielmente la identidad de tu negocio.",
     "about-val-title-3": "Transparencia total",
     "about-val-desc-3":
-      "El dominio, el hosting y todos los accesos son tuyos desde el primer día. Sin permanencias ni dependencias.",
+      "Sin cuotas ocultas. Tú eres el propietario de tu dominio y hosting, y te entrego todos los accesos desde el primer día.",
     "about-skills-title": "Tecnologías",
 
     "editor-desc": "Desarrollador Web",
