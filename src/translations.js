@@ -49,10 +49,10 @@ export const translations = {
         "service-title-corporate": "Página Web Corporativa",
         "service-desc-corporate": "La solución ideal para empresas, clínicas, despachos y comercios. Una página profesional que transmite confianza y ayuda a posicionar tu negocio en Google.",
         "service-bullets-corporate": [
-            "Hasta 5 Páginas Propias",
-            "Preparada para Google (SEO)",
-            "Contacto y Mapas Avanzados",
-            "Analítica e Indexación"
+            "Hasta 5 Páginas Propias: Secciones independientes para Inicio, Servicios detallados, Quiénes Somos y Contacto.",
+            "Preparada para Google (SEO): Estructura técnica optimizada para ayudarte a posicionar tu negocio en tu zona.",
+            "Contacto y Mapas Avanzados: Formulario a medida y mapa interactivo de Google Maps para que te encuentren fácil.",
+            "Analítica e Indexación: Alta en Google para asegurar que tu web existe en internet y puedas medir tus visitas."
         ],
         "service-link-corporate": "Hablemos sobre tu web",
         
