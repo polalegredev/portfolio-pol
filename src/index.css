@@ -2602,3 +2602,11 @@ h1, h2, h3, h4 {
       0 0 40px rgba(0, 240, 255, 0.5);
 }
 
+@media (max-width: 768px) {
+    .hero-interactive-side {
+        display: none !important;
+    }
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
