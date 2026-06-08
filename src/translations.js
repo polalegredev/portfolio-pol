@@ -36,11 +36,11 @@ export const translations = {
         "service-title-landing": "Diseño One-Page Estratégico",
         "service-desc-landing": "Todo el contenido clave estructurado en una sola página fluida, atractiva y fácil de navegar.",
         "service-bullets-landing": [
-            "Secciones clave para vender: Sección principal de impacto, presentación de tus servicios, testimonios de clientes y bloque de contacto.",
-            "Optimización Móvil (100% Responsive): Tu web se adaptará perfectamente a teléfonos, tablets y ordenadores.",
-            "Conversión Directa: Integración de botones de acción rápida como clic directo a WhatsApp, llamadas telefónicas o formularios limpios.",
-            "Velocidad de Carga Optimizada: Una web rápida para que ningún cliente potencial se vaya por esperar.",
-            "Textos Legales Obligatorios: Configuración del aviso legal, política de privacidad y cookies según la normativa vigente (RGPD)."
+            "Secciones clave para vender",
+            "Optimización Móvil (100% Responsive)",
+            "Conversión Directa",
+            "Velocidad de Carga Optimizada",
+            "Textos Legales Obligatorios"
         ],
         "service-link-landing": "Hablemos de tu landing",
         
