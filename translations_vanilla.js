@@ -33,11 +33,13 @@ const translations = {
         "services-subtitle": "Tres formas claras de ayudarte a tener una presencia profesional en internet, explicadas de forma sencilla.",
         
         "service-price-landing": "350€",
-        "service-title-landing": "Página de Aterrizaje",
-        "service-desc-landing": "Una sola página estructurada de principio a fin para un único objetivo: presentar tu servicio estrella y hacer que te llamen o te manden un WhatsApp.",
-        "service-bullet-landing-1": "Adaptada perfectamente a teléfonos móviles",
-        "service-bullet-landing-2": "Formulario de contacto rápido y enlace directo a WhatsApp",
-        "service-bullet-landing-3": "Ideal para campañas o servicios muy concretos",
+        "service-title-landing": "Diseño One-Page Estratégico",
+        "service-desc-landing": "Todo el contenido clave estructurado en una sola página fluida, atractiva y fácil de navegar.",
+        "service-bullet-landing-1": "Secciones clave para vender",
+        "service-bullet-landing-2": "Optimización Móvil (100% Responsive)",
+        "service-bullet-landing-3": "Conversión Directa",
+        "service-bullet-landing-4": "Velocidad de Carga Optimizada",
+        "service-bullet-landing-5": "Textos Legales Obligatorios",
         "service-link-landing": "Hablemos sobre tu landing",
         
         "service-price-corporate": "Desde 500€",
