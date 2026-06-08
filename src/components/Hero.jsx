@@ -80,7 +80,7 @@ export default function Hero({ t }) {
           <img
             key={src}
             src={src}
-            alt="Web Development Background"
+            alt=""
             className={`carousel-image ${index === currentImage ? 'active' : ''}`}
           />
         ))}
