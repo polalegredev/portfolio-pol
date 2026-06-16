@@ -185,6 +185,10 @@ export default function Services({ t }) {
             </div>
           </div>
         </div>
+
+        <div className="services-disclaimer reveal active">
+          <p>{t("services-disclaimer")}</p>
+        </div>
       </div>
     </section>
   );

@@ -53,6 +53,7 @@ const translations = {
         "service-ideal-landing":
             "[Ideal para: Negocios locales, profesionales independientes o el lanzamiento de un servicio concreto.]",
         "service-link-landing": "¡Quiero lanzar mi landing!",
+        "services-disclaimer": "Nota: El alojamiento (hosting) y el dominio anual no están incluidos en el precio. Te ayudaré a contratarlos a tu nombre y suelen rondar entre 35€ y 50€ al año en total.",
 
         "service-price-corporate": "Desde 350€",
         "service-title-corporate": "Web Integral (Web Corporativa)",
@@ -244,6 +245,7 @@ const translations = {
         "service-ideal-landing":
             "[Ideal per a: Negocis locals, professionals independents o el llançament d'un servei concret.]",
         "service-link-landing": "¡Vull llançar la meva landing!",
+        "services-disclaimer": "Nota: L'allotjament (hosting) i el domini anual no estan inclosos en el preu. T'ajudaré a contractar-los al teu nom i acostumen a rondar entre 35€ i 50€ a l'any en total.",
 
         "service-price-corporate": "Des de 350€",
         "service-title-corporate": "Web Integral (Web Corporativa)",
@@ -435,6 +437,7 @@ const translations = {
         "service-ideal-landing":
             "[Ideal for: Local businesses, independent professionals, or launching a specific service.]",
         "service-link-landing": "I want to launch my landing page!",
+        "services-disclaimer": "Note: Annual hosting and domain are not included in the price. I will help you set them up under your name (they usually cost around €35 to €50 per year in total).",
 
         "service-price-corporate": "From €350",
         "service-title-corporate": "Comprehensive Web (Corporate)",
