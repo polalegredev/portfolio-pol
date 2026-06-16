@@ -34,8 +34,8 @@ export const translations = {
     "services-subtitle":
       "Soluciones web directas, sin rodeos técnicos y enfocadas en lo que tu negocio necesita: conseguir clientes y transmitir confianza.",
 
-    "service-price-landing-label": "Desde",
-    "service-price-landing-value": "200€",
+    "service-price-landing-label": "",
+    "service-price-landing-value": "250€",
     "service-title-landing": "Web Esencial (Landing Page)",
     "service-desc-landing":
       "El impulso rápido para empezar a captar clientes en internet.",
@@ -171,7 +171,7 @@ export const translations = {
     "faq-title": "Preguntas Frecuentes",
     "faq-q1": "¿Cuánto cuesta una página web en Badalona?",
     "faq-a1":
-      "Las landing pages comienzan desde 200€ y las páginas corporativas desde 350€.",
+      "Las landing pages tienen un precio de 250€ y las páginas corporativas desde 350€.",
     "faq-q2": "¿Cuánto tarda el proyecto?",
     "faq-a2": "La mayoría de webs se completan entre una y tres semanas.",
     "faq-q3": "¿Incluyes SEO?",
@@ -295,8 +295,8 @@ export const translations = {
     "services-subtitle":
       "Solucions web directes, sense voltes tècniques i enfocades en el que el teu negoci necessita: aconseguir clients i transmetre confiança.",
 
-    "service-price-landing-label": "Des de",
-    "service-price-landing-value": "200€",
+    "service-price-landing-label": "",
+    "service-price-landing-value": "250€",
     "service-title-landing": "Web Essencial (Landing Page)",
     "service-desc-landing":
       "L'impuls ràpid per començar a captar clients a internet.",
@@ -432,7 +432,7 @@ export const translations = {
     "faq-title": "Preguntes Freqüents",
     "faq-q1": "Quant costa una pàgina web a Badalona?",
     "faq-a1":
-      "Les landing pages comencen des de 200€ i les pàgines corporatives des de 350€.",
+      "Les landing pages tenen un preu de 250€ i les pàgines corporatives des de 350€.",
     "faq-q2": "Quant triga el projecte?",
     "faq-a2": "La majoria de webs es completen entre una i tres setmanes.",
     "faq-q3": "Enllesteixes SEO?",
@@ -555,8 +555,8 @@ export const translations = {
     "services-subtitle":
       "Three clear ways to establish a professional presence on the web, explained simply.",
 
-    "service-price-landing-label": "From",
-    "service-price-landing-value": "€200",
+    "service-price-landing-label": "",
+    "service-price-landing-value": "€250",
     "service-title-landing": "Essential Web (Landing Page)",
     "service-desc-landing":
       "The quick boost to start attracting clients online.",
@@ -691,7 +691,7 @@ export const translations = {
     // FAQ
     "faq-title": "Frequently Asked Questions",
     "faq-q1": "How much does a website in Badalona cost?",
-    "faq-a1": "Landing pages start from €200 and corporate websites from €350.",
+    "faq-a1": "Landing pages have a fixed price of €250 and corporate websites from €350.",
     "faq-q2": "How long does the project take?",
     "faq-a2": "Most websites are completed within one to three weeks.",
     "faq-q3": "Do you include SEO?",

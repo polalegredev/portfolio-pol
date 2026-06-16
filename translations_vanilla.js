@@ -38,7 +38,7 @@ const translations = {
         "services-subtitle":
             "Soluciones web directas, sin rodeos técnicos y enfocadas en lo que tu negocio necesita: conseguir clientes y transmitir confianza.",
 
-        "service-price-landing": "200€",
+        "service-price-landing": "250€",
         "service-title-landing": "Web Esencial (Landing Page)",
         "service-desc-landing":
             "El impulso rápido para empezar a captar clientes en internet.",
@@ -229,7 +229,7 @@ const translations = {
         "services-subtitle":
             "Tres formes clares d'ajudar-te a tenir una presència professional a internet, explicades de manera senzilla.",
 
-        "service-price-landing": "200€",
+        "service-price-landing": "250€",
         "service-title-landing": "Web Essencial (Landing Page)",
         "service-desc-landing":
             "L'impuls ràpid per començar a captar clients a internet.",
@@ -420,7 +420,7 @@ const translations = {
         "services-subtitle":
             "Three clear ways to establish a professional presence on the web, explained simply.",
 
-        "service-price-landing": "€200",
+        "service-price-landing": "€250",
         "service-title-landing": "Essential Web (Landing Page)",
         "service-desc-landing":
             "The quick boost to start attracting clients online.",
