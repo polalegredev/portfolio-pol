@@ -12,7 +12,7 @@ export default function Projects({ t }) {
 
         <div className="portfolio-grid" style={{ gridTemplateColumns: '1fr' }}>
           {/* EcoPool Project */}
-          <a href="http://localhost:5174" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+          <a href="https://ecopoollux.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
             <div className="project-card reveal active" id="proj-ecopool" style={{ maxWidth: '900px', margin: '0 auto', width: '100%' }}>
             <div className="project-img-wrapper" style={{ height: '500px' }}>
               {/* Aquí puedes poner la imagen de la web EcoPool */}
