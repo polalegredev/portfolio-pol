@@ -4,8 +4,6 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Workflow from "./components/Workflow";
 import About from "./components/About";
-import TargetAudience from "./components/TargetAudience";
-import SeoOptimized from "./components/SeoOptimized";
 import Projects from "./components/Projects";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
@@ -42,17 +40,36 @@ function App() {
     return translations[lang]?.[key] || key;
   };
 
+  // Scroll reveal animation logic
+  useEffect(() => {
+    const handleReveal = () => {
+      const reveals = document.querySelectorAll(".reveal");
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 50;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleReveal);
+    handleReveal(); // Trigger initially
+
+    return () => window.removeEventListener("scroll", handleReveal);
+  }, []);
+
   return (
     <>
       <Navbar lang={lang} setLang={setLang} t={t} />
       <main>
         <Hero t={t} />
-        <TargetAudience t={t} />
-        <Services t={t} />
-        <SeoOptimized t={t} />
-        <Projects t={t} />
-        <Workflow t={t} />
         <About t={t} />
+        <Projects t={t} />
+        <Services t={t} />
+        <Workflow t={t} />
         <Faq t={t} />
         <Contact lang={lang} t={t} />
       </main>

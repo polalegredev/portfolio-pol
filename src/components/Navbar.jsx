@@ -44,22 +44,6 @@ export default function Navbar({ lang, setLang, t }) {
           id="nav-menu"
         >
           <a
-            href="#servicios"
-            className="nav-link"
-            id="link-servicios"
-            onClick={handleLinkClick}
-          >
-            {t("nav-servicios")}
-          </a>
-          <a
-            href="#como-trabajamos"
-            className="nav-link"
-            id="link-metodo"
-            onClick={handleLinkClick}
-          >
-            {t("nav-metodo")}
-          </a>
-          <a
             href="#sobre-mi"
             className="nav-link"
             id="link-sobre-mi"
@@ -74,6 +58,22 @@ export default function Navbar({ lang, setLang, t }) {
             onClick={handleLinkClick}
           >
             {t("nav-portafolio")}
+          </a>
+          <a
+            href="#servicios"
+            className="nav-link"
+            id="link-servicios"
+            onClick={handleLinkClick}
+          >
+            {t("nav-servicios")}
+          </a>
+          <a
+            href="#como-trabajamos"
+            className="nav-link"
+            id="link-metodo"
+            onClick={handleLinkClick}
+          >
+            {t("nav-metodo")}
           </a>
 
           <a
