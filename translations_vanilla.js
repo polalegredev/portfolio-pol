@@ -71,6 +71,40 @@ const translations = {
             "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
         "service-link-corporate": "¡Quiero consolidar mi negocio!",
 
+        "service-price-ecommerce-label": "Desde",
+        "service-price-ecommerce-value": "650€",
+        "service-title-ecommerce": "Tienda Online (E-commerce)",
+        "service-desc-ecommerce":
+            "El escaparate digital completo para vender tus productos por internet.",
+        "service-bullet-ecommerce-1":
+            "Catálogo de Productos: Hasta 50 productos iniciales con variaciones y categorías.",
+        "service-bullet-ecommerce-2":
+            "Pasarela de Pago: Configuración de pagos seguros por tarjeta, PayPal o Bizum.",
+        "service-bullet-ecommerce-3":
+            "Gestión de Envíos: Configuración de zonas de envío y tarifas automatizadas.",
+        "service-bullet-ecommerce-4":
+            "Autogestionable: Te enseño a subir productos y gestionar pedidos sin depender de nadie.",
+        "service-ideal-ecommerce":
+            "[Ideal para: Comercios locales que quieren vender online, marcas de ropa o artesanía.]",
+        "service-link-ecommerce": "¡Quiero abrir mi tienda online!",
+
+        "service-price-maintenance-label": "",
+        "service-price-maintenance-value": "40€/mes",
+        "service-title-maintenance": "Mantenimiento y Evolución",
+        "service-desc-maintenance":
+            "Despreocúpate de la parte técnica. Yo me encargo de que tu web esté siempre al día.",
+        "service-bullet-maintenance-1":
+            "Actualizaciones Seguras: Mantengo el sistema y los plugins actualizados para evitar hackeos.",
+        "service-bullet-maintenance-2":
+            "Copias de Seguridad: Backups semanales para que nunca pierdas tu información.",
+        "service-bullet-maintenance-3":
+            "Cambios de Contenido: Incluye hasta 1 hora al mes para modificar textos, fotos o añadir promociones.",
+        "service-bullet-maintenance-4":
+            "Soporte Prioritario: Si algo falla o tienes dudas, me tienes a un WhatsApp de distancia.",
+        "service-ideal-maintenance":
+            "[Ideal para: Negocios que ya tienen web y no tienen tiempo para gestionarla o actualizarla.]",
+        "service-link-maintenance": "¡Quiero delegar el mantenimiento!",
+
         // Methodology
         "method-decor": "Metodología",
         "method-title": "Paso a paso, sin líos",
@@ -263,6 +297,40 @@ const translations = {
             "[Ideal per a: Empreses consolidades, clíniques, acadèmies o negocis amb un catàleg ampli de serveis.]",
         "service-link-corporate": "¡Vull consolidar el meu negoci!",
 
+        "service-price-ecommerce-label": "Des de",
+        "service-price-ecommerce-value": "650€",
+        "service-title-ecommerce": "Botiga Online (E-commerce)",
+        "service-desc-ecommerce":
+            "L'aparador digital complet per vendre els teus productes per internet.",
+        "service-bullet-ecommerce-1":
+            "Catàleg de Productes: Fins a 50 productes inicials amb variacions i categories.",
+        "service-bullet-ecommerce-2":
+            "Passarel·la de Pagament: Configuració de pagaments segurs per targeta, PayPal o Bizum.",
+        "service-bullet-ecommerce-3":
+            "Gestió d'Enviaments: Configuració de zones d'enviament i tarifes automatitzades.",
+        "service-bullet-ecommerce-4":
+            "Autogestionable: T'ensenyo a pujar productes i gestionar comandes sense dependre de ningú.",
+        "service-ideal-ecommerce":
+            "[Ideal per a: Comerços locals que volen vendre online, marques de roba o artesania.]",
+        "service-link-ecommerce": "¡Vull obrir la meva botiga online!",
+
+        "service-price-maintenance-label": "",
+        "service-price-maintenance-value": "40€/mes",
+        "service-title-maintenance": "Manteniment i Evolució",
+        "service-desc-maintenance":
+            "Despreocupa't de la part tècnica. Jo m'encarrego que la teva web estigui sempre al dia.",
+        "service-bullet-maintenance-1":
+            "Actualitzacions Segures: Mantinc el sistema i els plugins actualitzats per evitar hackejos.",
+        "service-bullet-maintenance-2":
+            "Còpies de Seguretat: Backups setmanals perquè mai perdis la teva informació.",
+        "service-bullet-maintenance-3":
+            "Canvis de Contingut: Inclou fins a 1 hora al mes per modificar textos, fotos o afegir promocions.",
+        "service-bullet-maintenance-4":
+            "Suport Prioritari: Si alguna cosa falla o tens dubtes, em tens a un WhatsApp de distància.",
+        "service-ideal-maintenance":
+            "[Ideal per a: Negocis que ja tenen web i no tenen temps per gestionar-la o actualitzar-la.]",
+        "service-link-maintenance": "¡Vull delegar el manteniment!",
+
         // Methodology
         "method-decor": "Metodologia",
         "method-title": "Pas a pas, sense embolics",
@@ -454,6 +522,40 @@ const translations = {
         "service-ideal-corporate":
             "[Ideal for: Established companies, clinics, academies, or businesses with a wide service catalog.]",
         "service-link-corporate": "I want to consolidate my business!",
+
+        "service-price-ecommerce-label": "From",
+        "service-price-ecommerce-value": "€650",
+        "service-title-ecommerce": "Online Store (E-commerce)",
+        "service-desc-ecommerce":
+            "The complete digital storefront to sell your products online.",
+        "service-bullet-ecommerce-1":
+            "Product Catalog: Up to 50 initial products with variations and categories.",
+        "service-bullet-ecommerce-2":
+            "Payment Gateway: Setup of secure payments via card, PayPal, or local methods.",
+        "service-bullet-ecommerce-3":
+            "Shipping Management: Configuration of shipping zones and automated rates.",
+        "service-bullet-ecommerce-4":
+            "Self-Managed: I'll teach you how to upload products and manage orders independently.",
+        "service-ideal-ecommerce":
+            "[Ideal for: Local shops wanting to sell online, clothing brands, or crafters.]",
+        "service-link-ecommerce": "I want to open my online store!",
+
+        "service-price-maintenance-label": "",
+        "service-price-maintenance-value": "€40/mo",
+        "service-title-maintenance": "Maintenance & Evolution",
+        "service-desc-maintenance":
+            "Forget about the technical side. I'll make sure your website is always up to date.",
+        "service-bullet-maintenance-1":
+            "Secure Updates: I keep the system and plugins updated to prevent hacking.",
+        "service-bullet-maintenance-2":
+            "Backups: Weekly backups so you never lose your information.",
+        "service-bullet-maintenance-3":
+            "Content Changes: Includes up to 1 hour per month to modify texts, photos, or add promotions.",
+        "service-bullet-maintenance-4":
+            "Priority Support: If something fails or you have questions, I'm just a WhatsApp message away.",
+        "service-ideal-maintenance":
+            "[Ideal for: Businesses that already have a website and lack time to manage or update it.]",
+        "service-link-maintenance": "I want to delegate maintenance!",
 
         // Methodology
         "method-decor": "Methodology",
