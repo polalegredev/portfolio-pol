@@ -193,9 +193,6 @@ export const translations = {
     "faq-q3": "¿Incluyes SEO?",
     "faq-a3":
       "Sí. Todas las páginas se entregan optimizadas técnicamente para facilitar su posicionamiento.",
-    "faq-q4": "¿Podré editar el contenido?",
-    "faq-a4":
-      "Sí. Tendrás acceso completo para modificar textos, imágenes y contenidos.",
     "faq-q5": "¿Trabajas solo en Badalona?",
     "faq-a5":
       "No. También colaboro con empresas de Barcelona, Santa Coloma, Sant Adrià, Montgat y Tiana.",
@@ -470,9 +467,6 @@ export const translations = {
     "faq-q3": "Enllesteixes SEO?",
     "faq-a3":
       "Sí. Totes les pàgines s'entreguen optimitzades tècnicament per facilitar el seu posicionament.",
-    "faq-q4": "Podré editar el contingut?",
-    "faq-a4":
-      "Sí. Tindràs accés complet per modificar textos, imatges i continguts.",
     "faq-q5": "Treballes només a Badalona?",
     "faq-a5":
       "No. També col·laboro amb empreses de Barcelona, Santa Coloma, Sant Adrià, Montgat i Tiana.",
@@ -745,9 +739,6 @@ export const translations = {
     "faq-q3": "Do you include SEO?",
     "faq-a3":
       "Yes. All websites are delivered technically optimized to facilitate search engine positioning.",
-    "faq-q4": "Will I be able to edit the content?",
-    "faq-a4":
-      "Yes. You will have full access to modify text, images, and content.",
     "faq-q5": "Do you work only in Badalona?",
     "faq-a5":
       "No. I also collaborate with businesses in Barcelona, Santa Coloma, Sant Adrià, Montgat, and Tiana.",
