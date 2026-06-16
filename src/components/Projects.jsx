@@ -12,11 +12,12 @@ export default function Projects({ t }) {
 
         <div className="portfolio-grid" style={{ gridTemplateColumns: '1fr' }}>
           {/* EcoPool Project */}
-          <div className="project-card reveal active" id="proj-ecopool" style={{ maxWidth: '900px', margin: '0 auto', width: '100%' }}>
+          <a href="http://localhost:5174" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+            <div className="project-card reveal active" id="proj-ecopool" style={{ maxWidth: '900px', margin: '0 auto', width: '100%' }}>
             <div className="project-img-wrapper" style={{ height: '500px' }}>
               {/* Aquí puedes poner la imagen de la web EcoPool */}
               <img
-                src={`${import.meta.env.BASE_URL}assets/ecopool-mockup.png`}
+                src={`${import.meta.env.BASE_URL}assets/ecopool.png`}
                 alt="EcoPool Web"
                 className="project-img"
                 loading="lazy"
@@ -31,11 +32,12 @@ export default function Projects({ t }) {
             <div className="project-info">
               <h3>EcoPool</h3>
               <p>Proyecto web completo para EcoPool. Diseño moderno, dinámico y sostenible.</p>
-              <a href="http://localhost:5173" target="_blank" rel="noopener noreferrer" className="project-link" id="link-proj-ecopool">
+              <span className="project-link" id="link-proj-ecopool">
                 Ver la web de EcoPool
-              </a>
+              </span>
             </div>
           </div>
+          </a>
         </div>
       </div>
     </section>
