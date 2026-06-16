@@ -65,35 +65,24 @@ export const translations = {
       "[Ideal para: Empresas consolidadas, clínicas, academias o negocios con un catálogo amplio de servicios.]",
     "service-link-corporate": "¡Quiero consolidar mi negocio!",
 
-    "service-price-ecommerce-label": "Desde",
-    "service-price-ecommerce-value": "650€",
-    "service-title-ecommerce": "Tienda Online (E-commerce)",
-    "service-desc-ecommerce":
-      "El escaparate digital completo para vender tus productos por internet.",
-    "service-bullets-ecommerce": [
-      "Catálogo de Productos: Hasta 50 productos iniciales con variaciones y categorías.",
-      "Pasarela de Pago: Configuración de pagos seguros por tarjeta, PayPal o Bizum.",
-      "Gestión de Envíos: Configuración de zonas de envío y tarifas automatizadas.",
-      "Autogestionable: Te enseño a subir productos y gestionar pedidos sin depender de nadie.",
-    ],
-    "service-ideal-ecommerce":
-      "[Ideal para: Comercios locales que quieren vender online, marcas de ropa o artesanía.]",
-    "service-link-ecommerce": "¡Quiero abrir mi tienda online!",
-
-    "service-price-maintenance-label": "",
-    "service-price-maintenance-value": "40€/mes",
-    "service-title-maintenance": "Mantenimiento y Evolución",
-    "service-desc-maintenance":
-      "Despreocúpate de la parte técnica. Yo me encargo de que tu web esté siempre al día.",
-    "service-bullets-maintenance": [
-      "Actualizaciones Seguras: Mantengo el sistema y los plugins actualizados para evitar hackeos.",
-      "Copias de Seguridad: Backups semanales para que nunca pierdas tu información.",
-      "Cambios de Contenido: Incluye hasta 1 hora al mes para modificar textos, fotos o añadir promociones.",
-      "Soporte Prioritario: Si algo falla o tienes dudas, me tienes a un WhatsApp de distancia.",
-    ],
-    "service-ideal-maintenance":
-      "[Ideal para: Negocios que ya tienen web y no tienen tiempo para gestionarla o actualizarla.]",
-    "service-link-maintenance": "¡Quiero delegar el mantenimiento!",
+    "addons-title": "Servicios Adicionales",
+    "addons-subtitle": "Complementos perfectos para escalar tu web cuando lo necesites.",
+    
+    "addon-maintenance-title": "Mantenimiento y Soporte",
+    "addon-maintenance-desc": "Actualizaciones, copias de seguridad y 1h de cambios al mes.",
+    "addon-maintenance-price": "40€/mes",
+    
+    "addon-pages-title": "Páginas Extra",
+    "addon-pages-desc": "Si necesitas más secciones (ej. un catálogo extenso o un blog).",
+    "addon-pages-price": "50€/pág",
+    
+    "addon-seo-title": "SEO Local Avanzado",
+    "addon-seo-desc": "Auditoría, alta en directorios y optimización de ficha de Google Business.",
+    "addon-seo-price": "150€",
+    
+    "addon-lang-title": "Idioma Adicional",
+    "addon-lang-desc": "Traducción y configuración de la web en un idioma extra.",
+    "addon-lang-price": "100€/idioma",
 
     // Why Choose Me
     "why-title": "Un desarrollador web local que entiende tu negocio",
@@ -357,35 +346,24 @@ export const translations = {
       "[Ideal per a: Empreses consolidades, clíniques, acadèmies o negocis amb un catàleg ampli de serveis.]",
     "service-link-corporate": "¡Vull consolidar el meu negoci!",
 
-    "service-price-ecommerce-label": "Des de",
-    "service-price-ecommerce-value": "650€",
-    "service-title-ecommerce": "Botiga Online (E-commerce)",
-    "service-desc-ecommerce":
-      "L'aparador digital complet per vendre els teus productes per internet.",
-    "service-bullets-ecommerce": [
-      "Catàleg de Productes: Fins a 50 productes inicials amb variacions i categories.",
-      "Passarel·la de Pagament: Configuració de pagaments segurs per targeta, PayPal o Bizum.",
-      "Gestió d'Enviaments: Configuració de zones d'enviament i tarifes automatitzades.",
-      "Autogestionable: T'ensenyo a pujar productes i gestionar comandes sense dependre de ningú.",
-    ],
-    "service-ideal-ecommerce":
-      "[Ideal per a: Comerços locals que volen vendre online, marques de roba o artesania.]",
-    "service-link-ecommerce": "¡Vull obrir la meva botiga online!",
-
-    "service-price-maintenance-label": "",
-    "service-price-maintenance-value": "40€/mes",
-    "service-title-maintenance": "Manteniment i Evolució",
-    "service-desc-maintenance":
-      "Despreocupa't de la part tècnica. Jo m'encarrego que la teva web estigui sempre al dia.",
-    "service-bullets-maintenance": [
-      "Actualitzacions Segures: Mantinc el sistema i els plugins actualitzats per evitar hackejos.",
-      "Còpies de Seguretat: Backups setmanals perquè mai perdis la teva informació.",
-      "Canvis de Contingut: Inclou fins a 1 hora al mes per modificar textos, fotos o afegir promocions.",
-      "Suport Prioritari: Si alguna cosa falla o tens dubtes, em tens a un WhatsApp de distància.",
-    ],
-    "service-ideal-maintenance":
-      "[Ideal per a: Negocis que ja tenen web i no tenen temps per gestionar-la o actualitzar-la.]",
-    "service-link-maintenance": "¡Vull delegar el manteniment!",
+    "addons-title": "Serveis Addicionals",
+    "addons-subtitle": "Complements perfectes per escalar la teva web quan ho necessitis.",
+    
+    "addon-maintenance-title": "Manteniment i Suport",
+    "addon-maintenance-desc": "Actualitzacions, còpies de seguretat i 1h de canvis al mes.",
+    "addon-maintenance-price": "40€/mes",
+    
+    "addon-pages-title": "Pàgines Extra",
+    "addon-pages-desc": "Si necessites més seccions (ex. un catàleg extens o un blog).",
+    "addon-pages-price": "50€/pàg",
+    
+    "addon-seo-title": "SEO Local Avançat",
+    "addon-seo-desc": "Auditoria, alta a directoris i optimització de fitxa de Google Business.",
+    "addon-seo-price": "150€",
+    
+    "addon-lang-title": "Idioma Addicional",
+    "addon-lang-desc": "Traducció i configuració de la web en un idioma extra.",
+    "addon-lang-price": "100€/idioma",
 
     // Why Choose Me
     "why-title": "Un desenvolupador web local que entén el teu negoci",
@@ -648,35 +626,24 @@ export const translations = {
       "[Ideal for: Established companies, clinics, academies, or businesses with a wide service catalog.]",
     "service-link-corporate": "I want to consolidate my business!",
 
-    "service-price-ecommerce-label": "From",
-    "service-price-ecommerce-value": "€650",
-    "service-title-ecommerce": "Online Store (E-commerce)",
-    "service-desc-ecommerce":
-      "The complete digital storefront to sell your products online.",
-    "service-bullets-ecommerce": [
-      "Product Catalog: Up to 50 initial products with variations and categories.",
-      "Payment Gateway: Setup of secure payments via card, PayPal, or local methods.",
-      "Shipping Management: Configuration of shipping zones and automated rates.",
-      "Self-Managed: I'll teach you how to upload products and manage orders independently.",
-    ],
-    "service-ideal-ecommerce":
-      "[Ideal for: Local shops wanting to sell online, clothing brands, or crafters.]",
-    "service-link-ecommerce": "I want to open my online store!",
-
-    "service-price-maintenance-label": "",
-    "service-price-maintenance-value": "€40/mo",
-    "service-title-maintenance": "Maintenance & Evolution",
-    "service-desc-maintenance":
-      "Forget about the technical side. I'll make sure your website is always up to date.",
-    "service-bullets-maintenance": [
-      "Secure Updates: I keep the system and plugins updated to prevent hacking.",
-      "Backups: Weekly backups so you never lose your information.",
-      "Content Changes: Includes up to 1 hour per month to modify texts, photos, or add promotions.",
-      "Priority Support: If something fails or you have questions, I'm just a WhatsApp message away.",
-    ],
-    "service-ideal-maintenance":
-      "[Ideal for: Businesses that already have a website and lack time to manage or update it.]",
-    "service-link-maintenance": "I want to delegate maintenance!",
+    "addons-title": "Additional Services",
+    "addons-subtitle": "Perfect add-ons to scale your website whenever you need it.",
+    
+    "addon-maintenance-title": "Maintenance & Support",
+    "addon-maintenance-desc": "Updates, backups, and 1h of content changes per month.",
+    "addon-maintenance-price": "€40/mo",
+    
+    "addon-pages-title": "Extra Pages",
+    "addon-pages-desc": "If you need more sections (e.g., an extensive catalog or a blog).",
+    "addon-pages-price": "€50/page",
+    
+    "addon-seo-title": "Advanced Local SEO",
+    "addon-seo-desc": "Audit, directory listings, and Google Business Profile optimization.",
+    "addon-seo-price": "€150",
+    
+    "addon-lang-title": "Additional Language",
+    "addon-lang-desc": "Translation and configuration of your website in an extra language.",
+    "addon-lang-price": "€100/lang",
 
     // Why Choose Me
     "why-title": "A local web developer who understands your business",
