@@ -66,7 +66,15 @@ export default function Hero({ t }) {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="hero-carousel-bg">
+      <div className="hero-video-bg">
+        <video
+          src={`${import.meta.env.BASE_URL}assets/video-hero.mp4`}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hero-video"
+        ></video>
         <div className="hero-overlay"></div>
       </div>
 
